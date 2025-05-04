@@ -139,6 +139,11 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
     }
     
     func disconnect() {
+        if let pumpManager = self.pumpManager, pumpManager.state.usingHeartbeatMode {
+            // We are using heartbeat mode, so prevent disconnect
+            return
+        }
+        
         if let peripheral = self.peripheral, peripheral.state == .connected {
             self.manager.cancelPeripheralConnection(peripheral)
         }
