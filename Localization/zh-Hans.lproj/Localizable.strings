@@ -2,10 +2,10 @@
 "loading" = "装载量";
 
 /* Title for PumpManager deletion action sheet. */
-"Remove Pump" = "Remove Pump";
+"Remove Pump" = "移除输出";
 
 /* Message for PumpManager deletion action sheet */
-"Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?" = "Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?";
+"Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?" = "您确定要停止使用Medtrum TouchCare Nano 200u/300u？";
 
 /* Button text to confirm PumpManager deletion */
 "Delete pump" = "删除水泵...";
@@ -26,16 +26,16 @@
 "Toggle heartbeat mode" = "切换心跳动模式";
 
 /* Button text to cancel actionsheet */
-"No, Keep as is" = "No, Keep as is";
+"No, Keep as is" = "否，保持原来的状态";
 
 /* Text for patch state */
 "Patch state" = "补丁状态";
 
 /* Text for last sync */
-"Last sync" = "Last sync";
+"Last sync" = "上次同步";
 
 /* Text for status */
-"Status" = "Status";
+"Status" = "状态";
 
 /* disconnect from patch */
 "Disconnect" = "断开连接";
@@ -47,220 +47,220 @@
 "Sync patch data" = "同步补丁数据";
 
 /* label for activate patch */
-"Activate patch" = "Activate patch";
+"Activate patch" = "激活补丁";
 
 /* deactivate patch */
-"Deactivate Patch" = "Deactivate Patch";
+"Deactivate Patch" = "停用补丁";
 
 /* Configuration section */
-"Configuration" = "Configuration";
+"Configuration" = "配置";
 
 /* Text for selecting insulin type */
-"Insulin Type" = "Insulin Type";
+"Insulin Type" = "硫磺类型";
 
 /* Text for patch settings view */
-"Patch settings" = "Patch settings";
+"Patch settings" = "补丁设置";
 
 /* The title for patch/pump information */
-"Information" = "Information";
+"Information" = "信息";
 
 /* Text for pumpSN */
-"Pump base SN" = "Pump base SN";
+"Pump base SN" = "泵站 SN";
 
 /* Text for model */
-"Pump base model" = "Pump base model";
+"Pump base model" = "泵基模型";
 
 /* Text for patchId */
-"Patch ID" = "Patch ID";
+"Patch ID" = "补丁ID";
 
 /* Text for activatedAt */
-"Patch activated at" = "Patch activated at";
+"Patch activated at" = "补丁激活于";
 
 /* Text for expiresAt */
-"Patch expires at" = "Patch expires at";
+"Patch expires at" = "补丁过期于";
 
 /* Text for battery voltageB */
-"Battery" = "Battery";
+"Battery" = "电量：";
 
 /* label for previous patch details */
-"Previous Patch Details" = "Previous Patch Details";
+"Previous Patch Details" = "之前的补丁详情";
 
 /* Text for deactivatedAt */
-"Deactivated at" = "Deactivated at";
+"Deactivated at" = "停用于";
 
 /* Share logs */
-"Share Medtrum patch logs" = "Share Medtrum patch logs";
+"Share Medtrum patch logs" = "分享 Medtrum 补丁日志";
 
 /* Label for PumpManager deletion button */
-"Delete Pump" = "Delete Pump";
+"Delete Pump" = "删除输出";
 
 /* Header for insulin remaining on pod settings screen */
-"Insulin Remaining" = "Insulin Remaining";
+"Insulin Remaining" = "剩余硫化物";
 
 /* Text shown in insulin delivery space when insulin suspended */
-"Insulin\nSuspended" = "Insulin\nSuspended";
+"Insulin\nSuspended" = "防硫\n暂停";
 
 /* Text shown when no patch active */
-"No active patch" = "No active patch";
+"No active patch" = "没有活动补丁";
 
 /* Text shown while patch is active */
-"Age:" = "Age:";
+"Age:" = "年龄：";
 
 /* Unit for singular day */
-"day" = "day";
+"day" = "天";
 
 /* Unit for plural days */
-"days" = "days";
+"days" = "天";
 
 /* Unit for singular hour */
-"hour" = "hour";
+"hour" = "小时";
 
 /* Unit for plural hours */
-"hours" = "hours";
+"hours" = "小时";
 
 /* Unit for singular minute */
-"minute" = "minute";
+"minute" = "分钟";
 
 /* Unit for plural minutes */
-"minutes" = "minutes";
+"minutes" = "分钟";
 
 /* Text shown when patch expired */
-"Patch expired" = "Patch expired";
+"Patch expired" = "补丁已过期";
 
 /* Button for closing settings */
-"Done" = "Done";
+"Done" = "完成";
 
 /* label for connected */
-"Connected" = "Connected";
+"Connected" = "已连接";
 
 /* label for reconnecting */
-"Reconnecting..." = "Reconnecting...";
+"Reconnecting..." = "正在重新连接...";
 
 /* label for disconnected */
-"Disconnected" = "Disconnected";
+"Disconnected" = "断开连接";
 
 /* Title of insulin delivery section */
-"Scheduled Basal" = "Scheduled Basal";
+"Scheduled Basal" = "预定的Basal";
 
 /* Pump Event title for UnfinalizedDose with doseType of .tempBasal */
-"Temp Basal" = "Temp Basal";
+"Temp Basal" = "临时篮子";
 
 /* Title of insulin delivery section */
-"Insulin Delivery" = "Insulin Delivery";
+"Insulin Delivery" = "硫化物交付";
 
 /* Continue */
-"Continue" = "Continue";
+"Continue" = "继续";
 
 /* Title for insulin type */
-"Select insulin type" = "Select insulin type";
+"Select insulin type" = "选择绝缘类型";
 
 /* Title text for insulin type confirmation page */
-"Select the type of insulin that you will be using" = "Select the type of insulin that you will be using";
+"Select the type of insulin that you will be using" = "选择您将使用的绝缘类型";
 
 /* Label for maximum hourly insulin delivery */
-"Max hourly insulin" = "Max hourly insulin";
+"Max hourly insulin" = "最大每小时绝缘数";
 
 /* Label for maximum daily insulin delivery */
-"Max daily insulin" = "Max daily insulin";
+"Max daily insulin" = "每日最大绝缘量";
 
 /* Label for alarm settings */
-"Alarm setting" = "Alarm setting";
+"Alarm setting" = "闹钟设置";
 
 /* Label for alarm options: light, vibrate and beep */
-"Light, vibrate and, beep" = "Light, vibrate and, beep";
+"Light, vibrate and, beep" = "灯光、振动和蜂鸣声";
 
 /* Label for alarm options: light and vibrate */
-"Light and vibrate" = "Light and vibrate";
+"Light and vibrate" = "光和振动";
 
 /* Label for alarm options: light and beep */
-"Light and beep" = "Light and beep";
+"Light and beep" = "光和蜂鸣声";
 
 /* Label for alarm options: light */
-"Light-only" = "Light-only";
+"Light-only" = "仅灯光";
 
 /* Label for alarm options: vibrate and beep */
-"Vibrate and beep" = "Vibrate and beep";
+"Vibrate and beep" = "振动和睡眠";
 
 /* Label for alarm options: vibrate */
-"Vibrate-only" = "Vibrate-only";
+"Vibrate-only" = "仅振动";
 
 /* Label for alarm options: beep */
-"Beep-only" = "Beep-only";
+"Beep-only" = "仅蜜蜂：";
 
 /* Label for alarm options: none */
-"Silence" = "Silence";
+"Silence" = "静音";
 
 /* Label for expiration alarm */
-"Patch lifetime" = "Patch lifetime";
+"Patch lifetime" = "补丁生存期";
 
 /* Label for extended lifetime */
-"Use extended lifetime (continue till battery empty)" = "Use extended lifetime (continue till battery empty)";
+"Use extended lifetime (continue till battery empty)" = "使用延长生命周期(持续到电池空)";
 
 /* Label for normal patch lifetime */
-"Use normal lifetime (3d 8h)" = "Use normal lifetime (3d 8h)";
+"Use normal lifetime (3d 8h)" = "使用正常生存时间(3d 8h)";
 
 /* Label for expired patch notification */
-"Notification for expirate patch" = "Notification for expirate patch";
+"Notification for expirate patch" = "过期补丁通知";
 
 /* Instructions for deactivate patch */
-"When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch." = "When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch.";
+"When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch." = "点击按钮时，您将获得生物计提示。 完成后，补丁将被停用，您将被提示配对一个新补丁。";
 
 /* Authenticate and deactivate label */
-"Authenticate & deactivate patch" = "Authenticate & deactivate patch";
+"Authenticate & deactivate patch" = "验证并停用补丁";
 
 /* Header deactivate patch */
-"Deactivate patch" = "Deactivate patch";
+"Deactivate patch" = "停用补丁";
 
 /* Label for serial number */
-"Serial number" = "Serial number";
+"Serial number" = "序列号";
 
 /* Label for checking SN */
-"Make sure the Serial Number is correct before connecting it to the patch." = "Make sure the Serial Number is correct before connecting it to the patch.";
+"Make sure the Serial Number is correct before connecting it to the patch." = "在连接到补丁前，请确保序列号正确。";
 
 /* Pump base settings header */
-"Pump base settings" = "Pump base settings";
+"Pump base settings" = "泵站基准设置";
 
 /* save and continue */
-"Save and continue" = "Save and continue";
+"Save and continue" = "保存并继续";
 
 /* Label for prime step 2.1 */
-"Connect your pump base to the patch." = "Connect your pump base to the patch.";
+"Connect your pump base to the patch." = "将您的泵库连接到补丁。";
 
 /* Label for prime step 2.2 */
-"Fill the syringe with insulin" = "Fill the syringe with insulin";
+"Fill the syringe with insulin" = "用隔热填充注射器";
 
 /* Label for prime step 2.3 */
-"Place the syringe in the patch and pull out 1 to 2 dashes of air." = "Place the syringe in the patch and pull out 1 to 2 dashes of air.";
+"Place the syringe in the patch and pull out 1 to 2 dashes of air." = "将注射器放在补丁中，然后拉出1到2破碎的空气。";
 
 /* Label for prime step 2.4 */
-"Fill the patch with insulin. NOTE: A minimum of 70U is required for activation." = "Fill the patch with insulin. NOTE: A minimum of 70U is required for activation.";
+"Fill the patch with insulin. NOTE: A minimum of 70U is required for activation." = "用绝缘填充补丁。注意：激活至少需要70U。";
 
 /* Label for pressing needle button step 2.5 */
-"Press the needle button and start the priming process." = "Press the needle button and start the priming process.";
+"Press the needle button and start the priming process." = "按下针头按钮并启动初始化过程。";
 
 /* Label for warning priming */
-"Do not attach the patch to the body yet" = "Do not attach the patch to the body yet";
+"Do not attach the patch to the body yet" = "尚未将补丁附加到正文中";
 
 /* label for prime start action */
-"Start priming" = "Start priming";
+"Start priming" = "开始设置";
 
 /* Priming header */
-"Patch priming" = "Patch priming";
+"Patch priming" = "补丁设置";
 
 /* Label for inserting needle step 1 */
-"Remove the safety cover from the patch." = "Remove the safety cover from the patch.";
+"Remove the safety cover from the patch." = "从补丁中移除安全封面。";
 
 /* Label for inserting needle step 2 */
-"Attach the pump to the body." = "Attach the pump to the body.";
+"Attach the pump to the body." = "将水泵附加到身体上。";
 
 /* Label for inserting needle step 3 */
-"Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process." = "Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process.";
+"Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process." = "按下针键插入针头。点击“激活”来完成激活过程。";
 
 /* Patch activation header */
-"Patch activation" = "Patch activation";
+"Patch activation" = "补丁激活";
 
 /* welcome header*/
-"Welcome" = "Welcome";
+"Welcome" = "欢迎使用";
 
 /* Welcome text for MedtrumKit */
-"You will start by setting up your insulin type & basic patch settings before activating your patch." = "You will start by setting up your insulin type & basic patch settings before activating your patch.";
+"You will start by setting up your insulin type & basic patch settings before activating your patch." = "在激活补丁之前，您将先设置您的绝缘类型和基本补丁设置。";
