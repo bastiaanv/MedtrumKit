@@ -88,13 +88,20 @@ class PeripheralManager : NSObject {
 extension PeripheralManager {
     
     // Connect step 1
-    private func doAuthorize() async {
+    private func doAuthorize(withPreviousToken: Bool = false) async {
+        let sessionToken = !withPreviousToken ? self.pumpManager.state.sessionToken : self.pumpManager.state.previousSessionToken
         let authData = await writePacket(
-            AuthorizePacket(pumpSN: self.pumpManager.state.pumpSN, sessionToken: self.pumpManager.state.sessionToken)
+            AuthorizePacket(pumpSN: self.pumpManager.state.pumpSN, sessionToken: sessionToken)
         )
         
         switch authData {
         case .failure(let error):
+            if case .invalidResponse(let code) = error, code == 0x07, !withPreviousToken {
+                log.debug("Retry to login with previous session token")
+                await self.doAuthorize(withPreviousToken: true)
+                return
+            }
+            
             log.error("Failed to complete authorization flow: \(error.localizedDescription)")
             completion?(.failure(error: .failedToCompleteAuthorizationFlow(localizedError: error.localizedDescription)))
             break
@@ -108,6 +115,11 @@ extension PeripheralManager {
             
             pumpManager.state.deviceType = authResponse.deviceType
             pumpManager.state.swVersion = authResponse.swVersion
+            
+            if withPreviousToken {
+                // Replace old token with new one
+                pumpManager.state.sessionToken = pumpManager.state.previousSessionToken
+            }
             
             await getTime()
         }
@@ -213,6 +225,9 @@ extension PeripheralManager {
             
         case .success:
             log.info("Connected to pump!")
+            
+            pumpManager.state.isConnected = false
+            pumpManager.notifyStateDidChange()
             completion?(.success)
         }
     }

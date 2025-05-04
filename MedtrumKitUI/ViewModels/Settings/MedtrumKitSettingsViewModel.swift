@@ -23,7 +23,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     @Published var model: String = ""
     @Published var patchId: UInt64 = 0
     @Published var is300u: Bool = false
-    @Published var usingContinuousMode = false
+    @Published var usingHeartbeatMode = false
     @Published var reservoirLevel: Double = 0
     @Published var battery: Double = 0
     @Published var maxReservoirLevel: Double = 1
@@ -39,7 +39,9 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     @Published var isConnected: Bool = false
     @Published var isReconnecting: Bool = false
     @Published var isUpdatingPumpState = false
+    @Published var showingHeartbeatWarning = false
     @Published var showingDeleteConfirmation = false
+    @Published var previousPatch: PreviousPatch? = nil
     
     public let patchSettingsViewModel: PatchSettingsViewModel
     
@@ -126,7 +128,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
             return nil
         }
         
-        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).days.rounded(.toNearestOrEven))
+        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).days.rounded(.towardZero))
     }
     
     var patchLifecycleHours: Int? {
@@ -134,7 +136,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
             return nil
         }
         
-        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).hours.truncatingRemainder(dividingBy: 24).rounded(.toNearestOrEven))
+        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).hours.truncatingRemainder(dividingBy: 24).rounded(.towardZero))
     }
     
     var patchLifecycleMinutes: Int? {
@@ -142,7 +144,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
             return nil
         }
         
-        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).minutes.truncatingRemainder(dividingBy: 60).rounded(.toNearestOrEven))
+        return Int((Date.now.timeIntervalSince1970 - self.patchActivatedAt.timeIntervalSince1970).minutes.truncatingRemainder(dividingBy: 60).rounded(.towardZero))
     }
     
     func syncData() {
@@ -198,8 +200,32 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         self.pumpActivationAction(alreadyPrimed)
     }
     
-    func toggleConnection() {
-        // TODO: 
+    func toggleHeartbeat() {
+        guard let pumpManager = self.pumpManager else {
+            return
+        }
+        
+        pumpManager.state.usingHeartbeatMode.toggle()
+        pumpManager.notifyStateDidChange()
+        self.checkConnection()
+    }
+    
+    func checkConnection() {
+        guard let pumpManager = self.pumpManager else {
+            return
+        }
+        
+        if pumpManager.state.usingHeartbeatMode, !pumpManager.bluetooth.isConnected {
+            // Reconnect to patch
+            pumpManager.bluetooth.ensureConnected{ _ in }
+            return
+        }
+        
+        if !pumpManager.state.usingHeartbeatMode, pumpManager.bluetooth.isConnected {
+            // Disconnect from patch
+            pumpManager.bluetooth.disconnect()
+            return
+        }
     }
 }
 
@@ -231,25 +257,29 @@ extension MedtrumKitSettingsViewModel {
         self.pumpBaseSN = state.pumpSN.hexEncodedString().uppercased()
         self.pumpName = state.pumpName
         self.patchId = state.patchId.toUInt64()
-        self.usingContinuousMode = state.usingContinuousMode
+        self.usingHeartbeatMode = state.usingHeartbeatMode
         self.patchState = state.pumpState
         self.patchStateString = state.pumpState.description
         self.reservoirLevel = state.reservoir
         self.basalType = state.basalState
         self.lastSync = state.lastSync
         self.patchActivatedAt = state.patchActivatedAt
+        self.patchExpiresAt = state.patchExpiresAt ?? state.patchActivatedAt.addingTimeInterval(.hours(80))
         self.battery = state.battery
         
         if !state.patchId.isEmpty {
             self.patchLifecycleProgress = min((Date.now.timeIntervalSince1970 - state.patchActivatedAt.timeIntervalSince1970) / TimeInterval(days: 3), 1)
             self.patchLifecycleState = self.patchLifecycleProgress == 1 ? .expired : .active
-            self.patchExpiresAt = self.patchActivatedAt.addingTimeInterval(TimeInterval(days: 3))
         } else {
             self.patchLifecycleState = .noPatch
         }
         
         if let insulinType = state.insulinType {
             self.insulinType = insulinType
+        }
+        
+        if let previewPatchState = state.previousPatch {
+            self.previousPatch = previewPatchState
         }
     }
 }

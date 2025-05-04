@@ -16,6 +16,7 @@ struct MedtrumKitSettings: View {
     @Environment(\.dismissAction) private var dismiss
     @Environment(\.insulinTintColor) var insulinTintColor
     @Environment(\.guidanceColors) private var guidanceColors
+    @Environment(\.appName) private var appName
     
     var supportedInsulinTypes: [InsulinType]
     
@@ -27,6 +28,24 @@ struct MedtrumKitSettings: View {
                             viewModel.stopUsingMedtrum()
                         },
                         .cancel()
+                    ])
+    }
+    
+    var heartbeatModeToggleWarning: ActionSheet {
+        let message = viewModel.usingHeartbeatMode ?
+        LocalizedString("Currently, you are using a heartbeat mode. This is needed to keep %1$@ running in the background. This might be interesting if your CGM already provides a heartbeat. It is recommended to keep this feature enabled", comment: "Message warning heartbeat disable (1: app name)") :
+        LocalizedString("Currently, you are NOT using a heartbeat mode. A heartbeat is needed to keep %1$@ running in the background. It is recommended to keep enable this feature", comment: "Message warning heartbeat disable (1: app name)")
+        
+        let enableLabel = viewModel.usingHeartbeatMode ?
+        LocalizedString("Yes, Disable heartbeat mode", comment: "Button text to disable heartbeat mode") :
+        LocalizedString("Yes, Enable heartbeat mode", comment: "Button text to enable heartbeat mode")
+        
+        return ActionSheet(title: Text(LocalizedString("Toggle heartbeat mode", comment: "Title for toggle heartbeat mode action sheet.")),
+                    message: Text(String(format: message, appName)), buttons: [
+                        .default(Text(enableLabel)) {
+                            self.viewModel.toggleHeartbeat()
+                        },
+                        .cancel(Text(LocalizedString("No, Keep as is", comment: "Button text to cancel actionsheet")))
                     ])
     }
     
@@ -68,7 +87,7 @@ struct MedtrumKitSettings: View {
                     }
                 }
                 
-                if viewModel.usingContinuousMode {
+                if viewModel.usingHeartbeatMode {
                     HStack {
                         Text(LocalizedString("Status", comment: "Text for status")).foregroundColor(Color.primary)
                         Spacer()
@@ -78,7 +97,7 @@ struct MedtrumKitSettings: View {
                         }
                     }
                     
-                    Button(action: { viewModel.toggleConnection() }) {
+                    Button(action: { viewModel.checkConnection() }) {
                         HStack {
                             if viewModel.isConnected {
                                 Text(LocalizedString("Disconnect", comment: "disconnect from patch"))
@@ -100,10 +119,10 @@ struct MedtrumKitSettings: View {
                 }
                 .disabled(viewModel.isUpdatingPumpState)
                 
-                if viewModel.patchState.rawValue < PatchState.active.rawValue {
+                if viewModel.patchState.rawValue < PatchState.active.rawValue && viewModel.patchState != .none {
                     Button(action: { viewModel.toPumpActivation() }) {
                         HStack {
-                            Text(LocalizedString("Activate patch", comment: "Activate patch"))
+                            Text(LocalizedString("Activate patch", comment: "label for activate patch"))
                             Spacer()
                             Image(systemName: "chevron.right")
                                 .font(.system(size: UIFont.systemFontSize, weight: .bold))
@@ -120,7 +139,7 @@ struct MedtrumKitSettings: View {
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.system(size: UIFont.systemFontSize, weight: .bold))
-                            .opacity(0.35)
+                            .opacity(0.5)
                             .foregroundColor(.red)
                     }
                 }
@@ -149,6 +168,12 @@ struct MedtrumKitSettings: View {
                     Spacer()
                     Text(viewModel.pumpBaseSN)
                         .foregroundColor(.secondary)
+                }
+                .onLongPressGesture {
+                    viewModel.showingHeartbeatWarning = true
+                }
+                .actionSheet(isPresented: $viewModel.showingHeartbeatWarning) {
+                    heartbeatModeToggleWarning
                 }
                 HStack {
                     Text(LocalizedString("Pump base model", comment: "Text for model"))
@@ -194,6 +219,46 @@ struct MedtrumKitSettings: View {
                     Spacer()
                     Text(viewModel.batteryText(for: viewModel.battery))
                         .foregroundColor(.secondary)
+                }
+            }
+            
+            if let previousPatch = viewModel.previousPatch {
+                Section(header: SectionHeader(label: LocalizedString("Previous Patch Details", comment: "label for previous patch details"))) {
+                    HStack {
+                        Text(LocalizedString("Patch ID", comment: "Text for patchId"))
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text("\(previousPatch.patchId.toUInt64())")
+                            .foregroundColor(.secondary)
+                    }
+                    HStack {
+                        Text(LocalizedString("Patch state", comment: "Text for state"))
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text((PatchState(rawValue: previousPatch.lastStateRaw) ?? .none).description)
+                            .foregroundColor(.secondary)
+                    }
+                    HStack {
+                        Text(LocalizedString("Activated at", comment: "Text for activatedAt"))
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text(viewModel.dateTimeFormatter.string(from: previousPatch.activatedAt))
+                            .foregroundColor(.secondary)
+                    }
+                    HStack {
+                        Text(LocalizedString("Deactivated at", comment: "Text for deactivatedAt"))
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text(viewModel.dateTimeFormatter.string(from: previousPatch.deactivatedAt))
+                            .foregroundColor(.secondary)
+                    }
+                    HStack {
+                        Text(LocalizedString("Battery", comment: "Text for battery voltageB"))
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text(viewModel.batteryText(for: previousPatch.battery))
+                            .foregroundColor(.secondary)
+                    }
                 }
             }
             

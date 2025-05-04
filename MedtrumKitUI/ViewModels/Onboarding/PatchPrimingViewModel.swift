@@ -38,6 +38,7 @@ class PatchPrimingViewModel: ObservableObject {
     func startPrime() {
 #if targetEnvironment(simulator)
         pumpManager?.state.sessionToken = Crypto.genSessionToken()
+        pumpManager?.state.pumpState = .primed
         pumpManager?.notifyStateDidChange()
         nextStep()
 #else

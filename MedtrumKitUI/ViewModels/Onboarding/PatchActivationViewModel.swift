@@ -24,8 +24,9 @@ class PatchActivationViewModel : ObservableObject {
             pumpManager.state.patchId = Data([1,2,3,4])
             pumpManager.state.reservoir = 200
             pumpManager.state.battery = 2.5
+            pumpManager.state.pumpState = .active
             pumpManager.state.patchActivatedAt = Date.now
-            pumpManager.state.patchExpiresAt = Date.now.addingTimeInterval(.days(3))
+            pumpManager.state.patchExpiresAt = Date.now.addingTimeInterval(.days(3)).addingTimeInterval(.hours(8))
             pumpManager.state.lastSync = Date.now
             pumpManager.notifyStateDidChange()
         }

@@ -15,20 +15,52 @@ struct PatchPrimingView: View {
         VStack {
             List {
                 Section {
+                    supportImage("connect_base")
+                    HStack(alignment: .top) {
+                        Text("1.")
+                            .foregroundStyle(.primary)
+                        Text(LocalizedString("Connect your pump base to the patch.", comment: "Label for prime step 2.1"))
+                            .foregroundStyle(.primary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                
+                Section {
                     supportImage("fill_reservoir")
                     VStack(alignment: .leading) {
-                        Text(LocalizedString("Connect your pump base to the patch, remove the residual air, and fill with insulin.", comment: "Label for prime steps"))
-                            .foregroundStyle(.primary)
-                        Text(LocalizedString("NOTE: A minimum of 70U is required for activation", comment: "Label for minimum requirements"))
-                            .foregroundStyle(.primary)
-                            .padding(.top, 5)
+                        HStack(alignment: .top) {
+                            Text("2.")
+                                .foregroundStyle(.primary)
+                            Text(LocalizedString("Fill the syringe with insulin", comment: "Label for prime step 2.2"))
+                                .foregroundStyle(.primary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack(alignment: .top) {
+                            Text("3.")
+                                .foregroundStyle(.primary)
+                            Text(LocalizedString("Place the syringe in the patch and pull out 1 to 2 dashes of air.", comment: "Label for prime step 2.3"))
+                                .foregroundStyle(.primary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack(alignment: .top) {
+                            Text("4.")
+                                .foregroundStyle(.primary)
+                            Text(LocalizedString("Fill the patch with insulin. NOTE: A minimum of 70U is required for activation.", comment: "Label for prime step 2.4"))
+                                .foregroundStyle(.primary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                 }
                 
                 Section {
                     supportImage("half_press_needle_button")
-                    Text(LocalizedString("After filling, half-press the needle button, remove the cover, and start the priming process", comment: "Label for pressing needle button"))
-                        .foregroundStyle(.primary)
+                    HStack(alignment: .top) {
+                        Text("5.")
+                            .foregroundStyle(.primary)
+                        Text(LocalizedString("Press the needle button and start the priming process.", comment: "Label for pressing needle button step 2.5"))
+                            .foregroundStyle(.primary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }
             }
             Spacer()
@@ -55,7 +87,7 @@ struct PatchPrimingView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
-        .navigationTitle(LocalizedString("Patch priming", comment: "Pump base settings"))
+        .navigationTitle(LocalizedString("Patch priming", comment: "Priming header"))
     }
     
     @ViewBuilder
@@ -66,7 +98,7 @@ struct PatchPrimingView: View {
                 .resizable()
                 .scaledToFit()
                 .padding(.horizontal)
-                .frame(height: 120)
+                .frame(height: 100)
             Spacer()
         }
     }

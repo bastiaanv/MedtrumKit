@@ -19,6 +19,15 @@ public enum BolusState: Int {
     case canceling = 2
 }
 
+public struct PreviousPatch: Codable {
+    public var patchId: Data
+    public var lastStateRaw: UInt8
+    public var lastSyncAt: Date
+    public var battery: Double
+    public var activatedAt: Date
+    public var deactivatedAt: Date
+}
+
 public class MedtrumPumpState: RawRepresentable {
     public typealias RawValue = PumpManager.RawStateValue
     
@@ -26,8 +35,10 @@ public class MedtrumPumpState: RawRepresentable {
         isOnboarded = rawValue["isOnboarded"] as? Bool ?? false
         lastSync = rawValue["lastSync"] as? Date ?? Date.distantPast
         pumpSN = rawValue["pumpSN"] as? Data ?? Data()
-        usingContinuousMode = rawValue["usingContinuousMode"] as? Bool ?? false
+        usingHeartbeatMode = rawValue["usingHeartbeatMode"] as? Bool ?? true
+        bleUuid = rawValue["bleUuid"] as? String
         sessionToken = rawValue["sessionToken"] as? Data ?? Data()
+        previousSessionToken = rawValue["previousSessionToken"] as? Data ?? Data()
         patchId = rawValue["patchId"] as? Data ?? Data()
         patchActivatedAt = rawValue["patchActivatedAt"] as? Date ?? Date.distantPast
         patchExpiresAt = rawValue["patchExpiresAt"] as? Date
@@ -41,7 +52,13 @@ public class MedtrumPumpState: RawRepresentable {
         battery = rawValue["battery"] as? Double ?? 0
         basalStateSince = rawValue["basalStateSince"] as? Date ?? Date.distantPast
         expirationTimer = rawValue["expirationTimer"] as? UInt8 ?? 1
-        notificationAfterActivation =  rawValue["notificationAfterActivation"] as? TimeInterval ?? .hours(70)
+        notificationAfterActivation =  rawValue["notificationAfterActivation"] as? TimeInterval ?? .hours(72)
+        
+        if let previousPatchRaw = rawValue["previousPatch"] as? Data {
+            do {
+                previousPatch = try JSONDecoder().decode(PreviousPatch.self, from: previousPatchRaw)
+            } catch { }
+        }
         
         if let rawInsulinType = rawValue["insulinType"] as? InsulinType.RawValue {
             insulinType = InsulinType(rawValue: rawInsulinType)
@@ -82,8 +99,10 @@ public class MedtrumPumpState: RawRepresentable {
         isOnboarded = false
         lastSync = Date.distantPast
         pumpSN = Data()
-        usingContinuousMode = false
+        usingHeartbeatMode = true
+        bleUuid = nil
         sessionToken = Data()
+        previousSessionToken = Data()
         patchId = Data()
         patchActivatedAt = Date.distantPast
         patchExpiresAt = nil
@@ -102,7 +121,8 @@ public class MedtrumPumpState: RawRepresentable {
         bolusState = .noBolus
         alarmSetting = .None
         expirationTimer = 1
-        notificationAfterActivation = .hours(70)
+        notificationAfterActivation = .hours(72)
+        previousPatch = nil
 
         if let basal = basal {
             basalSchedule = BasalSchedule(entries: basal.items)
@@ -118,8 +138,10 @@ public class MedtrumPumpState: RawRepresentable {
         value["lastSync"] = lastSync
         value["insulinType"] = insulinType?.rawValue
         value["pumpSN"] = pumpSN
-        value["usingContinuousMode"] = usingContinuousMode
+        value["usingHeartbeatMode"] = usingHeartbeatMode
+        value["bleUuid"] = bleUuid
         value["sessionToken"] = sessionToken
+        value["previousSessionToken"] = previousSessionToken
         value["patchId"] = patchId
         value["patchActivatedAt"] = patchActivatedAt
         value["patchExpiresAt"] = patchExpiresAt
@@ -140,6 +162,12 @@ public class MedtrumPumpState: RawRepresentable {
         value["expirationTimer"] = expirationTimer
         value["notificationAfterActivation"] = notificationAfterActivation
         
+        if let previousPatch = previousPatch {
+            do {
+                value["previousPatch"] = try JSONEncoder().encode(previousPatch)
+            } catch { }
+        }
+        
         return value
     }
     
@@ -147,12 +175,17 @@ public class MedtrumPumpState: RawRepresentable {
     public var insulinType: InsulinType?
     public var lastSync: Date
     public var pumpSN: Data
-    public var usingContinuousMode = false
+    public var usingHeartbeatMode = false
     
+    // Patch specific data
+    public var bleUuid: String?
     public var sessionToken: Data
+    public var previousSessionToken: Data
     public var patchId: Data
     public var patchActivatedAt: Date
     public var patchExpiresAt: Date?
+    
+    public var previousPatch: PreviousPatch?
     
     public var deviceType: UInt8
     public var swVersion: String
@@ -173,6 +206,7 @@ public class MedtrumPumpState: RawRepresentable {
     
     // **** THESE VALUES SHOULD NOT BE PERSISTED ****
     public var primeProgress: UInt8 = 0
+    public var isConnected: Bool = false
     // **** END ****
     
     public var bolusState: BolusState
@@ -240,7 +274,7 @@ public class MedtrumPumpState: RawRepresentable {
             "## MedtrumPumpState - \(Date.now)",
             "* isOnboarded: \(isOnboarded)",
             "* lastSync: \(lastSync)",
-            "* pumpSN: \(pumpSN)",
+            "* pumpSN: \(pumpSN.hexEncodedString())",
             "* pumpName: \(pumpName)",
             "* model: \(model)",
             "* swVersion: \(swVersion)",
@@ -251,7 +285,7 @@ public class MedtrumPumpState: RawRepresentable {
             "* pumpTimeSyncedAt: \(pumpTimeSyncedAt)",
             "* insulinType: \(insulinType ?? .afrezza)",
             "* reservoirLevel: \(reservoir)",
-            "* bolusState: \(bolusState.rawValue)"
+            "* bolusState: \(bolusState.rawValue)",
         ].joined(separator: "\n")
     }
 }

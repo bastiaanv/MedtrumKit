@@ -78,7 +78,6 @@ public class MedtrumPumpManager: DeviceManager {
         // 300U -> 0.05-30U
         // 200U -> 0.05-25U
         return state.pumpName.contains("300U") ? MedtrumPumpManager.onboardingSupportedBasalRates : (0 ... 500).map { Double($0) / 20 }
-        
     }
     
     public var supportedBolusVolumes: [Double] {
@@ -98,7 +97,7 @@ public class MedtrumPumpManager: DeviceManager {
     }
     
     public var debugDescription: String {
-        ""
+        state.debugDescription
     }
     
     public func acknowledgeAlert(alertIdentifier _: LoopKit.Alert.AlertIdentifier, completion: @escaping ((any Error)?) -> Void) {
@@ -664,10 +663,8 @@ public extension MedtrumPumpManager {
             return
         }
         
-        self.log.info("Start priming patch pump")
-        
-        if self.state.patchId.isEmpty {
-            self.log.info("NOTE: Update session token...")
+        if self.state.sessionToken.isEmpty {
+            // Patch has been disabled and thus a new session token is needed
             self.state.sessionToken = Crypto.genSessionToken()
             self.notifyStateDidChange()
         }
@@ -760,7 +757,17 @@ public extension MedtrumPumpManager {
                 return
             }
             
+            self.state.previousPatch = PreviousPatch(
+                patchId: self.state.patchId,
+                lastStateRaw: self.state.pumpState.rawValue,
+                lastSyncAt: self.state.lastSync,
+                battery: self.state.battery,
+                activatedAt: self.state.patchActivatedAt,
+                deactivatedAt: Date.now
+            )
+            
             self.state.patchId = Data()
+            self.state.pumpState = .none
             self.state.sessionToken = Data()
             self.notifyStateDidChange()
             

@@ -121,7 +121,7 @@ struct PatchSettingsView: View {
                     
                     if viewModel.expirationTimer == 1 {
                         sectionItem(
-                            title: LocalizedString("Notification for expirate patch", comment: "Label for expired patch notification "),
+                            title: LocalizedString("Notification for expirate patch", comment: "Label for expired patch notification"),
                             isEditing: isEditingNotificationAfterActivation,
                             value: $viewModel.notificationAfterActivation,
                             valueRange: Array(60...78).map({ Double($0) }),

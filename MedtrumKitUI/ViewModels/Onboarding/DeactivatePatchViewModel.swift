@@ -35,6 +35,22 @@ class DeactivatePatchViewModel: ObservableObject {
                     return
                 }
                 
+                if let pumpManager = self.pumpManager {
+                    pumpManager.state.previousPatch = PreviousPatch(
+                        patchId: pumpManager.state.patchId,
+                        lastStateRaw: pumpManager.state.pumpState.rawValue,
+                        lastSyncAt: pumpManager.state.lastSync,
+                        battery: pumpManager.state.battery,
+                        activatedAt: pumpManager.state.patchActivatedAt,
+                        deactivatedAt: Date.now
+                    )
+                    
+                    pumpManager.state.patchId = Data()
+                    pumpManager.state.sessionToken = Data()
+                    pumpManager.state.pumpState = .none
+                    pumpManager.notifyStateDidChange()
+                }
+                
                 self.nextStep()
             }
         }

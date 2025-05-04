@@ -5,7 +5,6 @@ import SwiftUI
 import UIKit
 
 enum MedtrumUIScreen {
-    case debugScreen
     case welcomeScreen
     case insulinTypeScreen
     case patchSettingsScreen
@@ -76,11 +75,11 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
             return .welcomeScreen
         }
         
-        if pumpManager.state.sessionToken.isEmpty || pumpManager.state.pumpSN.isEmpty {
+        if pumpManager.state.sessionToken.isEmpty || pumpManager.state.pumpSN.isEmpty || pumpManager.state.pumpState.rawValue < PatchState.primed.rawValue {
             return .pumpBaseSettingsScreen
         }
         
-        if pumpManager.state.patchId.isEmpty {
+        if pumpManager.state.patchId.isEmpty || pumpManager.state.pumpState.rawValue < PatchState.active.rawValue {
             return .patchActivationScreen
         }
         
@@ -89,16 +88,6 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
     
     private func viewControllerForScreen(_ screen: MedtrumUIScreen) -> UIViewController {
         switch screen {
-        case .debugScreen:
-            if let pumpManager = self.pumpManager, let pumpManagerOnboardingDelegate = self.pumpManagerOnboardingDelegate {
-                pumpManager.state.isOnboarded = true
-                pumpManager.notifyStateDidChange()
-                pumpManagerOnboardingDelegate.pumpManagerOnboarding(didCreatePumpManager: pumpManager)
-            }
-            
-            let viewModel = DebugViewModel(self.pumpManager)
-            return hostingController(rootView: DebugView(viewModel: viewModel))
-            
         case .welcomeScreen:
             return hostingController(rootView: OnboardingWelcomeView(nextStep: { self.navigateTo(.insulinTypeScreen) }))
             

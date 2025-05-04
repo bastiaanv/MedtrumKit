@@ -91,6 +91,15 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
             return
         }
         
+        if let pumpManager = self.pumpManager, let bleUuid = pumpManager.state.bleUuid {
+            let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [])
+            if !connectedDevices.isEmpty, let peripheral = connectedDevices.first(where: { $0.identifier.uuidString == bleUuid}) {
+                // Phone is already connected, but the app is not
+                self.connect(peripheral: peripheral, completion)
+                return
+            }
+        }
+        
         guard var pumpSNState = self.pumpManager?.state.pumpSN else {
             self.log.error("No pump serial number found")
             completion(.failure(error: .failedToFindDevice))
@@ -211,6 +220,11 @@ extension BluetoothManager {
     func centralManager(_: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         log.info("Device disconnected, name: \(peripheral.name ?? "<NO_NAME>")")
         
+        if let pumpManager = self.pumpManager {
+            pumpManager.state.isConnected = false
+            pumpManager.notifyStateDidChange()
+        }
+        
         if self.peripheralManager != nil {
             self.peripheralManager = nil
         }
@@ -218,5 +232,12 @@ extension BluetoothManager {
 
     func centralManager(_: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
         log.info("Device connect error, name: \(peripheral.name ?? "<NO_NAME>"), error: \(error!.localizedDescription)")
+        
+        guard let pumpManager = self.pumpManager else {
+            return
+        }
+        
+        pumpManager.state.isConnected = false
+        pumpManager.notifyStateDidChange()
     }
 }

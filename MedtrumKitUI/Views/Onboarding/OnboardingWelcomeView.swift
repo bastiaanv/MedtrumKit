@@ -29,6 +29,6 @@ struct OnboardingWelcomeView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
-        .navigationTitle(LocalizedString("Welcome", comment: "welcome"))
+        .navigationTitle(LocalizedString("Welcome", comment: "welcome header"))
     }
 }

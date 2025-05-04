@@ -32,7 +32,6 @@
 		3E26BE0D2D906A0D00E595B0 /* MedtrumUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E26BE0C2D906A0D00E595B0 /* MedtrumUI.xcassets */; };
 		3E26BE0F2D906AEE00E595B0 /* MedtrumKitSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26BE0E2D906AE500E595B0 /* MedtrumKitSettingsViewModel.swift */; };
 		3E26BE112D906E5700E595B0 /* ReservoirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E26BE102D906E5700E595B0 /* ReservoirView.swift */; };
-		3E45665E2D83714900FE1E0C /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45665D2D83714900FE1E0C /* DebugView.swift */; };
 		3E4566612D83719C00FE1E0C /* DebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4566602D83719900FE1E0C /* DebugViewModel.swift */; };
 		3E4566632D8371EC00FE1E0C /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4566622D8371EB00FE1E0C /* ActivityViewController.swift */; };
 		3E4566652D837A4900FE1E0C /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4566642D837A4800FE1E0C /* Bundle.swift */; };
@@ -186,7 +185,6 @@
 		3E26BE0C2D906A0D00E595B0 /* MedtrumUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MedtrumUI.xcassets; sourceTree = "<group>"; };
 		3E26BE0E2D906AE500E595B0 /* MedtrumKitSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedtrumKitSettingsViewModel.swift; sourceTree = "<group>"; };
 		3E26BE102D906E5700E595B0 /* ReservoirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservoirView.swift; sourceTree = "<group>"; };
-		3E45665D2D83714900FE1E0C /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		3E4566602D83719900FE1E0C /* DebugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
 		3E4566622D8371EB00FE1E0C /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		3E4566642D837A4800FE1E0C /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
@@ -418,7 +416,6 @@
 			children = (
 				3E6A00EB2DA03FCA0085E6A4 /* Onboarding */,
 				3E26BE092D90698A00E595B0 /* Settings */,
-				3E45665D2D83714900FE1E0C /* DebugView.swift */,
 				3E15A4772DA2B6E6007F7D3C /* MedtrumReservoirView.swift */,
 				3E15A47F2DA2B857007F7D3C /* MedtrumReservoirView.xib */,
 				3E26BE102D906E5700E595B0 /* ReservoirView.swift */,
@@ -836,7 +833,6 @@
 				3E5060142D70E5CB00376609 /* Crc8.swift in Sources */,
 				3E5060222D70FDA100376609 /* SetTimeZonePacket.swift in Sources */,
 				3E1532442D6F94E30020F015 /* AuthorizePacket.swift in Sources */,
-				3E45665E2D83714900FE1E0C /* DebugView.swift in Sources */,
 				3E767D022D67B315004B1971 /* LocalizedString.swift in Sources */,
 				3E77FEC22D74B39800A15134 /* AlarmSettings.swift in Sources */,
 				3E767D522D67BC2E004B1971 /* MedtrumKitPumpManager+UI.swift in Sources */,

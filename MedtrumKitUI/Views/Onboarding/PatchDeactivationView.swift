@@ -16,7 +16,7 @@ struct PatchDeactivationView: View {
             List {
                 Section {
                     PumpImage(is300u: viewModel.is300u)
-                    Text(LocalizedString("When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch.", comment: "Instructions for deactivate pod when pod not on body"))
+                    Text(LocalizedString("When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch.", comment: "Instructions for deactivate patch"))
                 }
             }
             Spacer()
@@ -28,7 +28,7 @@ struct PatchDeactivationView: View {
                 if viewModel.isDeactivating {
                     ActivityIndicator(isAnimating: .constant(true), style: .medium)
                 } else {
-                    Text(LocalizedString("Authenticate & deactivate patch", comment: "deactive patch"))
+                    Text(LocalizedString("Authenticate & deactivate patch", comment: "Authenticate and deactivate label"))
                 }
             }
             .buttonStyle(ActionButtonStyle(.destructive))

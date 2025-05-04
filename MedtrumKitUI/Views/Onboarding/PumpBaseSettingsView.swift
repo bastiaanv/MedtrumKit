@@ -24,7 +24,7 @@ struct PumpBaseSettingsView: View {
                             TextField("1234ABCD", text: $viewModel.serialNumber)
                                 .multilineTextAlignment(.trailing)
                         }
-                        Text(LocalizedString("Make sure the Serial Number is correct before connecting it to the patch. After checking, connect the pump base to the patch and press the button", comment: "Label for checking SN"))
+                        Text(LocalizedString("Make sure the Serial Number is correct before connecting it to the patch.", comment: "Label for checking SN"))
                             .padding(.top, 10)
                             .foregroundStyle(.primary)
                     }
@@ -35,7 +35,7 @@ struct PumpBaseSettingsView: View {
                 Text(viewModel.errorMessage)
                     .foregroundStyle(.red)
             }
-            Button(action: { viewModel.saveAndConnect() }) {
+            Button(action: { viewModel.saveAndContinue() }) {
                 Text(LocalizedString("Save and continue", comment: "save and continue"))
             }
             .disabled(viewModel.serialNumber.count != 8)
@@ -44,7 +44,7 @@ struct PumpBaseSettingsView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
-        .navigationTitle(LocalizedString("Pump base settings", comment: "Pump base settings"))
+        .navigationTitle(LocalizedString("Pump base settings", comment: "Pump base settings header"))
     }
 }
 
