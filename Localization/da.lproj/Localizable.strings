@@ -2,10 +2,10 @@
 "loading" = "Indlæsning";
 
 /* Title for PumpManager deletion action sheet. */
-"Remove Pump" = "Remove Pump";
+"Remove Pump" = "Fjern Pumpe";
 
 /* Message for PumpManager deletion action sheet */
-"Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?" = "Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?";
+"Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?" = "Er du sikker på, at du vil stoppe med at bruge Medtrum TouchCare Nano 200u/300u?";
 
 /* Button text to confirm PumpManager deletion */
 "Delete pump" = "Slet pumpe";
@@ -26,13 +26,13 @@
 "Toggle heartbeat mode" = "Slå hjerteslag til/fra";
 
 /* Button text to cancel actionsheet */
-"No, Keep as is" = "No, Keep as is";
+"No, Keep as is" = "Nej, behold som det er";
 
 /* Text for patch state */
 "Patch state" = "Patch tilstand";
 
 /* Text for last sync */
-"Last sync" = "Last sync";
+"Last sync" = "Seneste synkronisering";
 
 /* Text for status */
 "Status" = "Status";
@@ -47,220 +47,220 @@
 "Sync patch data" = "Synkroniser patch data";
 
 /* label for activate patch */
-"Activate patch" = "Activate patch";
+"Activate patch" = "Aktivér plaster";
 
 /* deactivate patch */
-"Deactivate Patch" = "Deactivate Patch";
+"Deactivate Patch" = "Deaktiver Patch";
 
 /* Configuration section */
-"Configuration" = "Configuration";
+"Configuration" = "Konfiguration";
 
 /* Text for selecting insulin type */
 "Insulin Type" = "Insulin Type";
 
 /* Text for patch settings view */
-"Patch settings" = "Patch settings";
+"Patch settings" = "Indstillinger for rettelse";
 
 /* The title for patch/pump information */
 "Information" = "Information";
 
 /* Text for pumpSN */
-"Pump base SN" = "Pump base SN";
+"Pump base SN" = "Pumpe base SN";
 
 /* Text for model */
-"Pump base model" = "Pump base model";
+"Pump base model" = "Pumpe base model";
 
 /* Text for patchId */
 "Patch ID" = "Patch ID";
 
 /* Text for activatedAt */
-"Patch activated at" = "Patch activated at";
+"Patch activated at" = "Patch aktiveret på";
 
 /* Text for expiresAt */
-"Patch expires at" = "Patch expires at";
+"Patch expires at" = "Patch udløber den";
 
 /* Text for battery voltageB */
-"Battery" = "Battery";
+"Battery" = "Batteri";
 
 /* label for previous patch details */
-"Previous Patch Details" = "Previous Patch Details";
+"Previous Patch Details" = "Forrige Rettelsesdetaljer";
 
 /* Text for deactivatedAt */
-"Deactivated at" = "Deactivated at";
+"Deactivated at" = "Deaktiveret på";
 
 /* Share logs */
-"Share Medtrum patch logs" = "Share Medtrum patch logs";
+"Share Medtrum patch logs" = "Del Medtrum patch logs";
 
 /* Label for PumpManager deletion button */
-"Delete Pump" = "Delete Pump";
+"Delete Pump" = "Slet Pumpe";
 
 /* Header for insulin remaining on pod settings screen */
-"Insulin Remaining" = "Insulin Remaining";
+"Insulin Remaining" = "Resterende Insulin";
 
 /* Text shown in insulin delivery space when insulin suspended */
-"Insulin\nSuspended" = "Insulin\nSuspended";
+"Insulin\nSuspended" = "Insulin\nSuspenderet";
 
 /* Text shown when no patch active */
-"No active patch" = "No active patch";
+"No active patch" = "Intet aktivt plaster";
 
 /* Text shown while patch is active */
-"Age:" = "Age:";
+"Age:" = "Alder:";
 
 /* Unit for singular day */
-"day" = "day";
+"day" = "dag";
 
 /* Unit for plural days */
-"days" = "days";
+"days" = "dage";
 
 /* Unit for singular hour */
-"hour" = "hour";
+"hour" = "time";
 
 /* Unit for plural hours */
-"hours" = "hours";
+"hours" = "timer";
 
 /* Unit for singular minute */
-"minute" = "minute";
+"minute" = "minut";
 
 /* Unit for plural minutes */
-"minutes" = "minutes";
+"minutes" = "minutter";
 
 /* Text shown when patch expired */
-"Patch expired" = "Patch expired";
+"Patch expired" = "Patch udløbet";
 
 /* Button for closing settings */
-"Done" = "Done";
+"Done" = "Udført";
 
 /* label for connected */
-"Connected" = "Connected";
+"Connected" = "Forbundet";
 
 /* label for reconnecting */
-"Reconnecting..." = "Reconnecting...";
+"Reconnecting..." = "Genforbinder...";
 
 /* label for disconnected */
-"Disconnected" = "Disconnected";
+"Disconnected" = "Afbrudt";
 
 /* Title of insulin delivery section */
-"Scheduled Basal" = "Scheduled Basal";
+"Scheduled Basal" = "Planlagt Basal";
 
 /* Pump Event title for UnfinalizedDose with doseType of .tempBasal */
-"Temp Basal" = "Temp Basal";
+"Temp Basal" = "Midlertidig Basal";
 
 /* Title of insulin delivery section */
-"Insulin Delivery" = "Insulin Delivery";
+"Insulin Delivery" = "Insulin Levering";
 
 /* Continue */
-"Continue" = "Continue";
+"Continue" = "Fortsæt";
 
 /* Title for insulin type */
-"Select insulin type" = "Select insulin type";
+"Select insulin type" = "Vælg insulintype";
 
 /* Title text for insulin type confirmation page */
-"Select the type of insulin that you will be using" = "Select the type of insulin that you will be using";
+"Select the type of insulin that you will be using" = "Vælg den type insulin, som De skal bruge.";
 
 /* Label for maximum hourly insulin delivery */
-"Max hourly insulin" = "Max hourly insulin";
+"Max hourly insulin" = "Maks. timeinsulin";
 
 /* Label for maximum daily insulin delivery */
-"Max daily insulin" = "Max daily insulin";
+"Max daily insulin" = "Max daglig insulin";
 
 /* Label for alarm settings */
-"Alarm setting" = "Alarm setting";
+"Alarm setting" = "Indstilling af alarm";
 
 /* Label for alarm options: light, vibrate and beep */
-"Light, vibrate and, beep" = "Light, vibrate and, beep";
+"Light, vibrate and, beep" = "Lys, vibration og bip";
 
 /* Label for alarm options: light and vibrate */
-"Light and vibrate" = "Light and vibrate";
+"Light and vibrate" = "Lys og vibrere";
 
 /* Label for alarm options: light and beep */
-"Light and beep" = "Light and beep";
+"Light and beep" = "Lys og bip";
 
 /* Label for alarm options: light */
-"Light-only" = "Light-only";
+"Light-only" = "Kun Lys";
 
 /* Label for alarm options: vibrate and beep */
-"Vibrate and beep" = "Vibrate and beep";
+"Vibrate and beep" = "Vibration og bip";
 
 /* Label for alarm options: vibrate */
-"Vibrate-only" = "Vibrate-only";
+"Vibrate-only" = "Kun vibrationQShortcut";
 
 /* Label for alarm options: beep */
-"Beep-only" = "Beep-only";
+"Beep-only" = "Kun Bip";
 
 /* Label for alarm options: none */
-"Silence" = "Silence";
+"Silence" = "Tavshed";
 
 /* Label for expiration alarm */
-"Patch lifetime" = "Patch lifetime";
+"Patch lifetime" = "Patch levetid";
 
 /* Label for extended lifetime */
-"Use extended lifetime (continue till battery empty)" = "Use extended lifetime (continue till battery empty)";
+"Use extended lifetime (continue till battery empty)" = "Brug forlænget levetid (fortsæt indtil batteriet er tomt)";
 
 /* Label for normal patch lifetime */
-"Use normal lifetime (3d 8h)" = "Use normal lifetime (3d 8h)";
+"Use normal lifetime (3d 8h)" = "Brug normal levetid (3d 8 timer)";
 
 /* Label for expired patch notification */
-"Notification for expirate patch" = "Notification for expirate patch";
+"Notification for expirate patch" = "Notifikation for udløbsplaster";
 
 /* Instructions for deactivate patch */
-"When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch." = "When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch.";
+"When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch." = "Når du klikker på knappen, vil du få en Biometrics prompt. Når plasteret er færdigt, vil det blive deaktiveret, og De vil blive bedt om at parre et nyt plaster.";
 
 /* Authenticate and deactivate label */
-"Authenticate & deactivate patch" = "Authenticate & deactivate patch";
+"Authenticate & deactivate patch" = "Godkend og deaktiver patch";
 
 /* Header deactivate patch */
-"Deactivate patch" = "Deactivate patch";
+"Deactivate patch" = "Deaktiver patch";
 
 /* Label for serial number */
-"Serial number" = "Serial number";
+"Serial number" = "Serienummer";
 
 /* Label for checking SN */
-"Make sure the Serial Number is correct before connecting it to the patch." = "Make sure the Serial Number is correct before connecting it to the patch.";
+"Make sure the Serial Number is correct before connecting it to the patch." = "Kontrollér, at serienummeret er korrekt, før det sættes på plasteret.";
 
 /* Pump base settings header */
-"Pump base settings" = "Pump base settings";
+"Pump base settings" = "Pumpe base indstillinger";
 
 /* save and continue */
-"Save and continue" = "Save and continue";
+"Save and continue" = "Gem og fortsæt";
 
 /* Label for prime step 2.1 */
-"Connect your pump base to the patch." = "Connect your pump base to the patch.";
+"Connect your pump base to the patch." = "Tilslut din pumpebase til plasteret.";
 
 /* Label for prime step 2.2 */
-"Fill the syringe with insulin" = "Fill the syringe with insulin";
+"Fill the syringe with insulin" = "Fyld sprøjten med insulin";
 
 /* Label for prime step 2.3 */
-"Place the syringe in the patch and pull out 1 to 2 dashes of air." = "Place the syringe in the patch and pull out 1 to 2 dashes of air.";
+"Place the syringe in the patch and pull out 1 to 2 dashes of air." = "Placer sprøjten i plasteret og træk 1 til 2 bindestreger luft ud.";
 
 /* Label for prime step 2.4 */
-"Fill the patch with insulin. NOTE: A minimum of 70U is required for activation." = "Fill the patch with insulin. NOTE: A minimum of 70U is required for activation.";
+"Fill the patch with insulin. NOTE: A minimum of 70U is required for activation." = "Fyld plasteret med insulin. BEMÆRK: Mindst 70 E er nødvendigt for aktivering.";
 
 /* Label for pressing needle button step 2.5 */
-"Press the needle button and start the priming process." = "Press the needle button and start the priming process.";
+"Press the needle button and start the priming process." = "Tryk på nåleknappen og start klargøringsprocessen.";
 
 /* Label for warning priming */
-"Do not attach the patch to the body yet" = "Do not attach the patch to the body yet";
+"Do not attach the patch to the body yet" = "Sæt ikke plasteret på kroppen endnu";
 
 /* label for prime start action */
-"Start priming" = "Start priming";
+"Start priming" = "Begynd klargøring";
 
 /* Priming header */
-"Patch priming" = "Patch priming";
+"Patch priming" = "Rettelse klargøring";
 
 /* Label for inserting needle step 1 */
-"Remove the safety cover from the patch." = "Remove the safety cover from the patch.";
+"Remove the safety cover from the patch." = "Tag sikkerhedshætten af plasteret.";
 
 /* Label for inserting needle step 2 */
-"Attach the pump to the body." = "Attach the pump to the body.";
+"Attach the pump to the body." = "Fastgør pumpen til kroppen.";
 
 /* Label for inserting needle step 3 */
-"Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process." = "Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process.";
+"Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process." = "Tryk på nåleknappen for at stikke nålen ind. Klik på \"Aktiver\" for at fuldføre aktiveringsprocessen.";
 
 /* Patch activation header */
-"Patch activation" = "Patch activation";
+"Patch activation" = "Patch aktivering";
 
 /* welcome header*/
-"Welcome" = "Welcome";
+"Welcome" = "Velkommen";
 
 /* Welcome text for MedtrumKit */
-"You will start by setting up your insulin type & basic patch settings before activating your patch." = "You will start by setting up your insulin type & basic patch settings before activating your patch.";
+"You will start by setting up your insulin type & basic patch settings before activating your patch." = "Du vil starte med at indstille dine indstillinger for insulintype og basisplaster, før du aktiverer dit plaster.";
