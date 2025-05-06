@@ -21,7 +21,7 @@ class PumpBaseSettingsViewModel: ObservableObject {
         }
         
         self.serialNumber = pumpManager.state.pumpSN.hexEncodedString().uppercased()
-        if pumpManager.state.pumpSN.count == 4 {
+        if !pumpManager.state.pumpSN.isEmpty {
             // Only try to decrypt pumpSN if it is valid
             self.is300u = pumpManager.state.pumpName.contains("300U")
         }
@@ -43,10 +43,15 @@ class PumpBaseSettingsViewModel: ObservableObject {
             return
         }
         
+        pumpManager.state.pumpSN = snData
+        guard pumpManager.state.model != "INVALID" else {
+            errorMessage = "Incorrect serial number received"
+            return
+        }
+        
         errorMessage = ""
         
         pumpManager.state.isOnboarded = true
-        pumpManager.state.pumpSN = snData
         pumpManager.notifyStateDidChange()
         nextStep()
     }
