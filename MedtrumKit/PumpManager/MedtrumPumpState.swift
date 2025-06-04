@@ -1,10 +1,3 @@
-//
-//  MedtrumPumpState.swift
-//  MedtrumKit
-//
-//  Created by Bastiaan Verhaar on 25/02/2025.
-//
-
 import LoopKit
 
 public enum BasalState: Int {
@@ -30,15 +23,14 @@ public struct PreviousPatch: Codable {
 
 public class MedtrumPumpState: RawRepresentable {
     public typealias RawValue = PumpManager.RawStateValue
-    
-    required public init(rawValue: RawValue) {
+
+    public required init(rawValue: RawValue) {
         isOnboarded = rawValue["isOnboarded"] as? Bool ?? false
         lastSync = rawValue["lastSync"] as? Date ?? Date.distantPast
         pumpSN = rawValue["pumpSN"] as? Data ?? Data()
         usingHeartbeatMode = rawValue["usingHeartbeatMode"] as? Bool ?? true
         bleUuid = rawValue["bleUuid"] as? String
         sessionToken = rawValue["sessionToken"] as? Data ?? Data()
-        previousSessionToken = rawValue["previousSessionToken"] as? Data ?? Data()
         patchId = rawValue["patchId"] as? Data ?? Data()
         patchActivatedAt = rawValue["patchActivatedAt"] as? Date ?? Date.distantPast
         patchExpiresAt = rawValue["patchExpiresAt"] as? Date
@@ -52,49 +44,50 @@ public class MedtrumPumpState: RawRepresentable {
         battery = rawValue["battery"] as? Double ?? 0
         basalStateSince = rawValue["basalStateSince"] as? Date ?? Date.distantPast
         expirationTimer = rawValue["expirationTimer"] as? UInt8 ?? 1
-        notificationAfterActivation =  rawValue["notificationAfterActivation"] as? TimeInterval ?? .hours(72)
-        
+        notificationAfterActivation = rawValue["notificationAfterActivation"] as? TimeInterval ?? .hours(72)
+
         if let previousPatchRaw = rawValue["previousPatch"] as? Data {
             do {
                 previousPatch = try JSONDecoder().decode(PreviousPatch.self, from: previousPatchRaw)
-            } catch { }
+            } catch {}
         }
-        
+
         if let rawInsulinType = rawValue["insulinType"] as? InsulinType.RawValue {
             insulinType = InsulinType(rawValue: rawInsulinType)
         }
-        
+
         if let pumpStateRaw = rawValue["pumpState"] as? PatchState.RawValue {
             pumpState = PatchState(rawValue: pumpStateRaw) ?? .none
         } else {
             pumpState = .none
         }
-        
+
         if let rawBasalSchedule = rawValue["basalSchedule"] as? BasalSchedule.RawValue {
-            basalSchedule = BasalSchedule(rawValue: rawBasalSchedule) ?? BasalSchedule(entries: [LoopKit.RepeatingScheduleValue(startTime: 0, value: 0)])
+            basalSchedule = BasalSchedule(rawValue: rawBasalSchedule) ??
+                BasalSchedule(entries: [LoopKit.RepeatingScheduleValue(startTime: 0, value: 0)])
         } else {
             basalSchedule = BasalSchedule(entries: [LoopKit.RepeatingScheduleValue(startTime: 0, value: 0)])
         }
-        
+
         if let basalStateRaw = rawValue["basalState"] as? BasalState.RawValue {
             basalState = BasalState(rawValue: basalStateRaw) ?? .active
         } else {
             basalState = .active
         }
-        
+
         if let bolusStateRaw = rawValue["bolusState"] as? BolusState.RawValue {
             bolusState = BolusState(rawValue: bolusStateRaw) ?? .noBolus
         } else {
             bolusState = .noBolus
         }
-        
+
         if let alarmSettingRaw = rawValue["alarmSetting"] as? AlarmSettings.RawValue {
             alarmSetting = AlarmSettings(rawValue: alarmSettingRaw) ?? .None
         } else {
             alarmSetting = .None
         }
     }
-    
+
     public init(_ basal: BasalRateSchedule?) {
         isOnboarded = false
         lastSync = Date.distantPast
@@ -102,7 +95,6 @@ public class MedtrumPumpState: RawRepresentable {
         usingHeartbeatMode = true
         bleUuid = nil
         sessionToken = Data()
-        previousSessionToken = Data()
         patchId = Data()
         patchActivatedAt = Date.distantPast
         patchExpiresAt = nil
@@ -111,7 +103,7 @@ public class MedtrumPumpState: RawRepresentable {
         pumpTime = Date()
         pumpTimeSyncedAt = Date()
         pumpState = .none
-        
+
         maxHourlyInsulin = 20
         maxDailyInsulin = 100
         reservoir = 0
@@ -130,10 +122,10 @@ public class MedtrumPumpState: RawRepresentable {
             basalSchedule = BasalSchedule(entries: [LoopKit.RepeatingScheduleValue(startTime: 0, value: 0)])
         }
     }
-    
+
     public var rawValue: RawValue {
         var value: [String: Any] = [:]
-        
+
         value["isOnboarded"] = isOnboarded
         value["lastSync"] = lastSync
         value["insulinType"] = insulinType?.rawValue
@@ -141,7 +133,6 @@ public class MedtrumPumpState: RawRepresentable {
         value["usingHeartbeatMode"] = usingHeartbeatMode
         value["bleUuid"] = bleUuid
         value["sessionToken"] = sessionToken
-        value["previousSessionToken"] = previousSessionToken
         value["patchId"] = patchId
         value["patchActivatedAt"] = patchActivatedAt
         value["patchExpiresAt"] = patchExpiresAt
@@ -161,56 +152,55 @@ public class MedtrumPumpState: RawRepresentable {
         value["alarmSetting"] = alarmSetting.rawValue
         value["expirationTimer"] = expirationTimer
         value["notificationAfterActivation"] = notificationAfterActivation
-        
+
         if let previousPatch = previousPatch {
             do {
                 value["previousPatch"] = try JSONEncoder().encode(previousPatch)
-            } catch { }
+            } catch {}
         }
-        
+
         return value
     }
-    
+
     public var isOnboarded: Bool
     public var insulinType: InsulinType?
     public var lastSync: Date
     public var pumpSN: Data
     public var usingHeartbeatMode = false
-    
+
     // Patch specific data
     public var bleUuid: String?
     public var sessionToken: Data
-    public var previousSessionToken: Data
     public var patchId: Data
     public var patchActivatedAt: Date
     public var patchExpiresAt: Date?
-    
+
     public var previousPatch: PreviousPatch?
-    
+
     public var deviceType: UInt8
     public var swVersion: String
-    
+
     public var pumpTime: Date
     public var pumpTimeSyncedAt: Date
-    
+
     public var pumpState: PatchState
     public var reservoir: Double
     public var battery: Double
-    
+
     // Patch settings
     public var maxHourlyInsulin: Double
     public var maxDailyInsulin: Double
     public var alarmSetting: AlarmSettings
     public var expirationTimer: UInt8
     public var notificationAfterActivation: TimeInterval
-    
+
     // **** THESE VALUES SHOULD NOT BE PERSISTED ****
     public var primeProgress: UInt8 = 0
     public var isConnected: Bool = false
     // **** END ****
-    
+
     public var bolusState: BolusState
-    
+
     public var basalState: BasalState
     public var basalStateSince: Date
     public var basalSchedule: BasalSchedule
@@ -219,7 +209,7 @@ public class MedtrumPumpState: RawRepresentable {
     public var tempBasalEndsAt: Date {
         basalStateSince + (tempBasalDuration ?? 0)
     }
-    
+
     public var basalDeliveryState: PumpManagerStatus.BasalDeliveryState {
         switch basalState {
         case .active:
@@ -239,25 +229,25 @@ public class MedtrumPumpState: RawRepresentable {
     }
 
     public var model: String {
-        let type = Crypto.simpleDecrypt(Data(self.pumpSN.reversed())).toUInt64()
-        
-        if (126000000..<126999999).contains(type) {
+        let type = Crypto.simpleDecrypt(Data(pumpSN.reversed())).toUInt64()
+
+        if (126_000_000 ..< 126_999_999).contains(type) {
             return "MD0201"
-        } else if (127000000..<127999999).contains(type) {
+        } else if (127_000_000 ..< 127_999_999).contains(type) {
             return "MD5201"
-        } else if (128000000..<128999999).contains(type) {
+        } else if (128_000_000 ..< 128_999_999).contains(type) {
             return "MD8201"
-        }else if (130000000..<130999999).contains(type) {
+        } else if (130_000_000 ..< 130_999_999).contains(type) {
             return "MD0202"
-        }else if (131000000..<131999999).contains(type) {
+        } else if (131_000_000 ..< 131_999_999).contains(type) {
             return "MD5202"
-        }else if (148000000..<148999999).contains(type) {
+        } else if (148_000_000 ..< 148_999_999).contains(type) {
             return "MD8301"
         } else {
             return "INVALID"
         }
     }
-    
+
     public var pumpName: String {
         let model = self.model
         if model == "MD8301" {
@@ -268,7 +258,7 @@ public class MedtrumPumpState: RawRepresentable {
             return "TouchCare Nano 200U"
         }
     }
-    
+
     public var debugDescription: String {
         [
             "## MedtrumPumpState - \(Date.now)",
@@ -285,7 +275,7 @@ public class MedtrumPumpState: RawRepresentable {
             "* pumpTimeSyncedAt: \(pumpTimeSyncedAt)",
             "* insulinType: \(insulinType ?? .afrezza)",
             "* reservoirLevel: \(reservoir)",
-            "* bolusState: \(bolusState.rawValue)",
+            "* bolusState: \(bolusState.rawValue)"
         ].joined(separator: "\n")
     }
 }

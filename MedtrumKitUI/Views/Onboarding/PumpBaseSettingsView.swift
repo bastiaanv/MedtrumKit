@@ -1,16 +1,9 @@
-//
-//  PumpBaseSettingsView.swift
-//  MedtrumKit
-//
-//  Created by Bastiaan Verhaar on 05/04/2025.
-//
-
-import SwiftUI
 import LoopKitUI
+import SwiftUI
 
 struct PumpBaseSettingsView: View {
     @ObservedObject var viewModel: PumpBaseSettingsViewModel
-    
+
     var body: some View {
         VStack {
             List {
@@ -24,7 +17,10 @@ struct PumpBaseSettingsView: View {
                             TextField("1234ABCD", text: $viewModel.serialNumber)
                                 .multilineTextAlignment(.trailing)
                         }
-                        Text(LocalizedString("Make sure the Serial Number is correct before connecting it to the patch.", comment: "Label for checking SN"))
+                        Text(LocalizedString(
+                            "Make sure the Serial Number is correct before connecting it to the patch.",
+                            comment: "Label for checking SN"
+                        ))
                             .padding(.top, 10)
                             .foregroundStyle(.primary)
                     }
@@ -47,4 +43,3 @@ struct PumpBaseSettingsView: View {
         .navigationTitle(LocalizedString("Pump base settings", comment: "Pump base settings header"))
     }
 }
-
