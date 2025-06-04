@@ -35,7 +35,6 @@ class PumpBaseSettingsViewModel: ObservableObject {
             errorMessage = "Failed to connect to pump"
             return
         }
-
         pumpManager.state.pumpSN = snData
         guard pumpManager.state.model != "INVALID" else {
             errorMessage = "Incorrect serial number received"
