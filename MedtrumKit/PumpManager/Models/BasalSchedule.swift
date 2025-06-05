@@ -28,42 +28,15 @@ public struct BasalSchedule: RawRepresentable {
     public func toData() -> Data {
         var output = Data([UInt8(entries.count)])
 
-        zip(entries, entries.dropFirst()).forEach { current, next in
-            let rate = UInt16(round(current.rate / 0.05))
-            let time = UInt16((next.startTime - current.startTime).minutes)
+        entries.forEach { item in
+            let rate = UInt32(round(item.rate / 0.05))
+            let time = UInt32(item.startTime.minutes)
 
             if time > 0xFFF || rate > 0xFFF {
                 preconditionFailure("Rate or time is too big: \(rate), \(time)")
             }
 
-            let entries = Data([
-                UInt8((time >> 4) & 0xFF),
-                UInt8((time << 4) & 0xF0 | (rate >> 8) & 0x0F),
-                UInt8(rate & 0xFF)
-            ])
-
-//            let entries = Data([
-//                UInt8((rate >> 4) & 0xFF),
-//                UInt8((rate << 4) & 0xF0 | (time >> 8) & 0x0F),
-//                UInt8(time & 0xFF)
-//            ])
-            output.append(entries)
-        }
-
-        if let lastEntry = entries.last {
-            let rate = UInt16(round(lastEntry.rate / 0.05))
-
-            let entries = Data([
-                UInt8(0),
-                UInt8((rate >> 8) & 0x0F),
-                UInt8(rate & 0xFF)
-            ])
-
-//            let entries = Data([
-//                UInt8((rate >> 4) & 0xFF),
-//                UInt8((rate << 4) & 0xF0),
-//                0
-//            ])
+            let entries = UInt64(rate << 12 | time).toData(length: 3)
             output.append(entries)
         }
 

@@ -47,6 +47,7 @@
 		3E6A00EE2DA03FE00085E6A4 /* PatchDeactivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A00ED2DA03FE00085E6A4 /* PatchDeactivationView.swift */; };
 		3E6A00F02DA0421A0085E6A4 /* DeactivatePatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A00EF2DA042140085E6A4 /* DeactivatePatchViewModel.swift */; };
 		3E6A00F22DA0428E0085E6A4 /* MedtrumDeactivatePatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A00F12DA0428E0085E6A4 /* MedtrumDeactivatePatchResult.swift */; };
+		3E6B082D2DF2224900A484C6 /* BasalScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6B082C2DF2224500A484C6 /* BasalScheduleTests.swift */; };
 		3E767D022D67B315004B1971 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CFD2D67B192004B1971 /* LocalizedString.swift */; };
 		3E767D032D67B319004B1971 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE42D67AF35004B1971 /* OSLog.swift */; };
 		3E767D042D67B3FC004B1971 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E767CFB2D67B13C004B1971 /* Localizable.strings */; };
@@ -200,6 +201,7 @@
 		3E6A00ED2DA03FE00085E6A4 /* PatchDeactivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchDeactivationView.swift; sourceTree = "<group>"; };
 		3E6A00EF2DA042140085E6A4 /* DeactivatePatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeactivatePatchViewModel.swift; sourceTree = "<group>"; };
 		3E6A00F12DA0428E0085E6A4 /* MedtrumDeactivatePatchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedtrumDeactivatePatchResult.swift; sourceTree = "<group>"; };
+		3E6B082C2DF2224500A484C6 /* BasalScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasalScheduleTests.swift; sourceTree = "<group>"; };
 		3E767CE22D67ADFA004B1971 /* MedtrumKitPumpManager+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MedtrumKitPumpManager+UI.swift"; sourceTree = "<group>"; };
 		3E767CE42D67AF35004B1971 /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
 		3E767CE52D67B13C004B1971 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ../Localization/ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -455,6 +457,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		3E6B082B2DF2223E00A484C6 /* PumpManager */ = {
+			isa = PBXGroup;
+			children = (
+				3E6B082C2DF2224500A484C6 /* BasalScheduleTests.swift */,
+			);
+			path = PumpManager;
+			sourceTree = "<group>";
+		};
 		3E767CE12D67AD91004B1971 /* MedtrumKitUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +620,7 @@
 		B7D3A8DE2C148CC4002EE003 /* MedtrumKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E6B082B2DF2223E00A484C6 /* PumpManager */,
 				3E77FEBF2D74B16100A15134 /* Packets */,
 				3E77FEB82D723ABF00A15134 /* Encryption */,
 			);
@@ -917,6 +928,7 @@
 				3ED27E112D80C4320026488B /* SetTimePacketTests.swift in Sources */,
 				3EA87D692D7A3FC2007DD959 /* PollPatchPacketTests.swift in Sources */,
 				3EA87C3B2DAC2DBE00E897ED /* SynchronizeNotificationPacketTests.swift in Sources */,
+				3E6B082D2DF2224900A484C6 /* BasalScheduleTests.swift in Sources */,
 				3ED27E0F2D80BFF90026488B /* SetTempBasalPacketTests.swift in Sources */,
 				3ED27E072D80BA130026488B /* SetBolusPacketTests.swift in Sources */,
 				3EEA51F92D7E13E6000C9E1E /* ReadBolusStatePacketTests.swift in Sources */,

@@ -68,7 +68,7 @@ class NotificationPacket: MedtrumBasePacket, MedtrumBasePacketProtocol {
         handle(
             state: PatchState(rawValue: totalData[0]) ?? .none,
             fieldMask: UInt16(totalData.subdata(in: 1 ..< 3).toUInt64()),
-            syncData: Data(totalData.dropFirst(2))
+            syncData: Data(totalData.dropFirst(3))
         )
     }
 
@@ -99,14 +99,6 @@ class NotificationPacket: MedtrumBasePacket, MedtrumBasePacketProtocol {
 
         return output
     }
-
-//    private func checkData(fieldMask: UInt16, data: Data) -> Bool {
-//        if fieldMask & MASK_BASAL != 0 {
-//
-//        }
-//    }
-//
-//    private func calculateOffset(field: UInt16) ->
 
     private let maskHandlers: [UInt16: (Data, Int, inout SynchronizePacketResponse) -> Int] = [
         MASK_SUSPEND: { data, offset, output in
