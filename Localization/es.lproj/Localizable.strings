@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Volver a la imprimación";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Tu parche caducará pronto.";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "A su parche le quedan %i horas";
