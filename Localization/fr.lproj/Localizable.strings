@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Retourner à l'amorçage";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Votre patch va bientôt expirer !";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Votre patch a %i heures restantes";
