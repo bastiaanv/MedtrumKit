@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Hazırlamaya geri dönün";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Yamanızın süresi yakında dolacak!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Yamanızın %i saati kaldı";
