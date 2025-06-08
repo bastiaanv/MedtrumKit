@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Palaa takaisin pohjustukseen";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Laastarin voimassaolo päättyy pian!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Laastariasi on jäljellä %i tuntia";
