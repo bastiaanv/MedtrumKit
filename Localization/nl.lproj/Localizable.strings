@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Ga terug naar primen";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Je patch verloopt binnenkort!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Je patch heeft nog %i uur over";
