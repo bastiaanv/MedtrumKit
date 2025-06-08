@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Wróć do gruntowania";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Twój patch wkrótce wygaśnie!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Do końca aktualizacji pozostało %i godzin";
