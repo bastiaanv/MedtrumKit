@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Gå tilbake til klaring";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Depotplasteret ditt vil utløpe snart!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Your patch has %i hours left";
