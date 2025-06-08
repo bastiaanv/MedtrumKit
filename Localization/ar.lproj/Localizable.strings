@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "العودة إلى الإعداد الأولي";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "ستنتهي صلاحية التصحيح الخاص بك قريباً!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "يتبقى لديك %i ساعة";
