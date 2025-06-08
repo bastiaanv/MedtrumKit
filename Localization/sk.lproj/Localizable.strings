@@ -270,3 +270,9 @@
 
 /* label for go to prime patch */
 "Go back to priming" = "Vráťte sa k základnému náteru";
+
+/* Title expire reminder notification */
+"Your patch will expire soon!" = "Platnosť vašej náplasti čoskoro vyprší!";
+
+/* Body expire reminder notification */
+"Your patch has %i hours left" = "Vaša náplasť má %i hodín";
