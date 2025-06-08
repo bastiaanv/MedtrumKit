@@ -264,3 +264,9 @@
 
 /* Welcome text for MedtrumKit */
 "You will start by setting up your insulin type & basic patch settings before activating your patch." = "Je zal beginnen met het instellen van jouw insulinetype & basispatch instellingen voordat je jouw patch activeert.";
+
+/* label for go to pump base patch */
+"Go back to pump base" = "Ga terug naar de pompbasis";
+
+/* label for go to prime patch */
+"Go back to priming" = "Go back to priming";
