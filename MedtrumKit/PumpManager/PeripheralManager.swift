@@ -218,54 +218,12 @@ extension PeripheralManager {
             log.warning("State update: Failed to encode JSON")
         }
 
-        pumpManager.state.pumpState = syncResponse.state
-
-        if let reservoir = syncResponse.reservoir {
-            pumpManager.state.reservoir = reservoir
-        }
-
-        if let basal = syncResponse.basal {
-            switch basal.type {
-            case .ABSOLUTE_TEMP,
-                 .RELATIVE_TEMP:
-                pumpManager.state.basalState = .tempBasal
-
-            case .STOP,
-                 .STOP_BASE_FAULT,
-                 .STOP_BATTERY_EMPTY,
-                 .STOP_DISCARD,
-                 .STOP_EMPTY,
-                 .STOP_EXPIRED,
-                 .STOP_OCCLUSION,
-                 .STOP_PATCH_FAULT,
-                 .STOP_PATCH_FAULT2,
-                 .SUSPEND_AUTO,
-                 .SUSPEND_KEY_LOST,
-                 .SUSPEND_LOW_GLUCOSE,
-                 .SUSPEND_MANUAL,
-                 .SUSPEND_MORE_THAN_MAX_PER_DAY,
-                 .SUSPEND_MORE_THAN_MAX_PER_HOUR,
-                 .SUSPEND_PREDICT_LOW_GLUCOSE:
-                pumpManager.state.basalState = .suspended
-
-            default:
-                pumpManager.state.basalState = .active
-            }
-        }
-
-        if let battery = syncResponse.battery {
-            pumpManager.state.battery = battery.voltageB
-        }
-
-        if let primeProgress = syncResponse.primeProgress {
-            pumpManager.state.primeProgress = primeProgress
-        }
-
-        if let bolus = syncResponse.bolus {
-            pumpManager.updateBolusProgress(delivered: bolus.delivered, completed: bolus.completed)
-        }
-
-        pumpManager.state.lastSync = Date.now
+        syncState(
+            syncResponse: syncResponse,
+            state: pumpManager.state,
+            delegate: nil,
+            pumpManager: pumpManager
+        )
         pumpManager.notifyStateDidChange()
     }
 }
@@ -367,7 +325,6 @@ extension PeripheralManager: CBPeripheralDelegate {
         currentPacket = packet
 
         guard packet.isComplete else {
-            log.warning("Data no complete yet...")
             // Wait for more data
             return
         }

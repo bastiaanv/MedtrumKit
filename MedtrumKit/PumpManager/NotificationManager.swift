@@ -12,11 +12,11 @@ class NotificationManager {
             let content = UNMutableNotificationContent()
             content.title = LocalizedString("Your patch will expire soon!", comment: "Title expire reminder notification")
             content.body = String(
-                format: LocalizedString("Your patch has %@ hours left", comment: "Body expire reminder notification"),
+                format: LocalizedString("Your patch has %i hours left", comment: "Body expire reminder notification"),
                 Int(80 - after.hours)
             )
 
-            addRequest(identifier: .patchExpiredNotification, content: content, triggerAfter: after)
+            addRequest(identifier: .patchExpiredNotification, content: content, triggerAfter: after, deleteOld: true)
         }
     }
 

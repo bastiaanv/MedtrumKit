@@ -66,6 +66,8 @@ class PatchSettingsViewModel: ObservableObject {
         pumpManager.state.notificationAfterActivation = .hours(notificationAfterActivation)
         pumpManager.notifyStateDidChange()
 
+        NotificationManager.activatePatchExpiredNotification(after: .hours(notificationAfterActivation))
+
         guard updatePatch else {
             nextStep?()
             return

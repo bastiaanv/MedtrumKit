@@ -150,6 +150,14 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 extension BluetoothManager {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         log.info("\(String(describing: central.state.rawValue))")
+
+        if central.state == .poweredOn, !isConnected, pumpManager?.state.pumpState == .active {
+            ensureConnected { result in
+                if case let .failure(error) = result {
+                    self.log.error("Failed to auto reconnect on boot: \(error)")
+                }
+            }
+        }
     }
 
     func centralManager(

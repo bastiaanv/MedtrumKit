@@ -135,15 +135,6 @@ public class MedtrumPumpManager: DeviceManager {
             udiDeviceIdentifier: nil
         )
     }
-
-    private let basalIntervals: [TimeInterval] = Array(0 ..< 24).map({ TimeInterval(60 * 60 * $0) })
-    public var currentBaseBasalRate: Double {
-        let now = Date()
-        let startOfDay = Calendar.current.startOfDay(for: now)
-        let nowTimeInterval = now.timeIntervalSince(startOfDay)
-
-        return state.basalSchedule.entries.last(where: { $0.startTime < nowTimeInterval })?.rate ?? 0
-    }
 }
 
 public extension MedtrumPumpManager {
@@ -227,6 +218,7 @@ public extension MedtrumPumpManager {
                 self.state.lastSync = Date.now
                 self.notifyStateDidChange()
             }
+            return
         #endif
 
         log.info("Sync pump data")
@@ -260,51 +252,16 @@ public extension MedtrumPumpManager {
                     self.log.warning("State update: Failed to encode JSON")
                 }
 
-                self.state.pumpState = syncResponse.state
-
-                if let reservoir = syncResponse.reservoir {
-                    self.state.reservoir = reservoir
-
-                    self.pumpDelegate.notify { delegate in
-                        delegate?.pumpManager(self, didReadReservoirValue: self.state.reservoir, at: Date.now) { _ in }
-                    }
+                self.pumpDelegate.notify { delegate in
+                    syncState(
+                        syncResponse: syncResponse,
+                        state: self.state,
+                        delegate: delegate,
+                        pumpManager: self
+                    )
+                    self.notifyStateDidChange()
                 }
 
-                if let basal = syncResponse.basal {
-                    switch basal.type {
-                    case .ABSOLUTE_TEMP,
-                         .RELATIVE_TEMP:
-                        self.state.basalState = .tempBasal
-
-                    case .STOP,
-                         .STOP_BASE_FAULT,
-                         .STOP_BATTERY_EMPTY,
-                         .STOP_DISCARD,
-                         .STOP_EMPTY,
-                         .STOP_EXPIRED,
-                         .STOP_OCCLUSION,
-                         .STOP_PATCH_FAULT,
-                         .STOP_PATCH_FAULT2,
-                         .SUSPEND_AUTO,
-                         .SUSPEND_KEY_LOST,
-                         .SUSPEND_LOW_GLUCOSE,
-                         .SUSPEND_MANUAL,
-                         .SUSPEND_MORE_THAN_MAX_PER_DAY,
-                         .SUSPEND_MORE_THAN_MAX_PER_HOUR,
-                         .SUSPEND_PREDICT_LOW_GLUCOSE:
-                        self.state.basalState = .suspended
-
-                    default:
-                        self.state.basalState = .active
-                    }
-                }
-
-                if let battery = syncResponse.battery {
-                    self.state.battery = battery.voltageB
-                }
-
-                self.state.lastSync = Date.now
-                self.notifyStateDidChange()
                 completion?(Date.now)
             }
         }
@@ -359,13 +316,35 @@ public extension MedtrumPumpManager {
                 return
             }
 
-            self.doseEntry = UnfinalizedDose(
+            let doseEntry = UnfinalizedDose(
                 units: units,
                 duration: duration,
                 activationType: activationType,
                 insulinType: insulinType
             )
 
+            self.pumpDelegate.notify { delegate in
+                guard let delegate = delegate else {
+                    self.log.error("Dose could not be reported -> Missing delegate")
+                    return
+                }
+
+                let dose = doseEntry.toDoseEntry(isMutable: true)
+                let event = NewPumpEvent.bolus(
+                    dose: dose,
+                    units: dose.programmedUnits,
+                    date: dose.startDate
+                )
+                delegate.pumpManager(
+                    self,
+                    hasNewPumpEvents: [event],
+                    lastReconciliation: Date.now,
+                    replacePendingEvents: false,
+                    completion: { _ in }
+                )
+            }
+
+            self.doseEntry = doseEntry
             self.doseReporter = MedtrumDoseProgressReporter(total: units)
             self.state.bolusState = .inProgress
             self.notifyStateDidChange()
@@ -423,11 +402,6 @@ public extension MedtrumPumpManager {
             self.doseEntry = nil
             self.doseReporter = nil
 
-            guard let dose = dose else {
-                completion(.success(nil))
-                return
-            }
-
             self.pumpDelegate.notify { delegate in
                 delegate?.pumpManager(
                     self,
@@ -477,7 +451,7 @@ public extension MedtrumPumpManager {
                 // Need to cancel temp basal, but is already cancelled
                 // Only need to report back to algorithm
                 if let insulinType = self.state.insulinType {
-                    let dose = DoseEntry.basal(rate: self.currentBaseBasalRate, insulinType: insulinType)
+                    let dose = DoseEntry.basal(rate: self.state.currentBaseBasalRate, insulinType: insulinType)
                     self.pumpDelegate.notify { delegate in
                         delegate?.pumpManager(
                             self,
@@ -649,7 +623,7 @@ public extension MedtrumPumpManager {
             self.notifyStateDidChange()
 
             if let insulinType = self.state.insulinType {
-                let dose = DoseEntry.basal(rate: self.currentBaseBasalRate, insulinType: insulinType)
+                let dose = DoseEntry.basal(rate: self.state.currentBaseBasalRate, insulinType: insulinType)
                 self.pumpDelegate.notify { delegate in
                     delegate?.pumpManager(
                         self,
@@ -872,23 +846,23 @@ public extension MedtrumPumpManager {
     }
 
     func updateBolusProgress(delivered: Double, completed: Bool) {
-        guard let doseReporter = doseReporter else {
+        if let doseReporter = doseReporter {
+            doseReporter.notify(deliveredUnits: delivered)
+        }
+
+        guard let doseEntry = self.doseEntry else {
             return
         }
 
-        doseReporter.notify(deliveredUnits: delivered)
+        doseEntry.deliveredUnits = delivered
 
         if completed {
             state.bolusState = .noBolus
             notifyStateDidChange()
 
-            let dose = doseEntry?.toDoseEntry()
-            doseEntry = nil
-            self.doseReporter = nil
-
-            guard let dose = dose else {
-                return
-            }
+            let dose = doseEntry.toDoseEntry()
+            self.doseEntry = nil
+            doseReporter = nil
 
             pumpDelegate.notify { delegate in
                 delegate?.pumpManager(

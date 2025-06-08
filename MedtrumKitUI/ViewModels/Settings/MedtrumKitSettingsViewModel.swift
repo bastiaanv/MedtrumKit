@@ -23,6 +23,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     @Published var patchState: PatchState = .none
     @Published var patchStateString: String = PatchState.none.description
     @Published var basalType: BasalState = .active
+    @Published var basalRate: Double = 0
     @Published var insulinType: InsulinType = .novolog
     @Published var lastSync = Date.distantPast
     @Published var patchLifecycleProgress: Double = 0
@@ -111,14 +112,6 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     func batteryText(for voltage: Double) -> String {
         let quantity = HKQuantity(unit: .volt(), doubleValue: voltage)
         return batteryFormatter.string(from: quantity) ?? ""
-    }
-
-    var basalRate: Double {
-        if let tempBasal = pumpManager?.state.tempBasalUnits {
-            return tempBasal
-        }
-
-        return pumpManager?.currentBaseBasalRate ?? 0
     }
 
     var patchLifecycleDays: Int? {
@@ -273,6 +266,7 @@ extension MedtrumKitSettingsViewModel {
         patchStateString = state.pumpState.description
         reservoirLevel = state.reservoir
         basalType = state.basalState
+        basalRate = basalType == .tempBasal ? (state.tempBasalUnits ?? state.currentBaseBasalRate) : state.currentBaseBasalRate
         lastSync = state.lastSync
         patchActivatedAt = state.patchActivatedAt
         patchExpiresAt = state.patchExpiresAt ?? state.patchActivatedAt.addingTimeInterval(.hours(80))

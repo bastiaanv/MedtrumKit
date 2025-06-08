@@ -42,6 +42,8 @@ public class MedtrumPumpState: RawRepresentable {
         reservoir = rawValue["reservoir"] as? Double ?? 0
         battery = rawValue["battery"] as? Double ?? 0
         basalStateSince = rawValue["basalStateSince"] as? Date ?? Date.distantPast
+        tempBasalUnits = rawValue["tempBasalUnits"] as? Double
+        tempBasalDuration = rawValue["tempBasalDuration"] as? Double
         expirationTimer = rawValue["expirationTimer"] as? UInt8 ?? 1
         notificationAfterActivation = rawValue["notificationAfterActivation"] as? TimeInterval ?? .hours(72)
 
@@ -108,6 +110,8 @@ public class MedtrumPumpState: RawRepresentable {
         battery = 0
         basalState = .active
         basalStateSince = Date.distantPast
+        tempBasalUnits = nil
+        tempBasalDuration = nil
         bolusState = .noBolus
         alarmSetting = .None
         expirationTimer = 1
@@ -146,6 +150,8 @@ public class MedtrumPumpState: RawRepresentable {
         value["battery"] = battery
         value["basalState"] = basalState.rawValue
         value["basalStateSince"] = basalStateSince
+        value["tempBasalUnits"] = tempBasalUnits
+        value["tempBasalDuration"] = tempBasalDuration
         value["alarmSetting"] = alarmSetting.rawValue
         value["expirationTimer"] = expirationTimer
         value["notificationAfterActivation"] = notificationAfterActivation
@@ -222,6 +228,15 @@ public class MedtrumPumpState: RawRepresentable {
                 )
             )
         }
+    }
+
+    private let basalIntervals: [TimeInterval] = Array(0 ..< 24).map({ TimeInterval(60 * 60 * $0) })
+    public var currentBaseBasalRate: Double {
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let nowTimeInterval = now.timeIntervalSince(startOfDay)
+
+        return basalSchedule.entries.last(where: { $0.startTime < nowTimeInterval })?.rate ?? 0
     }
 
     public var model: String {
