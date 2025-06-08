@@ -335,7 +335,7 @@ extension PeripheralManager: CBPeripheralDelegate {
             return
         }
 
-        guard let data = characteristic.value else {
+        guard var data = characteristic.value else {
             return
         }
 
@@ -346,6 +346,7 @@ extension PeripheralManager: CBPeripheralDelegate {
             }
 
             log.debug("READ -> Got data: \(data.hexEncodedString())")
+            data.append(0x00) // Little CRC hack. The notification lacks the CRC value, thus add an empty value there
 
             var packet = NotificationPacket()
             packet.decode(data)

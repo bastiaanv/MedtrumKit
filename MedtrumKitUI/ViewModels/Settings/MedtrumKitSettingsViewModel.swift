@@ -221,7 +221,12 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
 
         if pumpManager.state.usingHeartbeatMode, !pumpManager.bluetooth.isConnected {
             // Reconnect to patch
-            pumpManager.bluetooth.ensureConnected { _ in }
+            isReconnecting = true
+            pumpManager.bluetooth.ensureConnected { _ in
+                DispatchQueue.main.async {
+                    self.isReconnecting = false
+                }
+            }
             return
         }
 

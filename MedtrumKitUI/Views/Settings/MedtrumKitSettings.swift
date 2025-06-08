@@ -114,6 +114,10 @@ struct MedtrumKitSettings: View {
                             } else {
                                 Text(LocalizedString("Reconnect", comment: "reconnect to patch"))
                             }
+                            Spacer()
+                            if viewModel.isReconnecting {
+                                ActivityIndicator(isAnimating: .constant(true), style: .medium)
+                            }
                         }
                     }
                 }

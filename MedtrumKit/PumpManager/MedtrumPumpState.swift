@@ -29,7 +29,6 @@ public class MedtrumPumpState: RawRepresentable {
         lastSync = rawValue["lastSync"] as? Date ?? Date.distantPast
         pumpSN = rawValue["pumpSN"] as? Data ?? Data()
         usingHeartbeatMode = rawValue["usingHeartbeatMode"] as? Bool ?? true
-        bleUuid = rawValue["bleUuid"] as? String
         sessionToken = rawValue["sessionToken"] as? Data ?? Data()
         patchId = rawValue["patchId"] as? Data ?? Data()
         patchActivatedAt = rawValue["patchActivatedAt"] as? Date ?? Date.distantPast
@@ -93,7 +92,6 @@ public class MedtrumPumpState: RawRepresentable {
         lastSync = Date.distantPast
         pumpSN = Data()
         usingHeartbeatMode = true
-        bleUuid = nil
         sessionToken = Data()
         patchId = Data()
         patchActivatedAt = Date.distantPast
@@ -131,7 +129,6 @@ public class MedtrumPumpState: RawRepresentable {
         value["insulinType"] = insulinType?.rawValue
         value["pumpSN"] = pumpSN
         value["usingHeartbeatMode"] = usingHeartbeatMode
-        value["bleUuid"] = bleUuid
         value["sessionToken"] = sessionToken
         value["patchId"] = patchId
         value["patchActivatedAt"] = patchActivatedAt
@@ -169,7 +166,6 @@ public class MedtrumPumpState: RawRepresentable {
     public var usingHeartbeatMode = false
 
     // Patch specific data
-    public var bleUuid: String?
     public var sessionToken: Data
     public var patchId: Data
     public var patchActivatedAt: Date

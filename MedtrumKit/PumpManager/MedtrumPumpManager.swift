@@ -735,17 +735,6 @@ public extension MedtrumPumpManager {
             }
 
             guard self.state.pumpState.rawValue < PatchState.active.rawValue else {
-                self.state.patchId = UInt64(17152).toData(length: 4)
-
-                let dateComponents = DateComponents(year: 2025, month: 5, day: 8, hour: 7, minute: 0, second: 0)
-                self.state.patchActivatedAt = Calendar.current.date(from: dateComponents)!
-                self.state.patchExpiresAt = self.state.patchActivatedAt.addingTimeInterval(.days(3)).addingTimeInterval(.hours(8))
-                self.notifyStateDidChange()
-
-                self.pumpDelegate.notify { delegate in
-                    delegate?.pumpManagerPumpWasReplaced(self)
-                }
-
                 self.log.info("Patch already activated!")
                 completion(.success)
                 return

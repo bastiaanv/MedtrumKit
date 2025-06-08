@@ -76,6 +76,14 @@ struct PatchPrimingView: View {
                 ProgressView(progress: viewModel.primeProgress)
                     .padding(.horizontal)
             }
+
+            Button(action: { viewModel.previousStep() }) {
+                Text(LocalizedString("Go back to pump base", comment: "label for go to pump base patch"))
+            }
+            .buttonStyle(ActionButtonStyle(.secondary))
+            .disabled(viewModel.isPriming)
+            .padding(.horizontal)
+
             Button(action: { viewModel.startPrime() }) {
                 if viewModel.isPriming {
                     ActivityIndicator(isAnimating: .constant(true), style: .medium)
@@ -89,6 +97,7 @@ struct PatchPrimingView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
+        .navigationBarBackButtonHidden(viewModel.isPriming)
         .navigationTitle(LocalizedString("Patch priming", comment: "Priming header"))
     }
 

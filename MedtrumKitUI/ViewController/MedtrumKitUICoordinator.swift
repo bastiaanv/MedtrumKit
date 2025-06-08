@@ -75,13 +75,12 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
             return .welcomeScreen
         }
 
-        if pumpManager.state.sessionToken.isEmpty || pumpManager.state.pumpSN.isEmpty || pumpManager.state.pumpState
-            .rawValue < PatchState.primed.rawValue
+        if pumpManager.state.pumpState.rawValue < PatchState.primed.rawValue
         {
             return .pumpBaseSettingsScreen
         }
 
-        if pumpManager.state.patchId.isEmpty || pumpManager.state.pumpState.rawValue < PatchState.active.rawValue {
+        if pumpManager.state.pumpState.rawValue < PatchState.active.rawValue {
             return .patchActivationScreen
         }
 
@@ -137,12 +136,17 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
             let viewModel = PatchPrimingViewModel(
                 pumpManager,
                 { self.resetNavigationTo(.patchActivationScreen) },
+                { self.navigateTo(.pumpBaseSettingsScreen) },
                 { self.resetNavigationTo(.settingsScreen) }
             )
             return hostingController(rootView: PatchPrimingView(viewModel: viewModel))
 
         case .patchActivationScreen:
-            let viewModel = PatchActivationViewModel(pumpManager, { self.resetNavigationTo(.settingsScreen) })
+            let viewModel = PatchActivationViewModel(
+                pumpManager,
+                { self.resetNavigationTo(.settingsScreen) },
+                { self.navigateTo(.patchPrimingScreen) }
+            )
             return hostingController(rootView: PatchActivationView(viewModel: viewModel))
 
         case .settingsScreen:

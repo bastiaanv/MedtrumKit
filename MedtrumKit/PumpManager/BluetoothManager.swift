@@ -92,15 +92,11 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
             return
         }
 
-        if let pumpManager = self.pumpManager, let bleUuid = pumpManager.state.bleUuid {
-            let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [])
-            if !connectedDevices.isEmpty,
-               let peripheral = connectedDevices.first(where: { $0.identifier.uuidString == bleUuid })
-            {
-                // Phone is already connected, but the app is not
-                connect(peripheral: peripheral, completion)
-                return
-            }
+        let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [PeripheralManager.SERVICE_UUID])
+        if let peripheral = connectedDevices.first(where: { $0.name == "MT" }) {
+            // Phone is already connected, but the app is not
+            connect(peripheral: peripheral, completion)
+            return
         }
 
         guard var pumpSNState = pumpManager?.state.pumpSN else {
@@ -221,9 +217,6 @@ extension BluetoothManager {
                 self.log.warning("Couldnt reconnect to pump: \(error)")
                 return
             }
-
-            pumpManager.state.bleUuid = peripheral.identifier.uuidString
-            pumpManager.notifyStateDidChange()
 
             self.log.info("Reconnected to patch using restored state!")
         }
