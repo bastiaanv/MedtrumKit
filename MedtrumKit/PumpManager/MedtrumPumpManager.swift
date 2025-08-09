@@ -687,7 +687,7 @@ public extension MedtrumPumpManager {
         bluetooth.ensureConnected(autoDisconnect: false) { error in
             if let error = error {
                 self.log.error("Failed to connect to pump: \(error)")
-                completion(.failure(error: .connectionFailure))
+                completion(.failure(error: .connectionFailure(reason: error.errorDescription ?? "EMPTY")))
                 return
             }
 
@@ -701,7 +701,7 @@ public extension MedtrumPumpManager {
             let primeResult = await self.bluetooth.write(packet)
             if case let .failure(error) = primeResult {
                 self.log.error("Failed to start priming pump: \(error)")
-                completion(.failure(error: .unknownError(reason: error.localizedDescription)))
+                completion(.failure(error: .unknownError(reason: error.errorDescription ?? "EMPTY")))
                 return
             }
 
@@ -716,7 +716,7 @@ public extension MedtrumPumpManager {
         bluetooth.ensureConnected { error in
             if let error = error {
                 self.log.error("Failed to connect to pump: \(error)")
-                completion(.failure(error: .connectionFailure))
+                completion(.failure(error: .connectionFailure(reason: error.errorDescription ?? "EMPTY")))
                 return
             }
 
