@@ -278,16 +278,16 @@
 "Your patch has %i hours left" = "Laastariasi on jäljellä %i tuntia";
 
 /* Force remove */
-"Force remove" = "Force remove";
+"Force remove" = "Poista väkisin";
 
 /* title force remove */
-"Are you sure?" = "Are you sure?";
+"Are you sure?" = "Oletko varma?";
 
 /* body force remove */
-"It is recommended to deactivate first" = "It is recommended to deactivate first";
+"It is recommended to deactivate first" = "On suositeltavaa poistaa ensin käytöstä";
 
 /* confirm force remove */
-"Confirm" = "Confirm";
+"Confirm" = "Vahvista";
 
 /* cancel force remove */
-"Cancel" = "Cancel";
+"Cancel" = "Peruuta";
