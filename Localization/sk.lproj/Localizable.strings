@@ -278,16 +278,16 @@
 "Your patch has %i hours left" = "Tvoja náplasť má zostávajúcich %i hodín";
 
 /* Force remove */
-"Force remove" = "Force remove";
+"Force remove" = "Násilné odstránenie";
 
 /* title force remove */
-"Are you sure?" = "Are you sure?";
+"Are you sure?" = "Ste si istý?";
 
 /* body force remove */
-"It is recommended to deactivate first" = "It is recommended to deactivate first";
+"It is recommended to deactivate first" = "Odporúča sa najprv deaktivovať";
 
 /* confirm force remove */
-"Confirm" = "Confirm";
+"Confirm" = "Potvrďte";
 
 /* cancel force remove */
-"Cancel" = "Cancel";
+"Cancel" = "Zrušiť";
