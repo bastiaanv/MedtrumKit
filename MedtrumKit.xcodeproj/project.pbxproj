@@ -51,8 +51,6 @@
 		3E767D032D67B319004B1971 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE42D67AF35004B1971 /* OSLog.swift */; };
 		3E767D042D67B3FC004B1971 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E767CFB2D67B13C004B1971 /* Localizable.strings */; };
 		3E767D4D2D67BA71004B1971 /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E767D4C2D67BA71004B1971 /* LoopKitUI.framework */; };
-		3E767D4F2D67BB72004B1971 /* MedtrumKitPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3A8ED2C14F0EF002EE003 /* MedtrumKitPlugin.swift */; };
-		3E767D512D67BBF9004B1971 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767D502D67BBF9004B1971 /* OSLog.swift */; };
 		3E767D522D67BC2E004B1971 /* MedtrumKitPumpManager+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CE22D67ADFA004B1971 /* MedtrumKitPumpManager+UI.swift */; };
 		3E767D532D67BC33004B1971 /* MedtrumHUDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767CFE2D67B1A9004B1971 /* MedtrumHUDProvider.swift */; };
 		3E767D562D67BCD6004B1971 /* MedtrumKitUICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E767D552D67BCC9004B1971 /* MedtrumKitUICoordinator.swift */; };
@@ -111,6 +109,9 @@
 		3ED27E1F2D80D2660026488B /* PatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED27E1E2D80D25D0026488B /* PatchState.swift */; };
 		3EDA29762D9B862E00895031 /* PatchSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA29752D9B862800895031 /* PatchSettingsViewModel.swift */; };
 		3EE2DAC52D8A076200EA2EAD /* SuspendPumpPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2DAC42D8A075B00EA2EAD /* SuspendPumpPacket.swift */; };
+		3EE340AE2E4D1A880040E346 /* MedtrumKitPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3A8ED2C14F0EF002EE003 /* MedtrumKitPlugin.swift */; };
+		3EE340B42E4D1C6F0040E346 /* MedtrumKitPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE340B32E4D1C6F0040E346 /* MedtrumKitPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE340B62E4D1E740040E346 /* MedtrumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE340B52E4D1E740040E346 /* MedtrumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EEA51F72D7DF061000C9E1E /* ReadBolusStatePacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA51F62D7DF061000C9E1E /* ReadBolusStatePacket.swift */; };
 		3EEA51F92D7E13E6000C9E1E /* ReadBolusStatePacketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA51F82D7E13E6000C9E1E /* ReadBolusStatePacketTests.swift */; };
 		3EEA51FB2D7E1BF8000C9E1E /* ResumePumpPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA51FA2D7E1BF2000C9E1E /* ResumePumpPacket.swift */; };
@@ -126,8 +127,6 @@
 		B7189AEA2C15A8CE00703DE2 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7189AE92C15A8CE00703DE2 /* LoopKit.framework */; };
 		B7D3A8D52C148CC4002EE003 /* MedtrumKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = B7D3A8D42C148CC4002EE003 /* MedtrumKit.docc */; };
 		B7D3A8DB2C148CC4002EE003 /* MedtrumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3A8D02C148CC4002EE003 /* MedtrumKit.framework */; };
-		B7D3A8E12C148CC4002EE003 /* MedtrumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D3A8D32C148CC4002EE003 /* MedtrumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7D3A8F12C14F0EF002EE003 /* MedtrumKitPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3A8ED2C14F0EF002EE003 /* MedtrumKitPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,10 +228,8 @@
 		3E767CFD2D67B192004B1971 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		3E767CFE2D67B1A9004B1971 /* MedtrumHUDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedtrumHUDProvider.swift; sourceTree = "<group>"; };
 		3E767D052D67B4A0004B1971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E767D072D67B63B004B1971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3E767D432D67B790004B1971 /* MedtrumKitPlugin.loopplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MedtrumKitPlugin.loopplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E767D4C2D67BA71004B1971 /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E767D502D67BBF9004B1971 /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
 		3E767D552D67BCC9004B1971 /* MedtrumKitUICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedtrumKitUICoordinator.swift; sourceTree = "<group>"; };
 		3E77FEB92D723AD200A15134 /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
 		3E77FEBB2D72F8FC00A15134 /* MedtrumBasePacketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedtrumBasePacketTests.swift; sourceTree = "<group>"; };
@@ -287,6 +284,9 @@
 		3ED27E1E2D80D25D0026488B /* PatchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchState.swift; sourceTree = "<group>"; };
 		3EDA29752D9B862800895031 /* PatchSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchSettingsViewModel.swift; sourceTree = "<group>"; };
 		3EE2DAC42D8A075B00EA2EAD /* SuspendPumpPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspendPumpPacket.swift; sourceTree = "<group>"; };
+		3EE340B12E4D1C510040E346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE340B32E4D1C6F0040E346 /* MedtrumKitPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedtrumKitPlugin.h; sourceTree = "<group>"; };
+		3EE340B52E4D1E740040E346 /* MedtrumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedtrumKit.h; sourceTree = "<group>"; };
 		3EEA51F62D7DF061000C9E1E /* ReadBolusStatePacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadBolusStatePacket.swift; sourceTree = "<group>"; };
 		3EEA51F82D7E13E6000C9E1E /* ReadBolusStatePacketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadBolusStatePacketTests.swift; sourceTree = "<group>"; };
 		3EEA51FA2D7E1BF2000C9E1E /* ResumePumpPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumePumpPacket.swift; sourceTree = "<group>"; };
@@ -301,7 +301,6 @@
 		B7189AE52C15A52800703DE2 /* MedtrumPumpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedtrumPumpManager.swift; sourceTree = "<group>"; };
 		B7189AE92C15A8CE00703DE2 /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D3A8D02C148CC4002EE003 /* MedtrumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MedtrumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7D3A8D32C148CC4002EE003 /* MedtrumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedtrumKit.h; sourceTree = "<group>"; };
 		B7D3A8D42C148CC4002EE003 /* MedtrumKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MedtrumKit.docc; sourceTree = "<group>"; };
 		B7D3A8DA2C148CC4002EE003 /* MedtrumKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedtrumKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D3A8ED2C14F0EF002EE003 /* MedtrumKitPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedtrumKitPlugin.swift; sourceTree = "<group>"; };
@@ -614,7 +613,7 @@
 				3E1532402D6F93DD0020F015 /* Packets */,
 				B7189AE62C15A52800703DE2 /* PumpManager */,
 				3E767D052D67B4A0004B1971 /* Info.plist */,
-				B7D3A8D32C148CC4002EE003 /* MedtrumKit.h */,
+				3EE340B52E4D1E740040E346 /* MedtrumKit.h */,
 				B7D3A8D42C148CC4002EE003 /* MedtrumKit.docc */,
 			);
 			path = MedtrumKit;
@@ -630,19 +629,11 @@
 			path = MedtrumKitTests;
 			sourceTree = "<group>";
 		};
-		B7D3A8EB2C14F0EF002EE003 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				3E767D502D67BBF9004B1971 /* OSLog.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		B7D3A8EE2C14F0EF002EE003 /* MedtrumKitPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				3E767D072D67B63B004B1971 /* Info.plist */,
-				B7D3A8EB2C14F0EF002EE003 /* Extensions */,
+				3EE340B32E4D1C6F0040E346 /* MedtrumKitPlugin.h */,
+				3EE340B12E4D1C510040E346 /* Info.plist */,
 				B7D3A8ED2C14F0EF002EE003 /* MedtrumKitPlugin.swift */,
 			);
 			path = MedtrumKitPlugin;
@@ -655,6 +646,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE340B42E4D1C6F0040E346 /* MedtrumKitPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +654,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D3A8E12C148CC4002EE003 /* MedtrumKit.h in Headers */,
+				3EE340B62E4D1E740040E346 /* MedtrumKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,8 +814,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E767D512D67BBF9004B1971 /* OSLog.swift in Sources */,
-				3E767D4F2D67BB72004B1971 /* MedtrumKitPlugin.swift in Sources */,
+				3EE340AE2E4D1A880040E346 /* MedtrumKitPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,7 +859,6 @@
 				3E1390122D6E59B500A146C1 /* MedtrumPumpState.swift in Sources */,
 				3E4566632D8371EC00FE1E0C /* ActivityViewController.swift in Sources */,
 				3E1532482D6F98D20020F015 /* Crypto.swift in Sources */,
-				B7D3A8F12C14F0EF002EE003 /* MedtrumKitPlugin.swift in Sources */,
 				B7189AE72C15A52800703DE2 /* MedtrumPumpManager.swift in Sources */,
 				3E767D532D67BC33004B1971 /* MedtrumHUDProvider.swift in Sources */,
 				3E24AEC02DA1639F00C7733C /* PumpImage.swift in Sources */,
@@ -1003,19 +993,19 @@
 		3E767D492D67B790004B1971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MedtrumKit/Info.plist;
+				INFOPLIST_FILE = MedtrumKitPlugin/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1042,19 +1032,19 @@
 		3E767D4A2D67B790004B1971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MedtrumKit/Info.plist;
+				INFOPLIST_FILE = MedtrumKitPlugin/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1221,7 +1211,7 @@
 				INFOPLIST_FILE = MedtrumKit/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1265,7 +1255,7 @@
 				INFOPLIST_FILE = MedtrumKit/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
