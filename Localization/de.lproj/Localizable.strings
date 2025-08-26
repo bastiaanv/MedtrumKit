@@ -278,16 +278,16 @@
 "Your patch has %i hours left" = "Ihr Patch hat noch %i Stunden";
 
 /* Force remove */
-"Force remove" = "Force remove";
+"Force remove" = "Entfernen erzwingen";
 
 /* title force remove */
-"Are you sure?" = "Are you sure?";
+"Are you sure?" = "Sind Sie sicher?";
 
 /* body force remove */
-"It is recommended to deactivate first" = "It is recommended to deactivate first";
+"It is recommended to deactivate first" = "Es wird empfohlen, zuerst zu deaktivieren";
 
 /* confirm force remove */
-"Confirm" = "Confirm";
+"Confirm" = "Bestätigen Sie";
 
 /* cancel force remove */
-"Cancel" = "Cancel";
+"Cancel" = "Abbrechen";
