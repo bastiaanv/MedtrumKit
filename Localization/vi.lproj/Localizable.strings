@@ -278,16 +278,16 @@
 "Your patch has %i hours left" = "Your patch has %i hours left";
 
 /* Force remove */
-"Force remove" = "Force remove";
+"Force remove" = "Buộc gỡ bỏ";
 
 /* title force remove */
-"Are you sure?" = "Are you sure?";
+"Are you sure?" = "Bạn có chắc không?";
 
 /* body force remove */
-"It is recommended to deactivate first" = "It is recommended to deactivate first";
+"It is recommended to deactivate first" = "Nên tắt trước.";
 
 /* confirm force remove */
-"Confirm" = "Confirm";
+"Confirm" = "Xác nhận";
 
 /* cancel force remove */
-"Cancel" = "Cancel";
+"Cancel" = "Hủy";
