@@ -278,16 +278,16 @@
 "Your patch has %i hours left" = "يتبقى لديك %i ساعة";
 
 /* Force remove */
-"Force remove" = "Force remove";
+"Force remove" = "الإزالة القسرية";
 
 /* title force remove */
-"Are you sure?" = "Are you sure?";
+"Are you sure?" = "هل أنت متأكد؟";
 
 /* body force remove */
-"It is recommended to deactivate first" = "It is recommended to deactivate first";
+"It is recommended to deactivate first" = "يوصى بإلغاء التنشيط أولاً";
 
 /* confirm force remove */
-"Confirm" = "Confirm";
+"Confirm" = "تأكيد";
 
 /* cancel force remove */
-"Cancel" = "Cancel";
+"Cancel" = "إلغاء";
