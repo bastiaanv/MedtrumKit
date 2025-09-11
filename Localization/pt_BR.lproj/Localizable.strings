@@ -278,25 +278,25 @@
 "Your patch has %i hours left" = "Seu patch tem %i horas restantes";
 
 /* Title insulin suspended notification */
-"Insulin has been suspended!" = "Insulin has been suspended!";
+"Insulin has been suspended!" = "A insulina foi suspensa!";
 
 /* Body daily max notification */
-"Your patch has reached its daily maximum!" = "Your patch has reached its daily maximum!";
+"Your patch has reached its daily maximum!" = "Seu patch atingiu o máximo diário!";
 
 /* Body hourly max notification */
-"Your patch has reached its hourly maximum!" = "Your patch has reached its hourly maximum!";
+"Your patch has reached its hourly maximum!" = "Seu patch atingiu o máximo por hora!";
 
 /* Title replace patch notification */
-"Replace your patch now!" = "Replace your patch now!";
+"Replace your patch now!" = "Substitua seu patch agora!";
 
 /* Body occlussion notification */
-"Your patch has detected an occlussion!" = "Your patch has detected an occlussion!";
+"Your patch has detected an occlussion!" = "Seu patch detectou uma ocorrência!";
 
 /* Body fault notification */
-"Your patch is in Fault state!" = "Your patch is in Fault state!";
+"Your patch is in Fault state!" = "Seu patch está em estado de falha!";
 
 /* Body reservoir empty notification */
-"Your patch is out of insulin!" = "Your patch is out of insulin!";
+"Your patch is out of insulin!" = "Seu adesivo está sem insulina!";
 
 /* Force remove */
 "Force remove" = "Forçar a remoção";
