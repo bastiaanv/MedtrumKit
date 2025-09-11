@@ -188,7 +188,7 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
     override func viewDidDisappear(_: Bool) {
         UIApplication.shared.isIdleTimerDisabled = false
     }
-    
+
     private func pumpRemoval() {
         NotificationManager.clearPendingNotifications()
         guard let completionDelegate = self.completionDelegate, let pumpManager = self.pumpManager else {
