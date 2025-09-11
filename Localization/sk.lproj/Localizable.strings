@@ -278,25 +278,25 @@
 "Your patch has %i hours left" = "Tvoja náplasť má zostávajúcich %i hodín";
 
 /* Title insulin suspended notification */
-"Insulin has been suspended!" = "Insulin has been suspended!";
+"Insulin has been suspended!" = "Inzulín bol pozastavený!";
 
 /* Body daily max notification */
-"Your patch has reached its daily maximum!" = "Your patch has reached its daily maximum!";
+"Your patch has reached its daily maximum!" = "Vaša náplasť dosiahla svoje denné maximum!";
 
 /* Body hourly max notification */
-"Your patch has reached its hourly maximum!" = "Your patch has reached its hourly maximum!";
+"Your patch has reached its hourly maximum!" = "Vaša náplasť dosiahla svoje hodinové maximum!";
 
 /* Title replace patch notification */
-"Replace your patch now!" = "Replace your patch now!";
+"Replace your patch now!" = "Vymeňte svoju náplasť teraz!";
 
 /* Body occlussion notification */
-"Your patch has detected an occlussion!" = "Your patch has detected an occlussion!";
+"Your patch has detected an occlussion!" = "Vaša oprava zistila okázalosť!";
 
 /* Body fault notification */
-"Your patch is in Fault state!" = "Your patch is in Fault state!";
+"Your patch is in Fault state!" = "Vaša záplata je v stave poruchy!";
 
 /* Body reservoir empty notification */
-"Your patch is out of insulin!" = "Your patch is out of insulin!";
+"Your patch is out of insulin!" = "Vaša náplasť je bez inzulínu!";
 
 /* Force remove */
 "Force remove" = "Násilné odstránenie";
