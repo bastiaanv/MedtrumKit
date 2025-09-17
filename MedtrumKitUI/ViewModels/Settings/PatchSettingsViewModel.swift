@@ -9,7 +9,7 @@ class PatchSettingsViewModel: ObservableObject {
         didSet { checkDirtyState() }
     }
 
-    @Published var alarmSettings = Double(AlarmSettings.None.rawValue) {
+    @Published var alarmSettings = Double(AlarmSettings.BeepOnly.rawValue) {
         didSet { checkDirtyState() }
     }
 

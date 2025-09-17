@@ -2,6 +2,8 @@ import LoopKitUI
 import SwiftUI
 
 struct OnboardingWelcomeView: View {
+    @Environment(\.dismissAction) private var dismiss
+
     let nextStep: () -> Void
 
     var body: some View {
@@ -26,5 +28,12 @@ struct OnboardingWelcomeView: View {
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
         .navigationTitle(LocalizedString("Welcome", comment: "welcome header"))
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(LocalizedString("Cancel", comment: "Cancel button title"), action: {
+                    self.dismiss()
+                })
+            }
+        }
     }
 }

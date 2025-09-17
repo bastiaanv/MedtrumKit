@@ -112,6 +112,16 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
             ))
 
         case .patchSettingsScreen:
+            let nextStep = { self.navigateTo(.pumpBaseSettingsScreen) }
+            let viewModel = PatchSettingsViewModel(pumpManager, updatePatch: false, nextStep: nextStep)
+            return hostingController(rootView: PatchSettingsView(viewModel: viewModel, doDirtyCheck: false))
+
+        case .deactivatePatchScreen:
+            let nextStep = { self.resetNavigationTo(.pumpBaseSettingsScreen) }
+            let viewModel = DeactivatePatchViewModel(pumpManager, nextStep)
+            return hostingController(rootView: PatchDeactivationView(viewModel: viewModel))
+
+        case .pumpBaseSettingsScreen:
             let nextStep = {
                 if let pumpManager = self.pumpManager {
                     pumpManager.state.isOnboarded = true
@@ -124,18 +134,8 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
                     }
                 }
 
-                self.navigateTo(.pumpBaseSettingsScreen)
+                self.navigateTo(.patchPrimingScreen)
             }
-            let viewModel = PatchSettingsViewModel(pumpManager, updatePatch: false, nextStep: nextStep)
-            return hostingController(rootView: PatchSettingsView(viewModel: viewModel, doDirtyCheck: false))
-
-        case .deactivatePatchScreen:
-            let nextStep = { self.resetNavigationTo(.pumpBaseSettingsScreen) }
-            let viewModel = DeactivatePatchViewModel(pumpManager, nextStep)
-            return hostingController(rootView: PatchDeactivationView(viewModel: viewModel))
-
-        case .pumpBaseSettingsScreen:
-            let nextStep = { self.navigateTo(.patchPrimingScreen) }
             let viewModel = PumpBaseSettingsViewModel(pumpManager, nextStep, pumpRemoval)
 
             return hostingController(rootView: PumpBaseSettingsView(viewModel: viewModel))

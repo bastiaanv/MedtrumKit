@@ -47,14 +47,16 @@ struct PumpBaseSettingsView: View {
         .navigationTitle(LocalizedString("Pump base settings", comment: "Pump base settings header"))
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: {
-                    isShowingDeleteConfirmation = true
-                }) {
-                    Text(LocalizedString("Delete Pump", comment: "Label for PumpManager deletion button"))
-                        .foregroundStyle(guidanceColors.critical)
-                }
-                .actionSheet(isPresented: $isShowingDeleteConfirmation) {
-                    removePumpManagerActionSheet(deleteAction: viewModel.pumpRemovalAction)
+                if viewModel.isOnboarded {
+                    Button(action: {
+                        isShowingDeleteConfirmation = true
+                    }) {
+                        Text(LocalizedString("Delete Pump", comment: "Label for PumpManager deletion button"))
+                            .foregroundStyle(guidanceColors.critical)
+                    }
+                    .actionSheet(isPresented: $isShowingDeleteConfirmation) {
+                        removePumpManagerActionSheet(deleteAction: viewModel.pumpRemovalAction)
+                    }
                 }
             }
         }

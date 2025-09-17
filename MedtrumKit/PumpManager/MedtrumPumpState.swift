@@ -113,7 +113,7 @@ public class MedtrumPumpState: RawRepresentable {
         tempBasalUnits = nil
         tempBasalDuration = nil
         bolusState = .noBolus
-        alarmSetting = .None
+        alarmSetting = .BeepOnly
         expirationTimer = 1
         notificationAfterActivation = .hours(72)
         previousPatch = nil

@@ -2,6 +2,7 @@ import LoopKitUI
 import SwiftUI
 
 struct PatchActivationView: View {
+    @Environment(\.dismissAction) private var dismiss
     @ObservedObject var viewModel: PatchActivationViewModel
 
     var body: some View {
@@ -73,6 +74,13 @@ struct PatchActivationView: View {
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
         .navigationTitle(LocalizedString("Patch activation", comment: "Patch activation header"))
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(LocalizedString("Cancel", comment: "Cancel button title"), action: {
+                    self.dismiss()
+                })
+            }
+        }
     }
 
     @ViewBuilder func supportImage(_ imageName: String) -> some View {
