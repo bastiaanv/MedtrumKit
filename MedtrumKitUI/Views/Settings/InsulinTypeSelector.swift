@@ -10,7 +10,12 @@ struct InsulinTypeSelector: View {
     private var didConfirm: (InsulinType) -> Void
     private let showSave: Bool
 
-    init(initialValue: InsulinType, supportedInsulinTypes: [InsulinType], showSave: Bool, didConfirm: @escaping (InsulinType) -> Void) {
+    init(
+        initialValue: InsulinType,
+        supportedInsulinTypes: [InsulinType],
+        showSave: Bool,
+        didConfirm: @escaping (InsulinType) -> Void
+    ) {
         _insulinType = State(initialValue: initialValue)
         self.supportedInsulinTypes = supportedInsulinTypes
         self.didConfirm = didConfirm

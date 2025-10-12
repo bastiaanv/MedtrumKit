@@ -222,16 +222,6 @@ struct MedtrumKitSettings: View {
                     Text(viewModel.batteryText(for: viewModel.battery))
                         .foregroundColor(.secondary)
                 }
-
-                if let sessionToken = viewModel.patchSessionToken {
-                    HStack {
-                        Text(LocalizedString("Session token", comment: "Text for session token"))
-                            .foregroundColor(Color.primary)
-                        Spacer()
-                        Text(sessionToken)
-                            .foregroundColor(.secondary)
-                    }
-                }
             }
 
             if let previousPatch = viewModel.previousPatch {
@@ -366,8 +356,13 @@ struct MedtrumKitSettings: View {
                 }
             case .active:
                 HStack {
-                    Text(LocalizedString("Age:", comment: "Text shown while patch is active"))
-                        .foregroundStyle(.secondary)
+                    if viewModel.patchLifecycleExpiration {
+                        Text(LocalizedString("Expires in:", comment: "Text shown while patch is active"))
+                            .foregroundStyle(.secondary)
+                    } else {
+                        Text(LocalizedString("Age:", comment: "Text shown while patch is active"))
+                            .foregroundStyle(.secondary)
+                    }
                     Spacer()
                     viewModel.patchLifecycleDays.map { days in
                         timeComponent(
@@ -402,8 +397,10 @@ struct MedtrumKitSettings: View {
                 }
             }
 
-            ProgressView(progress: viewModel.patchLifecycleProgress)
-                .padding(.top, -5)
+            if viewModel.patchLifecycleExpiration {
+                ProgressView(progress: viewModel.patchLifecycleProgress)
+                    .padding(.top, -5)
+            }
         }
     }
 
