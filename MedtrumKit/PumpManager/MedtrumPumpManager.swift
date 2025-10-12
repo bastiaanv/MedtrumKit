@@ -522,11 +522,10 @@ public extension MedtrumPumpManager {
 
             self.log.info("Delivery suspended for 120min!")
 
-            let dose = DoseEntry.suspend()
             self.pumpDelegate.notify { delegate in
                 delegate?.pumpManager(
                     self,
-                    hasNewPumpEvents: [NewPumpEvent.suspend(dose: dose)],
+                    hasNewPumpEvents: [NewPumpEvent.suspend(dose: DoseEntry.suspend())],
                     lastReconciliation: Date.now,
                     replacePendingEvents: true,
                     completion: { _ in }
@@ -732,9 +731,15 @@ public extension MedtrumPumpManager {
                 self.notifyStateDidChange()
 
                 self.pumpDelegate.notify { delegate in
+                    var events = [NewPumpEvent.replacedPump()]
+                    
+                    if let insulinType = self.state.insulinType {
+                        events.append(NewPumpEvent.resume(dose: DoseEntry.resume(insulinType: insulinType)))
+                    }
+                    
                     delegate?.pumpManager(
                         self,
-                        hasNewPumpEvents: [NewPumpEvent.replacedPump()],
+                        hasNewPumpEvents: events,
                         lastReconciliation: Date.now,
                         replacePendingEvents: true,
                         completion: { _ in }
@@ -780,6 +785,16 @@ public extension MedtrumPumpManager {
             self.state.pumpState = .none
             self.state.sessionToken = Data()
             self.notifyStateDidChange()
+            
+            self.pumpDelegate.notify { delegate in
+                delegate?.pumpManager(
+                    self,
+                    hasNewPumpEvents: [NewPumpEvent.suspend(dose: DoseEntry.suspend())],
+                    lastReconciliation: Date.now,
+                    replacePendingEvents: true,
+                    completion: { _ in }
+                )
+            }
 
             self.log.info("Patch deactivated")
             completion(.success)
