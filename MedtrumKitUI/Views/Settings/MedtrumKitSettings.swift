@@ -264,6 +264,15 @@ struct MedtrumKitSettings: View {
                         Text(viewModel.batteryText(for: previousPatch.battery))
                             .foregroundColor(.secondary)
                     }
+                    if let reservoirLevel = previousPatch.reservoirLevel, let maxInsulin = previousPatch.maxInsulin {
+                        HStack {
+                            Text(LocalizedString("Insulin used", comment: "Text for Insulin used"))
+                                .foregroundColor(Color.primary)
+                            Spacer()
+                            Text(viewModel.reservoirText(for: Double(maxInsulin) - reservoirLevel))
+                                .foregroundColor(.secondary)
+                        }
+                    }
                 }
             }
 

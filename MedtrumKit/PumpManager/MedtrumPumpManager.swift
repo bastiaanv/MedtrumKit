@@ -732,11 +732,11 @@ public extension MedtrumPumpManager {
 
                 self.pumpDelegate.notify { delegate in
                     var events = [NewPumpEvent.replacedPump()]
-                    
+
                     if let insulinType = self.state.insulinType {
                         events.append(NewPumpEvent.resume(dose: DoseEntry.resume(insulinType: insulinType)))
                     }
-                    
+
                     delegate?.pumpManager(
                         self,
                         hasNewPumpEvents: events,
@@ -778,14 +778,16 @@ public extension MedtrumPumpManager {
                 lastSyncAt: self.state.lastSync,
                 battery: self.state.battery,
                 activatedAt: self.state.patchActivatedAt,
-                deactivatedAt: Date.now
+                deactivatedAt: Date.now,
+                reservoirLevel: self.state.reservoir,
+                maxInsulin: self.state.pumpName.contains("300U") ? 300 : 200
             )
 
             self.state.patchId = Data()
             self.state.pumpState = .none
             self.state.sessionToken = Data()
             self.notifyStateDidChange()
-            
+
             self.pumpDelegate.notify { delegate in
                 delegate?.pumpManager(
                     self,
@@ -885,7 +887,7 @@ public extension MedtrumPumpManager {
             }
         }
     }
-    
+
     internal func checkBolusDone() {
         guard let doseEntry = self.doseEntry else {
             // Disconnect was done after bolus was complete!
