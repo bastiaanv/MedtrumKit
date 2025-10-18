@@ -411,7 +411,7 @@ struct MedtrumKitSettings: View {
             case .expired:
                 HStack {
                     Text(LocalizedString("Patch expired", comment: "Text shown when patch expired"))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.red)
                     Spacer()
                 }
             }
