@@ -41,8 +41,6 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     @Published var showingDeleteConfirmation = false
     @Published var previousPatch: PreviousPatch? = nil
 
-    public let patchSettingsViewModel: PatchSettingsViewModel
-
     let reservoirVolumeFormatter: QuantityFormatter = {
         let formatter = QuantityFormatter(for: .internationalUnit())
         formatter.numberFormatter.minimumFractionDigits = 0
@@ -80,6 +78,8 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
 
     let deactivatePatchAction: () -> Void
     let pumpRemovalAction: () -> Void
+    let toSettings: () -> Void
+    let toInsulinType: () -> Void
     let pumpActivationAction: (Bool) -> Void
     private let log = MedtrumLogger(category: "settingsViewModel")
     private let pumpManager: MedtrumPumpManager?
@@ -87,13 +87,16 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         _ pumpManager: MedtrumPumpManager?,
         _ deactivatePatchAction: @escaping () -> Void,
         _ pumpActivationAction: @escaping (Bool) -> Void,
+        _ toSettings: @escaping () -> Void,
+        _ toInsulinType: @escaping () -> Void,
         _ pumpRemovalAction: @escaping () -> Void
     ) {
         self.pumpManager = pumpManager
-        patchSettingsViewModel = PatchSettingsViewModel(pumpManager, updatePatch: true, nextStep: nil)
         self.deactivatePatchAction = deactivatePatchAction
         self.pumpActivationAction = pumpActivationAction
         self.pumpRemovalAction = pumpRemovalAction
+        self.toInsulinType = toInsulinType
+        self.toSettings = toSettings
 
         guard let pumpManager = pumpManager else {
             return
