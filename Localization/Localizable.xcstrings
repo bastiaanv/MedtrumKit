@@ -2,37 +2,1434 @@
   "sourceLanguage" : "en",
   "strings" : {
     "-" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        }
+      }
     },
     "%llu" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        }
+      }
     },
     "1." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        }
+      }
     },
     "2." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        }
+      }
     },
     "3." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        }
+      }
     },
     "4." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        }
+      }
     },
     "5." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        }
+      }
     },
     "6." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        }
+      }
     },
     "7." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        }
+      }
     },
     "8." : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        }
+      }
     },
     "1234ABCD" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        }
+      }
     },
     "Activate patch" : {
       "comment" : "label for activate patch",
@@ -42,6 +1439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تنشيط التصحيح"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activate patch"
           }
         },
         "da" : {
@@ -80,19 +1483,19 @@
             "value" : "Activer le patch"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activate patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attiva patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチをアクティブにする"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktiver plaster"
@@ -114,6 +1517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativar patch"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activare plasture"
           }
         },
         "ru" : {
@@ -170,6 +1579,12 @@
             "value" : "العمر:"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Age:"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -206,19 +1621,19 @@
             "value" : "Âge:"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Age:"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Età:"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歳："
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alder:"
@@ -240,6 +1655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Idade:"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vârstă:"
           }
         },
         "ru" : {
@@ -296,6 +1717,12 @@
             "value" : "إعداد المنبه"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarm setting"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -332,19 +1759,19 @@
             "value" : "Réglage de l'alarme"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alarm setting"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni allarme"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アラーム設定"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Innstilling av alarm"
@@ -366,6 +1793,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuração de alarme"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setare alarmă"
           }
         },
         "ru" : {
@@ -422,6 +1855,12 @@
             "value" : "هل أنت متأكد من أنك تريد التوقف عن استخدام Medtrum TouchCare Nano 200u/300u؟"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -458,19 +1897,19 @@
             "value" : "Êtes-vous sûr de vouloir arrêter d'utiliser Medtrum TouchCare Nano 200u/300u?"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Are you sure you want to stop using Medtrum TouchCare Nano 200u/300u?"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sei sicuro di voler smettere di usare Medtrum TouchCare Nano 200u/300u?"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medtrum TouchCare Nano 200u/300uの使用を中止してもよろしいですか？"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Er du sikker på at du vil slutte å bruke Medtrum TouchCare Nano 200u/300u?"
@@ -492,6 +1931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tem certeza que deseja parar de usar o Medtrum TouchCare Nano 200u/300u?"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigur doriți să opriți utilizarea Medtrum TouchCare Nano 200u/300u?"
           }
         },
         "ru" : {
@@ -548,6 +1993,12 @@
             "value" : "هل أنت متأكد؟"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure?"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -590,7 +2041,13 @@
             "value" : "Sei sicuro?"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本当か？"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Er du sikker?"
@@ -612,6 +2069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tem certeza?"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ești sigur?"
           }
         },
         "ru" : {
@@ -668,6 +2131,12 @@
             "value" : "إرفاق المضخات إلى الجسم."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attach the pump to the body."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -704,19 +2173,19 @@
             "value" : "Attachez la pompe au corps."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Attach the pump to the body."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collegare la pompa al corpo."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプを本体に取り付ける。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fest pumpen til karosseriet."
@@ -738,6 +2207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anexe a bomba ao corpo."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ataşaţi pompa la corp."
           }
         },
         "ru" : {
@@ -794,6 +2269,12 @@
             "value" : "المصادقة و تعطيل التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authenticate & deactivate patch"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -830,19 +2311,19 @@
             "value" : "Authentification et désactivation du patch"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Authenticate & deactivate patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Autenticazione e disattivazione patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの認証と無効化"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Autentisering og deaktivering av patch"
@@ -864,6 +2345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Autenticar e desativar patch"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentificare și dezactivare patch-uri"
           }
         },
         "ru" : {
@@ -920,6 +2407,12 @@
             "value" : "البطارية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Battery"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -956,19 +2449,19 @@
             "value" : "Batterie"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Battery"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Batteria"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バッテリー"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Batteri"
@@ -990,6 +2483,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bateria"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baterie"
           }
         },
         "ru" : {
@@ -1046,6 +2545,12 @@
             "value" : "بيب-فقط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beep-only"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1082,19 +2587,19 @@
             "value" : "Bip seulement"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Beep-only"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unicamente Beep"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ビープ音のみ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun lydsignal"
@@ -1116,6 +2621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beep-only"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adoar"
           }
         },
         "ru" : {
@@ -1172,6 +2683,12 @@
             "value" : "إلغاء"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1214,7 +2731,13 @@
             "value" : "Annullamento"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avbryt"
@@ -1236,6 +2759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anulează"
           }
         },
         "ru" : {
@@ -1292,6 +2821,12 @@
             "value" : "الإعدادات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1328,19 +2863,19 @@
             "value" : "Configuration"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Configuration"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configurazione"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "構成"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konfigurasjon"
@@ -1362,6 +2897,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuração"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurare"
           }
         },
         "ru" : {
@@ -1418,6 +2959,12 @@
             "value" : "تأكيد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1460,7 +3007,13 @@
             "value" : "Confermare"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確認"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bekreft"
@@ -1482,6 +3035,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Confirmar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmare"
           }
         },
         "ru" : {
@@ -1538,6 +3097,12 @@
             "value" : "قم بتوصيل قاعدة المضخة الخاصة بك إلى التصحيح."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect your pump base to the patch."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1574,19 +3139,19 @@
             "value" : "Connectez la base de votre pompe au patch."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connect your pump base to the patch."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collega la base della pompa al cerotto."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプベースをパッチに接続する。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koble pumpebasen til lappen."
@@ -1608,6 +3173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conecte a sua base da bomba ao patch."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectaţi baza pompei la plasture transdermic."
           }
         },
         "ru" : {
@@ -1664,6 +3235,12 @@
             "value" : "متصل"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connected"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1700,19 +3277,19 @@
             "value" : "Connecté"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connected"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connesso"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接続済み"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilkoblet"
@@ -1734,6 +3311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conectado"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectat"
           }
         },
         "ru" : {
@@ -1790,6 +3373,12 @@
             "value" : "متابعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1826,19 +3415,19 @@
             "value" : "Continuer"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continua"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortsett"
@@ -1860,6 +3449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continuar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuă"
           }
         },
         "ru" : {
@@ -1916,6 +3511,12 @@
             "value" : "حالياً، أنت لا تستخدم وضع نبض القلب. هناك حاجة إلى نبض القلب لإبقاء %1$@ قيد التشغيل في الخلفية. من المستحسن الحفاظ على تمكين هذه الميزة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Currently, you are NOT using a heartbeat mode. A heartbeat is needed to keep %1$@ running in the background. It is recommended to keep enable this feature"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1952,19 +3553,19 @@
             "value" : "Actuellement, vous n'utilisez PAS le mode \"heartbeat\". Un battement de cœur est nécessaire pour que %1$@ continue à fonctionner en arrière-plan. Il est recommandé de continuer à activer cette fonction"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Currently, you are NOT using a heartbeat mode. A heartbeat is needed to keep %1$@ running in the background. It is recommended to keep enable this feature"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attualmente, NON stai usando una modalità battito cardiaco. È necessario un battito cardiaco per mantenere %1$@ in esecuzione sullo sfondo. Si consiglia di mantenere attiva questa funzione"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在、あなたはハートビートモードを使用していません。ハートビートは、 %1$@ をバックグラウンドで実行し続けるために必要です。この機能を有効にしておくことをお勧めします。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "For øyeblikket bruker du IKKE hjerteslagmodus. Hjerteslag er nødvendig for å holde %1$@ i gang i bakgrunnen. Det anbefales å fortsette å aktivere denne funksjonen"
@@ -1986,6 +3587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atualmente, você NÃO está usando um modo pulso. Uma batida cardíaca é necessária para manter %1$@ a rodar em segundo plano. Recomenda-se manter ativado esse recurso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "În prezent, NU folosiți un mod de bătăi ale inimii. O bătăi ale inimii este necesară pentru a menține %1$@ în fundal. Este recomandat să continuați activarea acestei funcții"
           }
         },
         "ru" : {
@@ -2042,6 +3649,12 @@
             "value" : "حاليا، أنت تستخدم وضع نبض القلب. هذا مطلوب لإبقاء %1$@ قيد التشغيل في الخلفية. قد يكون هذا مثيراً للاهتمام إذا كان CGM الخاص بك يوفر مسبقاً نبض القلب. من المستحسن إبقاء هذه الميزة ممكنة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Currently, you are using a heartbeat mode. This is needed to keep %1$@ running in the background. This might be interesting if your CGM already provides a heartbeat. It is recommended to keep this feature enabled"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2078,19 +3691,19 @@
             "value" : "Actuellement, vous utilisez un mode de pulsation cardiaque. Ceci est nécessaire pour garder %1$@ en cours d'exécution en arrière-plan. Cela pourrait être intéressant si votre MGC fournit déjà un coup de cœur. Il est recommandé de garder cette fonctionnalité activée"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Currently, you are using a heartbeat mode. This is needed to keep %1$@ running in the background. This might be interesting if your CGM already provides a heartbeat. It is recommended to keep this feature enabled"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attualmente, stai usando una modalità battito cardiaco. Questo è necessario per mantenere %1$@ in esecuzione in background. Questo potrebbe essere interessante se il vostro CGM fornisce già un battito cardiaco. Si consiglia di mantenere questa funzione abilitata"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在、あなたはハートビートモードを使用しています。これは、 %1$@ をバックグラウンドで実行し続けるために必要です。お使いの CGM がすでにハートビートを提供している場合、これは興味深いかもしれません。この機能は有効にしておくことをお勧めします。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "For øyeblikket bruker du en heartbeat-modus. Dette er nødvendig for å holde %1$@ i gang i bakgrunnen. Dette kan være interessant hvis CGM-en din allerede gir hjerteslag. Det anbefales å beholde denne funksjonen aktivert"
@@ -2112,6 +3725,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atualmente, você está usando um modo de pulso. Isto é necessário para manter %1$@ em execução em segundo plano. Isso pode ser interessante se seu CGM já fornecer um batimento cardíaco. É recomendado manter este recurso ativado"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "În prezent, folosiți un mod de bătăi ale inimii. Acest lucru este necesar pentru a menține %1$@ să ruleze în fundal. Acest lucru poate fi interesant dacă CGM vă oferă deja o bătăi de inimă. Este recomandat să păstrați această caracteristică activată"
           }
         },
         "ru" : {
@@ -2168,6 +3787,12 @@
             "value" : "يوم"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "day"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2204,19 +3829,19 @@
             "value" : "jour"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "day"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "giorno"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "dag"
@@ -2238,6 +3863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dia"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "zi"
           }
         },
         "ru" : {
@@ -2294,6 +3925,12 @@
             "value" : "أيام"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "days"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2330,19 +3967,19 @@
             "value" : "Jours"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "days"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "giorni"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "dager"
@@ -2364,6 +4001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dias"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "zile"
           }
         },
         "ru" : {
@@ -2420,6 +4063,12 @@
             "value" : "إلغاء تنشيط التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deactivate patch"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2456,19 +4105,19 @@
             "value" : "Désactiver le patch"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deactivate patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disattiva patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの無効化"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deaktiver plaster"
@@ -2490,6 +4139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desativar o patch"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezactivați patch-ul"
           }
         },
         "ru" : {
@@ -2546,6 +4201,12 @@
             "value" : "إلغاء تنشيط التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deactivate Patch"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2582,19 +4243,19 @@
             "value" : "Désactiver le correctif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deactivate Patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disattiva Patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの無効化"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deaktiver lapp"
@@ -2616,6 +4277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desativar Correção"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezactivați patch-ul"
           }
         },
         "ru" : {
@@ -2672,6 +4339,12 @@
             "value" : "غير مفعّل في"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deactivated at"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2708,19 +4381,19 @@
             "value" : "Désactivé le"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deactivated at"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disattivato il"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "で活動停止"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deaktivert på"
@@ -2742,6 +4415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desativado em"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezactivată la"
           }
         },
         "ru" : {
@@ -2798,6 +4477,12 @@
             "value" : "حذف المضخة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete pump"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2834,19 +4519,19 @@
             "value" : "Supprimer la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete pump"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina micro"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプの削除"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slett pumpe"
@@ -2868,6 +4553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Excluir bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ștergeți pompa"
           }
         },
         "ru" : {
@@ -2924,6 +4615,12 @@
             "value" : "حذف مضخة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Pump"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2960,19 +4657,19 @@
             "value" : "Supprimer la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete Pump"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina Pompa"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプの削除"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slett pumpe"
@@ -2994,6 +4691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Excluir Bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Șterge pompa"
           }
         },
         "ru" : {
@@ -3050,6 +4753,12 @@
             "value" : "قطع الاتصال"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disconnect"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3086,19 +4795,19 @@
             "value" : "Déconnecter"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disconnect"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disconnetti"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切断"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koble fra"
@@ -3120,6 +4829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desconectar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deconectare"
           }
         },
         "ru" : {
@@ -3176,6 +4891,12 @@
             "value" : "قطع"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disconnected"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3212,19 +4933,19 @@
             "value" : "Déconnecté"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disconnected"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disconnesso"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切断"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frakoblet"
@@ -3246,6 +4967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desconectado"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deconectat"
           }
         },
         "ru" : {
@@ -3302,6 +5029,12 @@
             "value" : "لا تقم بإرفاق التصحيح إلى الجسم بعد"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do not attach the patch to the body yet"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3338,19 +5071,19 @@
             "value" : "Ne pas encore attacher le patch au corps"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Do not attach the patch to the body yet"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non collegare ancora il cerotto al corpo"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチはまだボディに貼り付けないでください"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ikke fest plasteret på kroppen ennå"
@@ -3372,6 +5105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não anexar a atualização ao corpo ainda"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu ataşaţi încă plasturele pe corp"
           }
         },
         "ru" : {
@@ -3428,6 +5167,12 @@
             "value" : "تم"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3464,19 +5209,19 @@
             "value" : "Fait"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fatto"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferdig"
@@ -3498,6 +5243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Concluído"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminat"
           }
         },
         "ru" : {
@@ -3554,6 +5305,12 @@
             "value" : "املأ التصحيح بالأنسينين. ملاحظة: مطلوب على الأقل 70U للتفعيل."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fill the patch with insulin. NOTE: A minimum of 70U is required for activation."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3590,19 +5347,19 @@
             "value" : "Remplissez le patch avec de l'insuline. NOTE : Un minimum de 70U est requis pour l'activation."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fill the patch with insulin. NOTE: A minimum of 70U is required for activation."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riempire il cerotto con insulina. NOTA: per l’attivazione è richiesto un minimo di 70U."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチにインスリンを注入する。注：活性化には最低70Uが必要です。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fyll plasteret med insulin. MERK: Det kreves minst 70U for aktivering."
@@ -3624,6 +5381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preencha a atualização com insulina. NOTA: é necessário um mínimo de 70U para ativação."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umpleţi plasturele cu insulină. NOTĂ: Pentru activare este necesară o cantitate minimă de 70U."
           }
         },
         "ru" : {
@@ -3680,6 +5443,12 @@
             "value" : "املأ المحاقنة بالأنسولين"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fill the syringe with insulin"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3716,19 +5485,19 @@
             "value" : "Remplissez la seringue avec l'insuline"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fill the syringe with insulin"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riempire la siringa con insulina"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注射器にインスリンを入れる"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fyll sprøyten med insulin"
@@ -3750,6 +5519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preencha o seringa com insulina"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umpleţi seringa cu insulină"
           }
         },
         "ru" : {
@@ -3806,6 +5581,12 @@
             "value" : "الإزالة القسرية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Force remove"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3848,7 +5629,13 @@
             "value" : "Rimuovere con forza"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強制撤去"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tving fjerning"
@@ -3870,6 +5657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forçar a remoção"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminare forțată"
           }
         },
         "ru" : {
@@ -3926,6 +5719,12 @@
             "value" : "العودة إلى الإعداد الأولي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go back to priming"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3962,19 +5761,19 @@
             "value" : "Retourner à l'amorçage"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go back to priming"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tornare al priming"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライミングに戻る"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gå tilbake til klaring"
@@ -3996,6 +5795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voltar para a preparação"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Întoarce-te la amorsare"
           }
         },
         "ru" : {
@@ -4052,6 +5857,12 @@
             "value" : "العودة إلى قاعدة المضخة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go back to pump base"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4088,19 +5899,19 @@
             "value" : "Retour à la base de la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Go back to pump base"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tornare alla base della pompa"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプベースに戻る"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gå tilbake til pumpebasen"
@@ -4122,6 +5933,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voltar para a base da bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Întoarce-te la baza pompei"
           }
         },
         "ru" : {
@@ -4178,6 +5995,12 @@
             "value" : "ساعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hour"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4214,19 +6037,19 @@
             "value" : "heure"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "hour"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ora"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "時"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "time"
@@ -4248,6 +6071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "hora"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "oră"
           }
         },
         "ru" : {
@@ -4304,6 +6133,12 @@
             "value" : "ساعات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hours"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4340,19 +6175,19 @@
             "value" : "heures"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "hours"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ore"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "時間"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "timer"
@@ -4374,6 +6209,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "horas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ore"
           }
         },
         "ru" : {
@@ -4430,6 +6271,12 @@
             "value" : "معلومات"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4466,19 +6313,19 @@
             "value" : "Information"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Information"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informazioni"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インフォメーション"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informasjon"
@@ -4500,6 +6347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informacao"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informare"
           }
         },
         "ru" : {
@@ -4556,6 +6409,12 @@
             "value" : "الأنسولين\nمعلق"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin\nSuspended"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4592,19 +6451,19 @@
             "value" : "Insuline\nsuspendue"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin\nSuspended"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina\nSospesa"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリン\n停止"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulin\nSuspendert"
@@ -4626,6 +6485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina\nSuspenso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulină\nsuspendată"
           }
         },
         "ru" : {
@@ -4682,6 +6547,12 @@
             "value" : "توصيل الإنسولين"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin Delivery"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4718,19 +6589,19 @@
             "value" : "Livraison d'insuline"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin Delivery"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Consegna Di Insulina"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリンデリバリー"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Levering av insulin"
@@ -4752,6 +6623,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entrega da insulina"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livrare insulină"
           }
         },
         "ru" : {
@@ -4808,6 +6685,12 @@
             "value" : "تم تعليق الأنسولين"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin has been suspended!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4850,7 +6733,13 @@
             "value" : "L'insulina è stata sospesa!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリンは中断している！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulin har blitt suspendert!"
@@ -4872,6 +6761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "A insulina foi suspensa!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulina a fost suspendată!"
           }
         },
         "ru" : {
@@ -4928,6 +6823,12 @@
             "value" : "الإنسولين المتبقي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin Remaining"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4964,19 +6865,19 @@
             "value" : "Insuline restante"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin Remaining"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina Rimanente"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリン残量"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjenværende insulin"
@@ -4998,6 +6899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina Restante"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulină rămasă"
           }
         },
         "ru" : {
@@ -5054,6 +6961,12 @@
             "value" : "نوع الإنسولين"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin Type"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5090,19 +7003,19 @@
             "value" : "Type d'insuline"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin Type"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo Di Insulina"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリンの種類"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulintype"
@@ -5124,6 +7037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo de insulina"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tip de insulină"
           }
         },
         "ru" : {
@@ -5180,6 +7099,12 @@
             "value" : "يوصى بإلغاء التنشيط أولاً"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It is recommended to deactivate first"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5222,7 +7147,13 @@
             "value" : "Si consiglia di disattivare prima"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最初に無効化することをお勧めします。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det anbefales å deaktivere første gang."
@@ -5244,6 +7175,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recomenda-se desativar primeiro"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este recomandat să dezactivați mai întâi"
           }
         },
         "ru" : {
@@ -5300,6 +7237,12 @@
             "value" : "آخر مزامنة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last sync"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5336,19 +7279,19 @@
             "value" : "Dernière synchronisation"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Last sync"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ultima sincronizzazione"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最後の同期"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siste synkronisering"
@@ -5370,6 +7313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Última sincronização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultima sincronizare"
           }
         },
         "ru" : {
@@ -5426,6 +7375,12 @@
             "value" : "ضوء ونبش"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light and beep"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5462,19 +7417,19 @@
             "value" : "Lumière et bip"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light and beep"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luce e segnale acustico"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライトとビープ音"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lys og pipetone"
@@ -5496,6 +7451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Claro e bipe"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lumină și beep"
           }
         },
         "ru" : {
@@ -5552,6 +7513,12 @@
             "value" : "الضوء والاهتزاز"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light and vibrate"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5588,19 +7555,19 @@
             "value" : "Lumière et vibration"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light and vibrate"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luce e vibrazione"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "光と振動"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lys og vibrasjon"
@@ -5622,6 +7589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luz e vibração"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lumină și vibrație"
           }
         },
         "ru" : {
@@ -5678,6 +7651,12 @@
             "value" : "الضوء فقط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light-only"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5714,19 +7693,19 @@
             "value" : "Lumière seule"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light-only"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sola Luce"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライトオンリー"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun lys"
@@ -5748,6 +7727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luz-apenas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doar ușor"
           }
         },
         "ru" : {
@@ -5804,6 +7789,12 @@
             "value" : "الضوء والاهتزاز والتنبيه"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light, vibrate and, beep"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5840,19 +7831,19 @@
             "value" : "Lumière, vibreur et bip"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Light, vibrate and, beep"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luce, vibrare e, beep"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ライト、バイブレーション、ビープ音"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lys, vibrasjon og pip"
@@ -5874,6 +7865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luz, vibração e bipe"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luminoasă, vibrație și bip"
           }
         },
         "ru" : {
@@ -5972,12 +7969,6 @@
             "value" : "chargement"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "loading"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5990,7 +7981,7 @@
             "value" : "ローディング"
           }
         },
-        "nb" : {
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "lasting"
@@ -6074,6 +8065,12 @@
             "value" : "تأكد من أن الرقم التسلسلي صحيح قبل توصيل التصحيح."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure the Serial Number is correct before connecting it to the patch."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6110,19 +8107,19 @@
             "value" : "Assurez-vous que le numéro de série est correct avant de le connecter au patch."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Make sure the Serial Number is correct before connecting it to the patch."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Assicurarsi che il Numero di serie sia corretto prima di collegarlo al cerotto."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチに接続する前に、シリアル番号が正しいことを確認してください。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontroller at serienummeret er riktig før du kobler den til patchen."
@@ -6144,6 +8141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Certifique-se de que o Número de Série está correto antes de conectá-lo ao patch."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asiguraţi-vă că numărul de serie este corect înainte de a-l conecta la plasture transdermic."
           }
         },
         "ru" : {
@@ -6200,6 +8203,12 @@
             "value" : "أقصى الأنسولين اليومي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max daily insulin"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6236,19 +8245,19 @@
             "value" : "Insuline quotidienne max"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Max daily insulin"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina massima giornaliera"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1日の最大インスリン量"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maks daglig insulin"
@@ -6270,6 +8279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina diária máxima"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulină zilnică maximă"
           }
         },
         "ru" : {
@@ -6326,6 +8341,12 @@
             "value" : "الانسولين في الساعة القصوى"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max hourly insulin"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6362,19 +8383,19 @@
             "value" : "Insuline horaire max"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Max hourly insulin"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max insulina oraria"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1時間当たりの最大インスリン量"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maks insulin per time"
@@ -6396,6 +8417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulina máxima horária"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maxim insulină pe oră"
           }
         },
         "ru" : {
@@ -6452,6 +8479,12 @@
             "value" : "دقيقة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minute"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6488,19 +8521,19 @@
             "value" : "minute"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minute"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "minuto"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "微細"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "minutt"
@@ -6522,6 +8555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "minuto"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minut"
           }
         },
         "ru" : {
@@ -6578,6 +8617,12 @@
             "value" : "دقائق"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutes"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6614,19 +8659,19 @@
             "value" : "minutes"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minutes"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "minuti"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "議事録"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "minutter"
@@ -6648,6 +8693,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minutos"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minute"
           }
         },
         "ru" : {
@@ -6704,6 +8755,12 @@
             "value" : "لا يوجد تعديل نشط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No active patch"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6740,19 +8797,19 @@
             "value" : "Aucun patch actif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No active patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessuna patch attiva"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクティブパッチなし"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen aktiv lapp"
@@ -6774,6 +8831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nenhum patch ativo"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niciun plasture activ"
           }
         },
         "ru" : {
@@ -6830,6 +8893,12 @@
             "value" : "لا، احتفظ كما هو"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No, Keep as is"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6866,19 +8935,19 @@
             "value" : "Non, Garder tel quel"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No, Keep as is"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No, tieni come è"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いいえ、そのままで"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nei, behold som den er"
@@ -6900,6 +8969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não, manter como está"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu, Păstrați așa cum este"
           }
         },
         "ru" : {
@@ -6956,6 +9031,12 @@
             "value" : "إشعار بتصحيح انتهاء الصلاحية"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification for expirate patch"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6992,19 +9073,19 @@
             "value" : "Notification pour le patch d'expiration"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notification for expirate patch"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notifica per la patch di scadenza"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "期限切れパッチのお知らせ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Melding om expirate patch"
@@ -7026,6 +9107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notificação de expiração do patch"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificare pentru patch-ul expirat"
           }
         },
         "ru" : {
@@ -7082,6 +9169,12 @@
             "value" : "تم تفعيل التصحيح في"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch activated at"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7118,19 +9211,19 @@
             "value" : "Patch activé à"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch activated at"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch attivato alle"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "でパッチが作動した。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lappen aktiveres ved"
@@ -7152,6 +9245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch ativado em"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch activat la"
           }
         },
         "ru" : {
@@ -7208,6 +9307,12 @@
             "value" : "تنشيط التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch activation"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7244,19 +9349,19 @@
             "value" : "Activation du correctif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch activation"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attivazione patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの活性化"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aktivering av lapp"
@@ -7278,6 +9383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativação de Atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch de activare"
           }
         },
         "ru" : {
@@ -7334,6 +9445,12 @@
             "value" : "انتهت صلاحية التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expired"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7370,19 +9487,19 @@
             "value" : "Le correctif a expiré"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch expired"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch scaduta"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチ期限切れ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oppdatering utløpt"
@@ -7404,6 +9521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atualização expirada"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expirat"
           }
         },
         "ru" : {
@@ -7460,6 +9583,12 @@
             "value" : "انتهت صلاحية التصحيح في"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expires at"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7496,19 +9625,19 @@
             "value" : "Le patch expire le"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch expires at"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La patch scade alle"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの有効期限"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oppdateringen utløper kl."
@@ -7530,6 +9659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Atualização expira em"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expiră la"
           }
         },
         "ru" : {
@@ -7586,6 +9721,12 @@
             "value" : "معرف التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch ID"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7622,19 +9763,19 @@
             "value" : "ID du correctif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch ID"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ID Patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチID"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch-ID"
@@ -7656,6 +9797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ID da Atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch ID"
           }
         },
         "ru" : {
@@ -7712,6 +9859,12 @@
             "value" : "تعديل عمر"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch lifetime"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7748,19 +9901,19 @@
             "value" : "Durée de mise à jour"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch lifetime"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Durata patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチ寿命"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lappens levetid"
@@ -7782,6 +9935,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vida útil da atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch de viață"
           }
         },
         "ru" : {
@@ -7838,6 +9997,12 @@
             "value" : "تركيب التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch priming"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7874,19 +10039,19 @@
             "value" : "Amorçage du patch"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch priming"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blocco patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチのプライミング"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Priming av lapper"
@@ -7908,6 +10073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Panturrilha de Atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pregătirea patch-ului"
           }
         },
         "ru" : {
@@ -7964,6 +10135,12 @@
             "value" : "إعدادات التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch settings"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8000,19 +10177,19 @@
             "value" : "Paramètres du correctif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch settings"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチ設定"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch-innstillinger"
@@ -8034,6 +10211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configurações de Atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări ceas"
           }
         },
         "ru" : {
@@ -8090,6 +10273,12 @@
             "value" : "تصحيح الحالة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch state"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8126,19 +10315,19 @@
             "value" : "Statut du correctif"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch state"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stato patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチ状態"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch-tilstand"
@@ -8160,6 +10349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Estado da Atualização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starea plasturelui"
           }
         },
         "ru" : {
@@ -8216,6 +10411,12 @@
             "value" : "ضع المحاقنة في التصحيح وسحب 1 إلى 2 شرطة من الهواء."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Place the syringe in the patch and pull out 1 to 2 dashes of air."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8252,19 +10453,19 @@
             "value" : "Placez la seringue dans le patch et tirez 1 à 2 tirets d'air."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Place the syringe in the patch and pull out 1 to 2 dashes of air."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Posizionare la siringa nel cerotto e tirare fuori da 1 a 2 trattini d’aria."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注射器をパッチの中に入れ、1～2ダッシュ分の空気を抜く。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plasser sprøyten i plasteret og trekk ut 1 til 2 streker med luft."
@@ -8286,6 +10487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coloque a seringa na atualização e extraia 1 a 2 traços de ar."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puneţi seringa în plasture şi scoateţi 1 până la 2 crăpături de aer."
           }
         },
         "ru" : {
@@ -8342,6 +10549,12 @@
             "value" : "اضغط على زر الإبرة وابدأ عملية التمهيد."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press the needle button and start the priming process."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8378,19 +10591,19 @@
             "value" : "Appuyez sur le bouton de l'aiguille et démarrez le processus d'amorçage."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press the needle button and start the priming process."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Premere il pulsante dell’ago e avviare il processo di innescatura."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ニードルボタンを押し、プライミングを開始する。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trykk på nåleknappen og start primingprosessen."
@@ -8412,6 +10625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pressione o botão da agulha e inicie o processo de primação."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apăsaţi butonul acului şi începeţi procesul de amorsare."
           }
         },
         "ru" : {
@@ -8468,6 +10687,12 @@
             "value" : "اضغط على زر الإبرة لإدراج الإبرة. انقر على \"تفعيل\" لإكمال عملية التفعيل."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8504,19 +10729,19 @@
             "value" : "Appuyez sur le bouton de l'aiguille pour insérer l'aiguille. Cliquez sur \"Activer\" pour terminer le processus d'activation."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press the needle button to insert the needle. Click on \"Activate\" to complete the activation process."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Premere il pulsante dell’ago per inserire l’ago. Fare clic su \"Attiva\" per completare il processo di attivazione."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "針ボタンを押して針を挿入します。Activate \"をクリックし、アクティベーションを完了します。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trykk på nåleknappen for å sette inn nålen. Klikk på \"Activate\" for å fullføre aktiveringsprosessen."
@@ -8538,6 +10763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pressione o botão da agulha para inserir a agulha. Clique em \"Ativar\" para concluir o processo de ativação."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apăsaţi butonul acului pentru a introduce acul. Faceţi clic pe \"Activare\" pentru a finaliza procesul de activare."
           }
         },
         "ru" : {
@@ -8594,6 +10825,12 @@
             "value" : "تفاصيل التصحيح السابقة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous Patch Details"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8630,19 +10867,19 @@
             "value" : "Détails du patch précédent"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Previous Patch Details"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dettagli Patch Precedente"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前パッチの詳細"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tidligere oppdateringsdetaljer"
@@ -8664,6 +10901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Detalhes da Atualização Anterior"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detalii Patch Anterior"
           }
         },
         "ru" : {
@@ -8720,6 +10963,12 @@
             "value" : "نموذج مضخة الأساس"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pump base model"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8756,19 +11005,19 @@
             "value" : "Modèle de base de la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pump base model"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modello base pompa"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプベースモデル"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basismodell for pumpe"
@@ -8790,6 +11039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modelo base da bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelul de bază al pompei"
           }
         },
         "ru" : {
@@ -8846,6 +11101,12 @@
             "value" : "إعدادات الأساس المضخة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pump base settings"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8882,19 +11143,19 @@
             "value" : "Paramètres de base de la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pump base settings"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni base micro"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプベースの設定"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Innstillinger for pumpebase"
@@ -8916,6 +11177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configurações da bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări bază pompă"
           }
         },
         "ru" : {
@@ -8972,6 +11239,12 @@
             "value" : "مضخة قاعدة SN"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pump base SN"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9008,19 +11281,19 @@
             "value" : "Base de pompe SN"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pump base SN"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Base microinfusore SN"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプベースSN"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pumpebase SN"
@@ -9042,6 +11315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Base da Bomba SN"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pompa de bază SN"
           }
         },
         "ru" : {
@@ -9098,6 +11377,12 @@
             "value" : "إعادة الاتصال"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconnect"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9134,19 +11419,19 @@
             "value" : "Reconnecter"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reconnect"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riconnetti"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再接続"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koble til igjen"
@@ -9168,6 +11453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reconectar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconectare"
           }
         },
         "ru" : {
@@ -9224,6 +11515,12 @@
             "value" : "إعادة الاتصال..."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconnecting..."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9260,19 +11557,19 @@
             "value" : "Reconnexion en cours..."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reconnecting..."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riconnessione..."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再接続..."
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjenopprette forbindelsen..."
@@ -9294,6 +11591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reconectando..."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconectare..."
           }
         },
         "ru" : {
@@ -9350,6 +11653,12 @@
             "value" : "إزالة المضخة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove Pump"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9386,19 +11695,19 @@
             "value" : "Enlever la pompe"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remove Pump"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rimuovi Pompa"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポンプの取り外し"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fjern pumpen"
@@ -9420,6 +11729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover Bomba"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimină pompa"
           }
         },
         "ru" : {
@@ -9476,6 +11791,12 @@
             "value" : "إزالة غلاف الأمان من التصحيح."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove the safety cover from the patch."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9512,19 +11833,19 @@
             "value" : "Retirez le capot de sécurité du patch."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Remove the safety cover from the patch."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rimuovere il coperchio di sicurezza dal cerotto."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチから安全カバーを外す。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fjern sikkerhetsdekselet fra plasteret."
@@ -9546,6 +11867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remova a tampa de segurança da patch."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Îndepărtaţi capacul de siguranţă al plasturelui."
           }
         },
         "ru" : {
@@ -9602,6 +11929,12 @@
             "value" : "استبدل الرقعة الآن!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Replace your patch now!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9644,7 +11977,13 @@
             "value" : "Sostituite subito la vostra patch!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐパッチを交換してください！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erstatt depotplasteret ditt nå!"
@@ -9666,6 +12005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Substitua seu patch agora!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Înlocuiți plasturele acum!"
           }
         },
         "ru" : {
@@ -9722,6 +12067,12 @@
             "value" : "حفظ ومتابعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save and continue"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9758,19 +12109,19 @@
             "value" : "Enregistrer et continuer"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save and continue"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salva e continua"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存して続ける"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lagre og fortsett"
@@ -9792,6 +12143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salvar e continuar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează și continuă"
           }
         },
         "ru" : {
@@ -9848,6 +12205,12 @@
             "value" : "قاعدة مجدولة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheduled Basal"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9884,19 +12247,19 @@
             "value" : "Basal planifié"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scheduled Basal"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Base Pianificata"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "予定ベース"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Planlagt Basal"
@@ -9918,6 +12281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basal Agendada"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazală programată"
           }
         },
         "ru" : {
@@ -9974,6 +12343,12 @@
             "value" : "حدد نوع الأنسولين"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select insulin type"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10010,19 +12385,19 @@
             "value" : "Sélectionnez le type d'insuline"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select insulin type"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seleziona tipo di insulina"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "インスリンの種類を選ぶ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Velg insulintype"
@@ -10044,6 +12419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selecionar tipo de insulina"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectaţi tipul de insulină"
           }
         },
         "ru" : {
@@ -10100,6 +12481,12 @@
             "value" : "حدد نوع الأنسولين الذي ستستخدمه"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select the type of insulin that you will be using"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10136,19 +12523,19 @@
             "value" : "Sélectionnez le type d'insuline que vous utiliserez"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select the type of insulin that you will be using"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seleziona il tipo di insulina che utilizzerai"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用するインスリンの種類を選択する。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Velg hvilken type insulin du skal bruke"
@@ -10170,6 +12557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selecione o tipo de insulina que você estará usando"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectaţi tipul de insulină pe care o veţi utiliza"
           }
         },
         "ru" : {
@@ -10226,6 +12619,12 @@
             "value" : "الرقم التسلسلي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serial number"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10262,19 +12661,19 @@
             "value" : "Numéro de série"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Serial number"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Numero d’ordine"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "シリアル番号"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serienummer"
@@ -10296,6 +12695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Número de série"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Număr de serie"
           }
         },
         "ru" : {
@@ -10352,6 +12757,12 @@
             "value" : "مشاركة سجلات التصحيح ميدتروم"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share Medtrum patch logs"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10388,19 +12799,19 @@
             "value" : "Partager les rustines de Medtrum"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share Medtrum patch logs"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condividi i log delle patch Medtrum"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medtrumのパッチログを共有する"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Del Medtrums oppdateringslogger"
@@ -10422,6 +12833,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compartilhar registros de correções Medtrum"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Distribuie jurnalele plasturelui Medtrum"
           }
         },
         "ru" : {
@@ -10478,6 +12895,12 @@
             "value" : "صمت"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silence"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10514,19 +12937,19 @@
             "value" : "Silencieux"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Silence"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silenzio"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沈黙"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stillhet"
@@ -10548,6 +12971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silêncio"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silențios"
           }
         },
         "ru" : {
@@ -10604,6 +13033,12 @@
             "value" : "ابدأ التحديث"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start priming"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10640,19 +13075,19 @@
             "value" : "Démarrer l'amorçage"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start priming"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inizia ad innescare"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライミング開始"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start priming"
@@ -10674,6 +13109,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Começar a fazer premir"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începe amorsarea"
           }
         },
         "ru" : {
@@ -10730,6 +13171,12 @@
             "value" : "الحالة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10766,19 +13213,19 @@
             "value" : "Statut"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Status"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stato"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ステータス"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Status"
@@ -10800,6 +13247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "SItuação"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stare"
           }
         },
         "ru" : {
@@ -10856,6 +13309,12 @@
             "value" : "مزامنة بيانات التصحيح"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sync patch data"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10892,19 +13351,19 @@
             "value" : "Synchroniser les données de correctifs"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sync patch data"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronizza dati patch"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチデータの同期"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synkroniser patchdata"
@@ -10926,6 +13385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronizar dados corretos"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizare date patch-uri"
           }
         },
         "ru" : {
@@ -10982,6 +13447,12 @@
             "value" : "قالب أساسي"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temp Basal"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11018,19 +13489,19 @@
             "value" : "Basal Temporaire"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Temp Basal"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basale Temporanea"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "基礎温度"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Temp Basal"
@@ -11052,6 +13523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basal temporaria"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bazală Temporală"
           }
         },
         "ru" : {
@@ -11108,6 +13585,12 @@
             "value" : "تبديل وضع نبضات القلب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toggle heartbeat mode"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11144,19 +13627,19 @@
             "value" : "Basculer en mode pulsations cardiaques"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toggle heartbeat mode"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attiva/Disattiva modalità battito cardiaco"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハートビートモードの切り替え"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veksle mellom hjerteslagmodus"
@@ -11178,6 +13661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alternar modo pulso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comută modul bătăi ale inimii"
           }
         },
         "ru" : {
@@ -11234,6 +13723,12 @@
             "value" : "استخدام تمديد العمر (الاستمرار حتى تكون البطارية فارغة)"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use extended lifetime (continue till battery empty)"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11270,19 +13765,19 @@
             "value" : "Utiliser la durée de vie prolongée (continuer jusqu'à ce que la batterie soit vide)"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use extended lifetime (continue till battery empty)"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usa durata prolungata (continua fino al vuoto della batteria)"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "寿命延長を使用する（バッテリーが空になるまで続ける）"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruk forlenget levetid (fortsett til batteriet er tomt)"
@@ -11304,6 +13799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usar duração estendida (continue até ficar sem bateria)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizați durata de viață prelungită (continuați până la golirea bateriei)"
           }
         },
         "ru" : {
@@ -11360,6 +13861,12 @@
             "value" : "استخدام الحياة العادية (3d 8 ساعة)"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use normal lifetime (3d 8h)"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11396,19 +13903,19 @@
             "value" : "Utiliser la durée de vie normale (3d 8h)"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use normal lifetime (3d 8h)"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usa vita normale (3d 8h)"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通常の寿命 (3d 8h) を使用"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruk normal levetid (3d 8t)"
@@ -11430,6 +13937,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usar tempo de vida normal (3d 8h)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizaţi durata normală de viaţă (3d 8h)"
           }
         },
         "ru" : {
@@ -11486,6 +13999,12 @@
             "value" : "الاهتزاز والتنبيه"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrate and beep"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11522,19 +14041,19 @@
             "value" : "Vibrer et bip"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrate and beep"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vibra e segnale acustico"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "振動とビープ音"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vibrerer og piper"
@@ -11556,6 +14075,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vibrar e bipe"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrare și bip"
           }
         },
         "ru" : {
@@ -11612,6 +14137,12 @@
             "value" : "فيبرايت فقط"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrate-only"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11648,19 +14179,19 @@
             "value" : "Vibrer uniquement"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrate-only"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solo Vibrazione"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "振動のみ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun vibrasjon"
@@ -11682,6 +14213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Somente vibração"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numai Vibrați-de-mare"
           }
         },
         "ru" : {
@@ -11738,6 +14275,12 @@
             "value" : "مرحبا بك"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11774,19 +14317,19 @@
             "value" : "Bienvenue"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Welcome"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Benvenuto"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ようこそ"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Velkommen"
@@ -11808,6 +14351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boas-vindas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bun venit"
           }
         },
         "ru" : {
@@ -11864,6 +14413,12 @@
             "value" : "عند النقر على الزر، ستحصل على طلب من القياسات الحيوية. بمجرد اكتمال التصحيح سوف يتم تعطيله وسيتم مطالبتك باقران تعديل جديد."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11900,19 +14455,19 @@
             "value" : "En cliquant sur le bouton, vous obtiendrez une invite biométrique. Une fois terminé, le patch sera désactivé et vous serez invité à associer un nouveau patch."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "When clicking on the button, you will get a Biometrics prompt. Once completed, the patch will be deactivated and you will be prompted to pair a new patch."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quando si fa clic sul pulsante, si otterrà un prompt Biometrica. Una volta completato, il cerotto sarà disattivato e le verrà chiesto di abbinare un nuovo cerotto."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタンをクリックすると、バイオメトリクスのプロンプトが表示されます。完了すると、パッチは無効化され、新しいパッチをペアリングするよう促されます。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Når du klikker på knappen, får du en biometrisk melding. Når du er ferdig, deaktiveres lappen, og du blir bedt om å koble til en ny lapp."
@@ -11934,6 +14489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ao clicar no botão, você receberá um prompt de Biometria. Uma vez concluído, o patch será desativado e você será solicitado para parear um novo patch."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Când faceți clic pe buton, veți primi o solicitare biometrică. Odată finalizat, plasturele va fi dezactivat şi vi se va solicita să asociaţi un nou plasture transdermic."
           }
         },
         "ru" : {
@@ -11990,6 +14551,12 @@
             "value" : "نعم، قم بتعطيل وضع حبات القلب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes, Disable heartbeat mode"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12026,19 +14593,19 @@
             "value" : "Oui, désactiver le mode de pulsation"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yes, Disable heartbeat mode"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sì, Disabilita la modalità battito cardiaco"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はい、ハートビートモードを無効にする"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja, Deaktiver hjerterytmemodus"
@@ -12060,6 +14627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sim, desativar o modo pulso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da, dezactivează modul bătăi ale inimii"
           }
         },
         "ru" : {
@@ -12116,6 +14689,12 @@
             "value" : "نعم، تمكين وضع نبضات القلب"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes, Enable heartbeat mode"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12152,19 +14731,19 @@
             "value" : "Oui, activer le mode pulsation"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yes, Enable heartbeat mode"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sì, Abilita la modalità battito cardiaco"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はい、ハートビートモードを有効にする"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja, Aktiver hjerteslagmodus"
@@ -12186,6 +14765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sim, Ativar modo pulso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Da, activează modul bătăi ale inimii"
           }
         },
         "ru" : {
@@ -12242,6 +14827,12 @@
             "value" : "ستبدأ بإعداد نوع الأنسولين وإعدادات التصحيح الأساسية قبل تفعيل التصحيح الخاص بك."
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You will start by setting up your insulin type & basic patch settings before activating your patch."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12278,19 +14869,19 @@
             "value" : "Vous commencerez par configurer votre type d'insuline et vos paramètres de correctifs de base avant d'activer votre patch."
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You will start by setting up your insulin type & basic patch settings before activating your patch."
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inizierà impostando il tipo di insulina e le impostazioni base del cerotto prima di attivare il cerotto."
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチを有効にする前に、まずインスリンの種類と基本的なパッチの設定を行います。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Du starter med å konfigurere insulintype og grunnleggende plasterinnstillinger før du aktiverer plasteret."
@@ -12312,6 +14903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Você começará configurando as configurações do patch e do tipo insulina antes de ativar o patch."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veţi începe prin a seta setările pentru tipul de insulină & plasturele de bază înainte de a activa plasturele."
           }
         },
         "ru" : {
@@ -12368,6 +14965,12 @@
             "value" : "يتبقى لديك %i ساعة"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has %i hours left"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12404,19 +15007,19 @@
             "value" : "Votre patch a %i heures restantes"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch has %i hours left"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La vostra patch ha %i ore rimanenti"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの残り時間は %i 時間です。"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your patch has %i hours left"
@@ -12438,6 +15041,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch tem %i horas restantes"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch-ul dvs. are %i ore rămase"
           }
         },
         "ru" : {
@@ -12494,6 +15103,12 @@
             "value" : "لقد اكتشف التصحيح الخاص بك وجود خلل!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has detected an occlussion!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12536,7 +15151,13 @@
             "value" : "La patch ha rilevato un'occlusione!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチが異常を検出しました！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patchen har oppdaget en okklusjon!"
@@ -12558,6 +15179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch detectou uma ocorrência!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch-ul dvs. a detectat o ocluzie!"
           }
         },
         "ru" : {
@@ -12614,6 +15241,12 @@
             "value" : "لقد وصلت رقعتك إلى الحد الأقصى اليومي!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has reached its daily maximum!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12656,7 +15289,13 @@
             "value" : "Il cerotto ha raggiunto il suo massimo giornaliero!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチが1日の上限に達しました！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plasteret ditt har nådd maksimum!"
@@ -12678,6 +15317,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch atingiu o máximo diário!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has reached its daily maximum!"
           }
         },
         "ru" : {
@@ -12734,6 +15379,12 @@
             "value" : "لقد وصلت رقعة التصحيح الخاصة بك إلى الحد الأقصى لكل ساعة!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has reached its hourly maximum!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12776,7 +15427,13 @@
             "value" : "La patch ha raggiunto il suo massimo orario!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチが1時間ごとの最大値に達した！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depotplasteret ditt har nådd maksimum timeliss!"
@@ -12798,6 +15455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch atingiu o máximo por hora!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has reached its hourly maximum!"
           }
         },
         "ru" : {
@@ -12854,6 +15517,12 @@
             "value" : "التصحيح الخاص بك في حالة خطأ!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch is in Fault state!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12896,7 +15565,13 @@
             "value" : "La patch è in stato di errore!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチが故障状態です！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patchen er i gjeldende status!"
@@ -12918,6 +15593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch está em estado de falha!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch is in Fault state!"
           }
         },
         "ru" : {
@@ -12974,6 +15655,12 @@
             "value" : "لقد نفدت رقعة الأنسولين الخاص بك!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch is out of insulin!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13016,7 +15703,13 @@
             "value" : "Il vostro cerotto ha finito l'insulina!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あなたのパッチはインスリンが切れている！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plasteret ditt er tom for insulin!"
@@ -13038,6 +15731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu adesivo está sem insulina!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch is out of insulin!"
           }
         },
         "ru" : {
@@ -13094,6 +15793,12 @@
             "value" : "ستنتهي صلاحية التصحيح الخاص بك قريباً!"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch will expire soon!"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13130,19 +15835,19 @@
             "value" : "Votre patch va bientôt expirer !"
           }
         },
-        "he" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch will expire soon!"
-          }
-        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La tua patch scadrà presto!"
           }
         },
-        "nb" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチの有効期限はもうすぐ切れる！"
+          }
+        },
+        "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Depotplasteret ditt vil utløpe snart!"
@@ -13164,6 +15869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seu patch expirará em breve!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch-ul dvs. va expira în curând!"
           }
         },
         "ru" : {
