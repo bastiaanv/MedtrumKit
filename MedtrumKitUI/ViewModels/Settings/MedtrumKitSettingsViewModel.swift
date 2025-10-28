@@ -351,7 +351,7 @@ extension MedtrumKitSettingsViewModel {
                 (Date.now.timeIntervalSince1970 - state.patchActivatedAt.timeIntervalSince1970) / TimeInterval(days: 3),
                 1
             )
-            patchLifecycleState = patchLifecycleProgress == 1 && state.expirationTimer == 0 ? .expired : .active
+            patchLifecycleState = patchLifecycleProgress == 1 && state.expirationTimer == 1 ? .expired : .active
         } else {
             patchLifecycleState = .noPatch
         }
