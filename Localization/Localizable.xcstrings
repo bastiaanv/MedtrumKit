@@ -1624,7 +1624,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Активувати патч"
+            "value" : "Активувати Патч"
           }
         },
         "vi" : {
@@ -1912,7 +1912,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Налаштування будильника"
+            "value" : "Налаштування Будильника"
           }
         },
         "vi" : {
@@ -2125,6 +2125,12 @@
             "value" : "Êtes-vous sûr ?"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biztos vagy benne?"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2135,6 +2141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "本当か？"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er du sikker?"
           }
         },
         "nb-NO" : {
@@ -2156,6 +2168,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tem certeza?"
+          }
+        },
+        "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tem certeza?"
@@ -2200,7 +2218,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ти впевнений?"
+            "value" : "Ви впевнені?"
           }
         },
         "vi" : {
@@ -2344,7 +2362,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Прикріпіть насос до корпусу."
+            "value" : "Прикріпіть помпу до тіла."
           }
         },
         "vi" : {
@@ -2488,7 +2506,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Автентифікація та деактивація патчу"
+            "value" : "Автентифікація та деактивація Патча"
           }
         },
         "vi" : {
@@ -2557,6 +2575,12 @@
             "value" : "Batterie"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Töltöttség"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2567,6 +2591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "バッテリー"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteri"
           }
         },
         "nb-NO" : {
@@ -2632,7 +2662,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Батарея"
+            "value" : "Акумулятор"
           }
         },
         "vi" : {
@@ -2845,6 +2875,12 @@
             "value" : "Annuler"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mégse"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2855,6 +2891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "キャンセル"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
           }
         },
         "nb-NO" : {
@@ -2876,6 +2918,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
@@ -2920,7 +2968,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Скасувати"
+            "value" : "Відмінити"
           }
         },
         "vi" : {
@@ -3061,12 +3109,6 @@
             "value" : "Kontrol edildi"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перевірено на"
-          }
-        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3133,6 +3175,12 @@
             "value" : "Configuration"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beállítások"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3143,6 +3191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "構成"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett"
           }
         },
         "nb-NO" : {
@@ -3167,6 +3221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuração"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
           }
         },
         "ro" : {
@@ -3208,7 +3268,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Конфігурація"
+            "value" : "Налаштування"
           }
         },
         "vi" : {
@@ -3287,6 +3347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "確認"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekreft"
           }
         },
         "nb-NO" : {
@@ -3496,7 +3562,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Підключіть основу насоса до патчу."
+            "value" : "Підключіть базу помпи до Патчу."
           }
         },
         "vi" : {
@@ -3565,6 +3631,12 @@
             "value" : "Connecté"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מחובר"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3575,6 +3647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "接続済み"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilkoblet"
           }
         },
         "nb-NO" : {
@@ -3640,7 +3718,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Підключено"
+            "value" : "Під'єднаний"
           }
         },
         "vi" : {
@@ -3721,6 +3799,12 @@
             "value" : "続ける"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3784,7 +3868,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продовжуйте"
+            "value" : "Продовжити"
           }
         },
         "vi" : {
@@ -3928,7 +4012,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Наразі ви НЕ використовуєте режим серцебиття. Серцебиття потрібне для того, щоб %1$@ працював у фоновому режимі. Рекомендується залишити цю функцію увімкненою"
+            "value" : "Наразі ви НЕ використовуєте режим серцевого ритму. Серцевий ритм потрібен для того, щоб %1$@ працював у фоновому режимі. Рекомендується залишити цю функцію ввімкненою."
           }
         },
         "vi" : {
@@ -4072,7 +4156,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Наразі ви використовуєте режим серцебиття. Це потрібно для того, щоб %1$@ працював у фоновому режимі. Це може бути корисно, якщо ваш CGM вже надає сигнал серцебиття. Рекомендується залишити цю функцію увімкненою"
+            "value" : "Наразі ви використовуєте режим серцебиття. Це необхідно для того, щоб %1$@ працював у фоновому режимі. Це може бути цікаво, якщо ваш CGM вже забезпечує серцебиття. Рекомендується залишити цю функцію ввімкненою."
           }
         },
         "vi" : {
@@ -4151,6 +4235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "日"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dag"
           }
         },
         "nb-NO" : {
@@ -4297,6 +4387,12 @@
             "value" : "日"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dager"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4360,7 +4456,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "днів"
+            "value" : "дні"
           }
         },
         "vi" : {
@@ -4504,7 +4600,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Деактивувати патч"
+            "value" : "Деактивувати Патч"
           }
         },
         "vi" : {
@@ -4648,7 +4744,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Деактивувати патч"
+            "value" : "Деактивувати Патч"
           }
         },
         "vi" : {
@@ -4792,7 +4888,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Деактивовано за адресою"
+            "value" : "Деактивовано о"
           }
         },
         "vi" : {
@@ -4936,7 +5032,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Видалити насос"
+            "value" : "Видалити помпу"
           }
         },
         "vi" : {
@@ -5017,6 +5113,12 @@
             "value" : "ポンプの削除"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slette pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5080,7 +5182,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Видалити насос"
+            "value" : "Видалити помпу"
           }
         },
         "vi" : {
@@ -5101,139 +5203,7 @@
       "comment" : "Label for disabled",
       "extractionState" : "manual",
       "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
         "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "nb-NO" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "sl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Інваліди"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disabled"
-          }
-        },
-        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disabled"
@@ -5368,7 +5338,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Від'єднати"
+            "value" : "Роз'єднати"
           }
         },
         "vi" : {
@@ -5437,6 +5407,12 @@
             "value" : "Déconnecté"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מנותק"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5447,6 +5423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "切断"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frakoblet"
           }
         },
         "nb-NO" : {
@@ -5512,7 +5494,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відключено"
+            "value" : "Від’єднано"
           }
         },
         "vi" : {
@@ -5656,7 +5638,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поки що не прикріплюйте пластир до тіла"
+            "value" : "Поки що не прикріплюйте Патч до тіла"
           }
         },
         "vi" : {
@@ -5725,6 +5707,12 @@
             "value" : "Fait"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kész"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5735,6 +5723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完了"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
           }
         },
         "nb-NO" : {
@@ -5759,6 +5753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Concluído"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         },
         "ro" : {
@@ -5800,7 +5800,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Готово."
+            "value" : "Готово"
           }
         },
         "vi" : {
@@ -5944,7 +5944,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Заповніть пластир інсуліном. ПРИМІТКА: Для активації потрібно щонайменше 70 ОД."
+            "value" : "Заповніть Патч Інсуліном. ПРИМІТКА. Для активації потрібно щонайменше 70 одиниць."
           }
         },
         "vi" : {
@@ -6088,7 +6088,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Наповніть шприц інсуліном"
+            "value" : "Наповніть шприц Інсуліном"
           }
         },
         "vi" : {
@@ -6376,7 +6376,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поверніться до ґрунтування"
+            "value" : "На початок"
           }
         },
         "vi" : {
@@ -6520,7 +6520,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Повернутися до бази насоса"
+            "value" : "Поверніться до бази помпи"
           }
         },
         "vi" : {
@@ -6601,6 +6601,12 @@
             "value" : "時"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "time"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6664,7 +6670,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "година"
+            "value" : "годин"
           }
         },
         "vi" : {
@@ -6733,6 +6739,12 @@
             "value" : "heures"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "óra"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6743,6 +6755,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "時間"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "timer"
           }
         },
         "nb-NO" : {
@@ -6764,6 +6782,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "horas"
+          }
+        },
+        "pt-PT" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "horas"
@@ -7033,6 +7057,12 @@
             "value" : "インスリン\n停止"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulintilførsel\npauset"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7177,6 +7207,12 @@
             "value" : "インスリンデリバリー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulintilførsel"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7240,7 +7276,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Доставка інсуліну"
+            "value" : "Подання Інсуліну"
           }
         },
         "vi" : {
@@ -7384,7 +7420,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Інсулін призупинено!"
+            "value" : "подачу Інсуліну призупинено!"
           }
         },
         "vi" : {
@@ -7465,6 +7501,12 @@
             "value" : "インスリン残量"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin i pod"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7528,7 +7570,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Залишок інсуліну"
+            "value" : "Залишок Інсуліну"
           }
         },
         "vi" : {
@@ -7609,6 +7651,12 @@
             "value" : "インスリンの種類"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulintype"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7672,7 +7720,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Тип інсуліну"
+            "value" : "Тип Інсуліну"
           }
         },
         "vi" : {
@@ -8824,7 +8872,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Переконайтеся, що серійний номер правильний, перш ніж підключати його до патчу."
+            "value" : "Перед підключенням до Патча переконайтеся, що Серійний номер правильний."
           }
         },
         "vi" : {
@@ -8963,12 +9011,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pompa zamanını manuel olarak senkronize edin"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Синхронізація вручну Час роботи насоса"
           }
         },
         "vi" : {
@@ -9112,7 +9154,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Максимальний добовий рівень інсуліну"
+            "value" : "Максимальна добова норма Інсуліну"
           }
         },
         "vi" : {
@@ -9256,7 +9298,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Максимальний погодинний інсулін"
+            "value" : "Максимальний погодинний рівень Інсуліну"
           }
         },
         "vi" : {
@@ -9337,6 +9379,12 @@
             "value" : "微細"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9400,7 +9448,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "хвилину."
+            "value" : "хвилин"
           }
         },
         "vi" : {
@@ -9469,6 +9517,12 @@
             "value" : "minutes"
           }
         },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "perc"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9479,6 +9533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "議事録"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutter"
           }
         },
         "nb-NO" : {
@@ -9503,6 +9563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minutos"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutos"
           }
         },
         "ro" : {
@@ -9544,7 +9610,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "хвилини"
+            "value" : "хвилин"
           }
         },
         "vi" : {
@@ -9688,7 +9754,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Немає активного виправлення"
+            "value" : "Немає активного Патчу"
           }
         },
         "vi" : {
@@ -9973,12 +10039,6 @@
             "value" : "Hayır, Pompayı Olduğu Gibi Saklayın"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ні, залиште насос як є"
-          }
-        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10120,7 +10180,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сповіщення про закінчення терміну дії патчу"
+            "value" : "Повідомлення про закінчення терміну дії Патча"
           }
         },
         "vi" : {
@@ -10264,7 +10324,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Патч активується за адресою"
+            "value" : "Патч активовано о"
           }
         },
         "vi" : {
@@ -10408,7 +10468,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Активація патчу"
+            "value" : "Активація Патча"
           }
         },
         "vi" : {
@@ -10552,7 +10612,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Термін дії патчу закінчився"
+            "value" : "Термін дії Патча закінчився"
           }
         },
         "vi" : {
@@ -10696,7 +10756,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Термін дії патчу закінчується"
+            "value" : "Патч закінчується о "
           }
         },
         "vi" : {
@@ -10840,7 +10900,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ідентифікатор патчу"
+            "value" : "ID Патчу"
           }
         },
         "vi" : {
@@ -10984,7 +11044,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Час життя патчу"
+            "value" : "Термін служби Патча"
           }
         },
         "vi" : {
@@ -11128,7 +11188,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ґрунтування латок"
+            "value" : "Патч-прайм"
           }
         },
         "vi" : {
@@ -11272,7 +11332,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Налаштування патчу"
+            "value" : "Налаштування Патчів"
           }
         },
         "vi" : {
@@ -11416,7 +11476,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Стан патчу"
+            "value" : "Стан Патча"
           }
         },
         "vi" : {
@@ -11555,12 +11615,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yama zamanı"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Час виправлення"
           }
         },
         "vi" : {
@@ -11704,7 +11758,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вставте шприц у пластир і витягніть 1-2 крапки повітря."
+            "value" : "Вставте шприц у Патч і витягніть 1-2 краплі повітря."
           }
         },
         "vi" : {
@@ -11848,7 +11902,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Натисніть кнопку голки і почніть процес ґрунтування."
+            "value" : "Натисніть кнопку голки та розпочніть процес заправки."
           }
         },
         "vi" : {
@@ -11992,7 +12046,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Натисніть кнопку голки, щоб вставити голку. Натисніть \"Активувати\", щоб завершити процес активації."
+            "value" : "Натисніть кнопку голки, щоб ввести голку. Натисніть кнопку «Активувати», щоб завершити процес активації."
           }
         },
         "vi" : {
@@ -12136,7 +12190,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Інформація про попередній патч"
+            "value" : "Деталі попереднього Патча"
           }
         },
         "vi" : {
@@ -12280,7 +12334,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Базова модель насоса"
+            "value" : "Базова модель помпи"
           }
         },
         "vi" : {
@@ -12424,7 +12478,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Базові налаштування насоса"
+            "value" : "Налаштування бази помпи"
           }
         },
         "vi" : {
@@ -12568,7 +12622,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Основа насоса SN"
+            "value" : "База помпи SN"
           }
         },
         "vi" : {
@@ -12712,7 +12766,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Підключіться знову"
+            "value" : "Перез'єднати"
           }
         },
         "vi" : {
@@ -12856,7 +12910,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відновлення зв'язку..."
+            "value" : "Повторне підключення..."
           }
         },
         "vi" : {
@@ -12937,6 +12991,12 @@
             "value" : "ポンプの取り外し"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjern pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13000,7 +13060,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зняти насос"
+            "value" : "Зніміть Pod"
           }
         },
         "vi" : {
@@ -13144,7 +13204,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зніміть захисну кришку з пластиру."
+            "value" : "Зніміть захисну кришку з Патчу."
           }
         },
         "vi" : {
@@ -13309,139 +13369,7 @@
       "comment" : "Title low reservoir notification",
       "extractionState" : "manual",
       "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
         "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "nb-NO" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "sl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Водосховище низьке (%iU)"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoir low (%iU)"
-          }
-        },
-        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reservoir low (%iU)"
@@ -13511,6 +13439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "保存して続ける"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre og fortsett"
           }
         },
         "nb-NO" : {
@@ -13657,6 +13591,12 @@
             "value" : "予定ベース"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planlagt basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13720,7 +13660,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Запланований базальний"
+            "value" : "Запланований Базал"
           }
         },
         "vi" : {
@@ -13864,7 +13804,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Оберіть тип інсуліну"
+            "value" : "Виберіть тип Інсуліну"
           }
         },
         "vi" : {
@@ -14008,7 +13948,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Виберіть тип інсуліну, який ви будете використовувати"
+            "value" : "Виберіть тип Інсуліну, який ви використовуватимете"
           }
         },
         "vi" : {
@@ -14296,7 +14236,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поділіться журналами виправлень Medtrum"
+            "value" : "Поділитися журналами Патчів Medtrum"
           }
         },
         "vi" : {
@@ -14440,7 +14380,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Тиша."
+            "value" : "Тиша"
           }
         },
         "vi" : {
@@ -14584,7 +14524,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Починаємо ґрунтування"
+            "value" : "Почати праймінг"
           }
         },
         "vi" : {
@@ -14872,7 +14812,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Синхронізація даних патчу"
+            "value" : "Синхронізація даних Патчів"
           }
         },
         "vi" : {
@@ -14953,6 +14893,12 @@
             "value" : "基礎温度"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Midlertidig basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15016,7 +14962,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temp Basal"
+            "value" : "Тимчасовий  Базал"
           }
         },
         "vi" : {
@@ -15157,12 +15103,6 @@
             "value" : "Pompanızdaki saat geçerli saatten farklı. Pompanızdaki saati geçerli saate güncellemek istiyor musunuz?"
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Час на вашому насосі відрізняється від поточного. Ви хочете оновити час на насосі до поточного?"
-          }
-        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15301,12 +15241,6 @@
             "value" : "Pompanızdaki saat, geçerli saatten farklıdır. Pompanızın saati programlanmış terapi ayarlarınızı kontrol eder. Saat farkını incelemek ve pompanızı yapılandırmak için Pompa Saati satırına ilerleyin."
           }
         },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Час на вашій помпі відрізняється від поточного часу. Час на вашій помпі контролює налаштування запланованої терапії. Прокрутіть вниз до рядка \"Час помпи\", щоб переглянути різницю в часі та налаштувати свою помпу."
-          }
-        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15443,12 +15377,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zaman Değişikliği Tespit Edildi"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Виявлено зміну часу"
           }
         },
         "vi" : {
@@ -15592,7 +15520,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Увімкнути режим серцебиття"
+            "value" : "Перемикання режиму серцебиття"
           }
         },
         "vi" : {
@@ -15736,7 +15664,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Використовуйте подовжений термін служби (продовжуйте, поки батарея не розрядиться)"
+            "value" : "Використовуйте збільшений термін служби (продовжуйте, поки батарея не розрядиться)"
           }
         },
         "vi" : {
@@ -15880,7 +15808,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Використовуйте звичайний термін служби (3d 8h)"
+            "value" : "Використовувати звичайний термін служби (3 дні 8 годин)"
           }
         },
         "vi" : {
@@ -16312,7 +16240,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ласкаво просимо."
+            "value" : "Ласкаво просимо"
           }
         },
         "vi" : {
@@ -16456,7 +16384,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Після натискання на кнопку з'явиться запит на проходження біометрії. Після цього патч буде деактивовано, і вам буде запропоновано підключити новий патч."
+            "value" : "Після натискання кнопки ви отримаєте запит на біометричні дані. Після завершення Патч буде деактивовано, і вам буде запропоновано підключити новий Патч."
           }
         },
         "vi" : {
@@ -16744,7 +16672,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Так, Увімкнути режим серцебиття"
+            "value" : "Так, Увімкнути режим серцевого ритму"
           }
         },
         "vi" : {
@@ -16883,12 +16811,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evet, Geçerli Saatle Senkronize Et"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Так, Синхронізувати з поточним часом"
           }
         },
         "vi" : {
@@ -17032,7 +16954,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перед активацією пластиру ви почнете з визначення типу інсуліну та основних налаштувань пластиру."
+            "value" : "Ви почнете з налаштування типу інсуліну та основних параметрів Патчу перед його активацією."
           }
         },
         "vi" : {
@@ -17176,7 +17098,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "На вашому патчі залишилося %i годин"
+            "value" : "Термін дії вашо Патчу закінчеться через %i годин"
           }
         },
         "vi" : {
@@ -17320,7 +17242,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ваш пластир виявив оклюзію!"
+            "value" : "Ваш патч виявив оклюзію!"
           }
         },
         "vi" : {
@@ -17464,7 +17386,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ваш патч досяг денного максимуму!"
+            "value" : "Ваш патч досяг свого денного максимуму!"
           }
         },
         "vi" : {
@@ -17608,7 +17530,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ваш патч досягнув свого годинного максимуму!"
+            "value" : "Ваш патч досяг свого годинного максимуму!"
           }
         },
         "vi" : {
@@ -17752,7 +17674,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ваш патч у стані Fault!"
+            "value" : "Ваш патч у стані «Несправність»!"
           }
         },
         "vi" : {
@@ -17896,7 +17818,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "У вашому пластирі закінчився інсулін!"
+            "value" : "У вашому патчи закінчився інсулін!"
           }
         },
         "vi" : {
@@ -17917,139 +17839,7 @@
       "comment" : "Body low reservoir notification",
       "extractionState" : "manual",
       "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
         "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "nb-NO" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "sl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "У вашому пластирі закінчується інсулін!"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your patch is running out of insulin!"
@@ -18184,7 +17974,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Термін дії вашого патчу скоро закінчиться!"
+            "value" : "Термін дії вашого Патча скоро закінчиться!"
           }
         },
         "vi" : {
