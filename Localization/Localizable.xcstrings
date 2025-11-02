@@ -5199,6 +5199,18 @@
         }
       }
     },
+    "Disabled" : {
+      "comment" : "Label for disabled",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
+          }
+        }
+      }
+    },
     "Disconnect" : {
       "comment" : "disconnect from patch",
       "extractionState" : "manual",
@@ -13353,6 +13365,18 @@
         }
       }
     },
+    "Reservoir low (%iU)" : {
+      "comment" : "Title low reservoir notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reservoir low (%iU)"
+          }
+        }
+      }
+    },
     "Save and continue" : {
       "comment" : "save and continue",
       "extractionState" : "manual",
@@ -17807,6 +17831,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "你的胰岛素补丁用完了"
+          }
+        }
+      }
+    },
+    "Your patch is running out of insulin!" : {
+      "comment" : "Body low reservoir notification",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch is running out of insulin!"
           }
         }
       }
