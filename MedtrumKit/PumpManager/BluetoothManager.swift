@@ -218,7 +218,12 @@ extension BluetoothManager {
     func centralManager(_: CBCentralManager, didConnect peripheral: CBPeripheral) {
         logger.info("Connected to pump: \(peripheral.name ?? "<NO_NAME>")!")
 
-        guard let completion = connectCompletion, let pumpManager = pumpManager else {
+        guard let pumpManager = pumpManager else {
+            logger.warning("No pumpManager...")
+            return
+        }
+        guard let completion = connectCompletion else {
+            logger.warning("No connectCompletion...")
             return
         }
 
@@ -265,11 +270,12 @@ extension BluetoothManager {
             peripheralManager = nil
         }
 
-        ensureConnected { error in
-            if let error = error {
-                self.logger.error("Failed to auto reconnect - \(error)")
-            }
-        }
+        // Temporary disabled auto reconnect...
+//        ensureConnected { error in
+//            if let error = error {
+//                self.logger.error("Failed to auto reconnect - \(error)")
+//            }
+//        }
     }
 
     func centralManager(_: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
