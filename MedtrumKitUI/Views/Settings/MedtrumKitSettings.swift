@@ -222,6 +222,13 @@ struct MedtrumKitSettings: View {
                         .foregroundColor(.secondary)
                 }
                 HStack {
+                    Text(LocalizedString("Pump base firmware", comment: "Text for firmware"))
+                        .foregroundColor(Color.primary)
+                    Spacer()
+                    Text(viewModel.swVersion)
+                        .foregroundColor(.secondary)
+                }
+                HStack {
                     Text(LocalizedString("Patch ID", comment: "Text for activatedAt"))
                         .foregroundColor(Color.primary)
                     Spacer()
