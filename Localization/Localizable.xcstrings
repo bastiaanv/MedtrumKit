@@ -15033,6 +15033,18 @@
         }
       }
     },
+    "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime." : {
+      "comment" : "warning body",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime."
+          }
+        }
+      }
+    },
     "The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?" : {
       "comment" : "Message for pod sync time action sheet",
       "extractionState" : "manual",
@@ -15605,6 +15617,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "切换心跳动模式"
+          }
+        }
+      }
+    },
+    "Use at your own risk!" : {
+      "comment" : "warning title",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use at your own risk!"
           }
         }
       }

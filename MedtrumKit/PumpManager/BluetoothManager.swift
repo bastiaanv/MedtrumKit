@@ -171,6 +171,12 @@ extension BluetoothManager {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         logger.info("\(String(describing: central.state.rawValue))")
 
+        if central.state == .resetting {
+            // CoreBluetooth crashed, lets remove all references and scan for device once it's back
+            peripheral = nil
+            peripheralManager = nil
+        }
+
         if central.state == .poweredOn, !isConnected, pumpManager?.state.pumpState == .active {
             ensureConnected { error in
                 if let error = error {
@@ -193,7 +199,7 @@ extension BluetoothManager {
         let manufacturerData = advertisementData[CBAdvertisementDataManufacturerDataKey]
         guard let manufacturerData = manufacturerData as? Data, manufacturerData.count >= 7 else {
             logger.warning("No ManufacturerData or too short - " + advertisementData.keys.joined(separator: ", "))
-            
+
             // Simulator bypass
             scanCompletion?(
                 .success(
