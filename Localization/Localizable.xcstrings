@@ -9705,6 +9705,18 @@
         }
       }
     },
+    "No patch" : {
+      "comment" : "Status highlight when no patch is active.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No patch"
+          }
+        }
+      }
+    },
     "No, Keep as is" : {
       "comment" : "Button text to cancel actionsheet",
       "extractionState" : "manual",

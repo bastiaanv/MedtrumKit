@@ -306,7 +306,7 @@ public extension MedtrumPumpManager {
             completion(.configuration(.none))
             return
         }
-        
+
         guard state.bolusState == .noBolus else {
             log.error("Pump is in bolus state...")
             completion(.deviceState(MedtrumConnectError.isBolussing))
@@ -457,7 +457,7 @@ public extension MedtrumPumpManager {
         completion: @escaping (LoopKit.PumpManagerError?) -> Void
     ) {
         log.info("Setting temp basal at \(unitsPerHour)U/hr for \(duration) seconds...")
-        
+
         guard state.bolusState == .noBolus else {
             log.error("Pump is in bolus state...")
             completion(.deviceState(MedtrumConnectError.isBolussing))
