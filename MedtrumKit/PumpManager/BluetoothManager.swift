@@ -13,6 +13,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
     var scanCompletion: ((MedtrumScanResult) -> Void)?
     var connectCompletion: ((MedtrumConnectError?) -> Void)?
+    var connectionTimeout: Task<(), Never>?
 
     public var isConnected: Bool {
         if let peripheral = peripheral, peripheral.state == .connected {
@@ -133,7 +134,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
     }
 
     func startTimeout(seconds: TimeInterval) {
-        Task {
+        connectionTimeout = Task {
             do {
                 try await Task.sleep(nanoseconds: UInt64(seconds) * 1_000_000_000)
                 guard let connectionCallback = self.connectCompletion else {
@@ -240,6 +241,8 @@ extension BluetoothManager {
             return
         }
 
+        connectionTimeout?.cancel()
+        
         self.peripheral = peripheral
         peripheralManager = PeripheralManager(peripheral, self, pumpManager, completion)
         peripheral.discoverServices([PeripheralManager.SERVICE_UUID])
