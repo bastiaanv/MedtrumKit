@@ -183,7 +183,7 @@ struct PatchSettingsView: View {
                                 .padding(.bottom, 10)
 
                             Text(LocalizedString(
-                                "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime.",
+                                "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime. Please be aware that new firmware in the latest generation of pump bases may block bolus commands after 5 days (120 hours).",
                                 comment: "warning body"
                             ))
                         }
