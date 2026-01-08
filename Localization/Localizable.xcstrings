@@ -4153,6 +4153,12 @@
             "value" : "日"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dag"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4295,6 +4301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "日"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dager"
           }
         },
         "nb-NO" : {
@@ -6601,6 +6613,12 @@
             "value" : "時"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "time"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6743,6 +6761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "時間"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "timer"
           }
         },
         "nb-NO" : {
@@ -7463,6 +7487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "インスリン残量"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenværende insulin"
           }
         },
         "nb-NO" : {
@@ -8617,6 +8647,12 @@
             "value" : "ローディング"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "laster"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9337,6 +9373,12 @@
             "value" : "微細"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9479,6 +9521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "議事録"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutter"
           }
         },
         "nb-NO" : {
@@ -16679,6 +16727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ようこそ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velkommen"
           }
         },
         "nb-NO" : {
