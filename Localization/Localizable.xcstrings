@@ -5122,7 +5122,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Disabled"
+            "value" : "Deaktiviert"
           }
         },
         "en" : {
@@ -14452,7 +14452,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "分享 Medtrum 补丁日志"
+            "value" : "分享移宇泵日志"
           }
         }
       }
