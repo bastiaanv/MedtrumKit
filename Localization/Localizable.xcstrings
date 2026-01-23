@@ -15825,13 +15825,13 @@
         },
         "cs" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Náplast je určena k použití pouze po dobu 3 dnů a 8 hodin. Překročení této doby může způsobit nespolehlivost náplasti. To se NEDOPORUČUJE. Zvažte použití normální životnosti."
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Plasteret er kun beregnet til at blive brugt i 3 dage og 8 timer. Overskridelse af denne tid kan medføre, at plasteret bliver upålideligt. Dette anbefales IKKE. Overvej at bruge normal levetid."
           }
         },
@@ -15867,7 +15867,7 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Il cerotto deve essere utilizzato solo per 3 giorni e 8 ore. Il superamento di questo tempo può causare l'inaffidabilità del cerotto. Questo non è raccomandato. Considerare l'utilizzo della normale durata di vita."
           }
         },
@@ -16785,7 +16785,7 @@
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Gebruik verlengde levensduur (doorgaan tot batterij leeg is)"
           }
         },
