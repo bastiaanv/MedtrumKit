@@ -4153,12 +4153,6 @@
             "value" : "日"
           }
         },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "dag"
-          }
-        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4301,12 +4295,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "日"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "dager"
           }
         },
         "nb-NO" : {
@@ -6613,12 +6601,6 @@
             "value" : "時"
           }
         },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "time"
-          }
-        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6761,12 +6743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "時間"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "timer"
           }
         },
         "nb-NO" : {
@@ -7487,12 +7463,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "インスリン残量"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjenværende insulin"
           }
         },
         "nb-NO" : {
@@ -8647,12 +8617,6 @@
             "value" : "ローディング"
           }
         },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "laster"
-          }
-        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9373,12 +9337,6 @@
             "value" : "微細"
           }
         },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minutt"
-          }
-        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9521,12 +9479,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "議事録"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minutter"
           }
         },
         "nb-NO" : {
@@ -15225,7 +15177,7 @@
         }
       }
     },
-    "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime." : {
+    "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime. Please be aware that new firmware in the latest generation of pump bases may block bolus commands after 5 days (120 hours)." : {
       "comment" : "warning body",
       "extractionState" : "manual",
       "localizations" : {
@@ -15256,7 +15208,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime."
+            "value" : "The patch is intended to be used for only 3 days and 8 hours. Exceeding this time may cause the patch to become unreliable. This is NOT recommended. Consider using normal lifetime. Please be aware that new firmware in the latest generation of pump bases may block bolus commands after 5 days (120 hours)."
           }
         },
         "es" : {
@@ -16089,7 +16041,7 @@
         }
       }
     },
-    "Use extended lifetime (continue till battery empty)" : {
+    "Use extended lifetime" : {
       "comment" : "Label for extended lifetime",
       "extractionState" : "manual",
       "localizations" : {
@@ -16120,7 +16072,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Use extended lifetime (continue till battery empty)"
+            "value" : "Use extended lifetime"
           }
         },
         "es" : {
@@ -16727,12 +16679,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ようこそ"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velkommen"
           }
         },
         "nb-NO" : {
