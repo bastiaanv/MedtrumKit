@@ -6063,6 +6063,156 @@
         }
       }
     },
+    "Extended Patch expired. Basal only." : {
+      "comment" : "Text shown when extended patch expired surpasses 120 hours",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهت صلاحية الرقعة الممتدة. القاعدية فقط."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platnost prodloužené záplaty vypršela. Pouze bazální."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended Patch er udløbet. Kun basal."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended Patch abgelaufen. Nur Basal."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended Patch expired. Basal only."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parche extendido caducado. Sólo basal."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laajennettu laastari on vanhentunut. Vain basal."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le patch étendu a expiré. Basal uniquement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch esteso scaduto. Solo basale."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "延長パッチは期限切れ。ベーサルのみ。"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forlenget plaster utgått. Bare basal."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended Patch is verlopen. Alleen basaal."
+          }
+        },
+        "no" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utvidet programfiks har gått ut basal."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przedłużona łatka wygasła. Tylko podstawowa."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch estendido expirado. Somente basal."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch extins expirat. Numai bazal."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок действия расширенного пластыря истек. Только базальный."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platnosť rozšírenej náplasti vypršala. Len bazálna."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podaljšani popravek je potekel. Samo osnovna plast."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended Patch har gått ut. Endast Basal."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genişletilmiş Yama'nın süresi doldu. Sadece bazal."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Термін дії розширеної латки закінчився. Тільки базовий."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản vá mở rộng đã hết hạn. Chỉ còn bản vá cơ bản."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扩展补丁已过期。仅限基质。"
+          }
+        }
+      }
+    },
     "Fill the patch with insulin. NOTE: A minimum of 70U is required for activation." : {
       "comment" : "Label for prime step 2.4",
       "extractionState" : "manual",
@@ -11163,6 +11313,156 @@
         }
       }
     },
+    "Patch expired. Basal only." : {
+      "comment" : "Status highlight when extended patch has expired, i.e. lifetime past 120 hours.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهت صلاحية التصحيح. القاعدية فقط."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platnost záplaty vypršela. Pouze bazální."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plasteret er udløbet. Kun basal."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Pflaster ist abgelaufen. Nur Basal."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expired. Basal only."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parche caducado. Sólo basal."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laastari vanhentunut. Vain basaalinen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch périmé. Basal uniquement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch scaduto. Solo basale."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パッチは期限切れ。基礎のみ。"
+          }
+        },
+        "nb-NO" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lappen er utløpt. Bare basal."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch is verlopen. Alleen basaal."
+          }
+        },
+        "no" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdateringen har gått ut på basal."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch wygasł. Tylko podstawowa."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O adesivo expirou. Somente basal."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch expirat. Numai bazal."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок действия пластыря истек. Только базальный."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platnosť záplaty vypršala. Len bazálna."
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obliž se je iztekel. Samo bazalna."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plåstret har gått ut. Endast basal."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yamanın süresi doldu. Sadece bazal."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Термін дії пластиру закінчився. Тільки для основи."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản vá đã hết hạn. Chỉ áp dụng cho cơ bản."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "补丁已过期。仅限基质。"
+          }
+        }
+      }
+    },
     "Patch expires at" : {
       "comment" : "Text for expiresAt",
       "extractionState" : "manual",
@@ -15825,13 +16125,13 @@
         },
         "cs" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Náplast je určena k použití pouze po dobu 3 dnů a 8 hodin. Překročení této doby může způsobit nespolehlivost náplasti. To se NEDOPORUČUJE. Zvažte použití normální životnosti."
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Plasteret er kun beregnet til at blive brugt i 3 dage og 8 timer. Overskridelse af denne tid kan medføre, at plasteret bliver upålideligt. Dette anbefales IKKE. Overvej at bruge normal levetid."
           }
         },
@@ -15867,7 +16167,7 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Il cerotto deve essere utilizzato solo per 3 giorni e 8 ore. Il superamento di questo tempo può causare l'inaffidabilità del cerotto. Questo non è raccomandato. Considerare l'utilizzo della normale durata di vita."
           }
         },
@@ -16785,7 +17085,7 @@
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Gebruik verlengde levensduur (doorgaan tot batterij leeg is)"
           }
         },
