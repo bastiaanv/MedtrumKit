@@ -31,14 +31,31 @@ public extension DoseEntry {
         startDate: Date = Date.now,
         endDate: Date? = nil
     ) -> DoseEntry {
-        DoseEntry(
+        if let endDate = endDate {
+            let duration = endDate.timeIntervalSince(startDate)
+            return DoseEntry(
+                type: .tempBasal,
+                startDate: startDate,
+                endDate: endDate,
+                value: absoluteUnit,
+                unit: .unitsPerHour,
+                deliveredUnits: absoluteUnit * (duration / .hours(1)),
+                insulinType: insulinType,
+                automatic: true,
+                isMutable: false
+            )
+        }
+        
+        return DoseEntry(
             type: .tempBasal,
             startDate: startDate,
-            endDate: endDate != nil ? endDate : startDate + duration,
+            endDate: startDate + duration,
             value: absoluteUnit,
             unit: .unitsPerHour,
+            deliveredUnits: nil,
             insulinType: insulinType,
-            isMutable: endDate == nil
+            automatic: true,
+            isMutable: true
         )
     }
 
