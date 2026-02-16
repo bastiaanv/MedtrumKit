@@ -6,6 +6,7 @@ enum PatchLifecycleState {
     case noPatch
     case active
     case expired
+    case expiredBasalOnly
 }
 
 class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
@@ -367,11 +368,11 @@ extension MedtrumKitSettingsViewModel {
         battery = state.battery
 
         if !state.patchId.isEmpty {
-            let totalLifetime = TimeInterval(hours: 80)
+            let totalLifetime = TimeInterval(hours: state.expirationTimer == 0 ? 120 : 80)
             let progress = Date.now.timeIntervalSince1970 - state.patchActivatedAt.timeIntervalSince1970
 
             patchLifecycleProgress = min(progress / totalLifetime, 1)
-            patchLifecycleState = patchLifecycleProgress == 1 && state.expirationTimer == 1 ? .expired : .active
+            patchLifecycleState = patchLifecycleProgress == 1 ? (state.expirationTimer == 0 ? .expiredBasalOnly : .expired) : .active
         } else {
             patchLifecycleState = .noPatch
         }

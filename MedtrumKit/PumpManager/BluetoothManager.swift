@@ -103,6 +103,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
         let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [PeripheralManager.SERVICE_UUID])
         if let peripheral = connectedDevices.first(where: { $0.name == "MT" }) {
             // Phone is already connected, but the app is not
+            startTimeout(seconds: .seconds(15))
             connect(peripheral: peripheral)
             return
         }
@@ -297,10 +298,12 @@ extension BluetoothManager {
             pumpManager.notifyStateDidChange()
         }
 
-        if peripheralManager != nil {
-            peripheralManager = nil
+        if let peripheralManager = peripheralManager {
+            peripheralManager.cleanup()
+            self.peripheralManager = nil
         }
 
+        connectCompletion?(.failedToConnectToDevice)
         connectCompletion = nil
     }
 

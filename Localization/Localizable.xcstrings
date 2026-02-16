@@ -57,6 +57,12 @@
             "value" : "-"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64,12 +70,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "-"
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "-"
@@ -199,6 +199,12 @@
             "value" : "%llu"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%llu"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -206,12 +212,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%llu"
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%llu"
@@ -341,6 +341,12 @@
             "value" : "1."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -348,12 +354,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1."
@@ -483,6 +483,12 @@
             "value" : "2."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -490,12 +496,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "2."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "2."
@@ -625,6 +625,12 @@
             "value" : "3."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -632,12 +638,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "3."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "3."
@@ -767,6 +767,12 @@
             "value" : "4."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -774,12 +780,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "4."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "4."
@@ -909,6 +909,12 @@
             "value" : "5."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -916,12 +922,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "5."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "5."
@@ -1051,6 +1051,12 @@
             "value" : "6."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1058,12 +1064,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "6."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "6."
@@ -1193,6 +1193,12 @@
             "value" : "7."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1200,12 +1206,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "7."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "7."
@@ -1335,6 +1335,12 @@
             "value" : "8."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1342,12 +1348,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "8."
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "8."
@@ -1477,6 +1477,12 @@
             "value" : "1234ABCD"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1234ABCD"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1484,12 +1490,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1234ABCD"
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1234ABCD"
@@ -1627,6 +1627,12 @@
             "value" : "パッチをアクティブにする"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktiver patch"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1637,12 +1643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activeer patch"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktiver patch"
           }
         },
         "pl" : {
@@ -1777,6 +1777,12 @@
             "value" : "歳："
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alder:"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1787,12 +1793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leeftijd:"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alder:"
           }
         },
         "pl" : {
@@ -1927,6 +1927,12 @@
             "value" : "アラーム設定"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger for alarm"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1937,12 +1943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alarm instelling"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Innstillinger for alarm"
           }
         },
         "pl" : {
@@ -2077,6 +2077,12 @@
             "value" : "Medtrum TouchCare Nano 200u/300uの使用を中止してもよろしいですか？"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er du sikker på at du ønsker å slutte med Medtrum TouchCare Nano 200u/300u?"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2087,12 +2093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weet je zeker dat je geen gebruik meer wilt maken van Medtrum TouchCare Nano 200u/300u?"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Er du sikker på at du ønsker å slutte med Medtrum TouchCare Nano 200u/300u?"
           }
         },
         "pl" : {
@@ -2227,6 +2227,12 @@
             "value" : "本当か？"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er du sikker?"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2237,12 +2243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Weet je het zeker?"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Er du sikker?"
           }
         },
         "pl" : {
@@ -2377,6 +2377,12 @@
             "value" : "ポンプを本体に取り付ける。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fest pumpen til kroppen."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2387,12 +2393,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koppel de pomp aan het lichaam."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fest pumpen til kroppen."
           }
         },
         "pl" : {
@@ -2527,6 +2527,12 @@
             "value" : "パッチの認証と無効化"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Godkjenn & deaktiver patch"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2537,12 +2543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Authenticeer & deactiveer patch"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Godkjenn & deaktiver patch"
           }
         },
         "pl" : {
@@ -2677,6 +2677,12 @@
             "value" : "バッテリー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteri"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2687,12 +2693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Accu"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Batteri"
           }
         },
         "pl" : {
@@ -2827,6 +2827,12 @@
             "value" : "ビープ音のみ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beholdbart"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2837,12 +2843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biep alleen-"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Beholdbart"
           }
         },
         "pl" : {
@@ -2977,6 +2977,12 @@
             "value" : "キャンセル"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2987,12 +2993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuleren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Avbryt"
           }
         },
         "pl" : {
@@ -3127,6 +3127,12 @@
             "value" : "でチェックした。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekket på"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3137,12 +3143,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gecontroleerd op"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sjekket på"
           }
         },
         "pl" : {
@@ -3277,6 +3277,12 @@
             "value" : "構成"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konfigurasjon"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3287,12 +3293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configuratie"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konfigurasjon"
           }
         },
         "pl" : {
@@ -3427,6 +3427,12 @@
             "value" : "確認"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekreft"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3437,12 +3443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bevestig"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bekreft"
           }
         },
         "pl" : {
@@ -3577,6 +3577,12 @@
             "value" : "ポンプベースをパッチに接続する。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koble pumpebasen din til plasteret."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3587,12 +3593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verbind je pomp basis met het patch."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Koble pumpebasen din til plasteret."
           }
         },
         "pl" : {
@@ -3727,6 +3727,12 @@
             "value" : "接続済み"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilkoblet"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3737,12 +3743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verbonden"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tilkoblet"
           }
         },
         "pl" : {
@@ -3877,6 +3877,12 @@
             "value" : "続ける"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3887,12 +3893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doorgaan"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fortsett"
           }
         },
         "pl" : {
@@ -4027,6 +4027,12 @@
             "value" : "現在、あなたはハートビートモードを使用していません。ハートビートは、 %1$@ をバックグラウンドで実行し続けるために必要です。この機能を有効にしておくことをお勧めします。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For tiden bruker du IKKE hjerteslag. Et hjerterytme er nødvendig for å holde %1$@ kjører i bakgrunnen. Det er anbefalt å holde aktivere denne funksjonen"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4037,12 +4043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Op dit moment gebruikt u GEEN hartslag modus. Een hartenslag is nodig om %1$@ actief te houden op de achtergrond. Het is aanbevolen om deze functie in te schakelen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For tiden bruker du IKKE hjerteslag. Et hjerterytme er nødvendig for å holde %1$@ kjører i bakgrunnen. Det er anbefalt å holde aktivere denne funksjonen"
           }
         },
         "pl" : {
@@ -4177,6 +4177,12 @@
             "value" : "現在、あなたはハートビートモードを使用しています。これは、 %1$@ をバックグラウンドで実行し続けるために必要です。お使いの CGM がすでにハートビートを提供している場合、これは興味深いかもしれません。この機能は有効にしておくことをお勧めします。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For tiden bruker du en hjertefrekvensmodus. Dette er nødvendig for at %1$@ skal kunne kjøre i bakgrunnen. Dette kan være interessant hvis CGM allerede tilbyr en hjerterytme. Det anbefales å holde denne funksjonen aktivert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4187,12 +4193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Op dit moment gebruikt u een hartbeet modus. Dit is nodig om %1$@ actief te houden op de achtergrond. Dit kan interessant zijn als uw CGM al een hartenslag biedt. Het wordt aangeraden om deze functie ingeschakeld te houden"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For tiden bruker du en hjertefrekvensmodus. Dette er nødvendig for at %1$@ skal kunne kjøre i bakgrunnen. Dette kan være interessant hvis CGM allerede tilbyr en hjerterytme. Det anbefales å holde denne funksjonen aktivert"
           }
         },
         "pl" : {
@@ -4327,6 +4327,12 @@
             "value" : "日"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dag"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4337,12 +4343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dag"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "dag"
           }
         },
         "pl" : {
@@ -4477,6 +4477,12 @@
             "value" : "日"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dager"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4487,12 +4493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dagen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "dager"
           }
         },
         "pl" : {
@@ -4627,6 +4627,12 @@
             "value" : "パッチの無効化"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivere patch"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4637,12 +4643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch deactiveren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deaktivere patch"
           }
         },
         "pl" : {
@@ -4777,6 +4777,12 @@
             "value" : "パッチの無効化"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktiver programfiks"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4787,12 +4793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch deactiveren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deaktiver programfiks"
           }
         },
         "pl" : {
@@ -4927,6 +4927,12 @@
             "value" : "で活動停止"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivert den"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4937,12 +4943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gedeactiveerd op"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deaktivert den"
           }
         },
         "pl" : {
@@ -5077,6 +5077,12 @@
             "value" : "ポンプの削除"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5087,12 +5093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp verwijderen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slett pumpe"
           }
         },
         "pl" : {
@@ -5227,6 +5227,12 @@
             "value" : "ポンプの削除"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5237,12 +5243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp verwijderen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slett pumpe"
           }
         },
         "pl" : {
@@ -5377,6 +5377,12 @@
             "value" : "Disabled"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5387,12 +5393,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Disabled"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deaktivert"
           }
         },
         "pl" : {
@@ -5527,6 +5527,12 @@
             "value" : "切断"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frakoblet"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5537,12 +5543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verbreek"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frakoblet"
           }
         },
         "pl" : {
@@ -5677,6 +5677,12 @@
             "value" : "切断"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frakoblet"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5687,12 +5693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Losgekoppeld"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frakoblet"
           }
         },
         "pl" : {
@@ -5827,6 +5827,12 @@
             "value" : "パッチはまだボディに貼り付けないでください"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke fest plasteret til kroppen ennå"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5837,12 +5843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bevestig de patch nog niet aan het lichaam"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ikke fest plasteret til kroppen ennå"
           }
         },
         "pl" : {
@@ -5977,6 +5977,12 @@
             "value" : "完了"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5987,12 +5993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voltooid"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ferdig"
           }
         },
         "pl" : {
@@ -6277,6 +6277,12 @@
             "value" : "パッチにインスリンを注入する。注：活性化には最低70Uが必要です。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fyll depotplasteret med insulin. MERK: Minst 70 E er nødvendig for aktivering."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6287,12 +6293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vul de patch in met insuline. Let op: een minimum van 70U is vereist om te activeren."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fyll depotplasteret med insulin. MERK: Minst 70 E er nødvendig for aktivering."
           }
         },
         "pl" : {
@@ -6427,6 +6427,12 @@
             "value" : "注射器にインスリンを入れる"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fyll sprøyten med insulin"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6437,12 +6443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vul de spuit met insuline"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fyll sprøyten med insulin"
           }
         },
         "pl" : {
@@ -6577,6 +6577,12 @@
             "value" : "強制撤去"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tving fjerning"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6587,12 +6593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forceer verwijderen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tving fjerning"
           }
         },
         "pl" : {
@@ -6727,6 +6727,12 @@
             "value" : "プライミングに戻る"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gå tilbake til klaring"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6737,12 +6743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ga terug naar primen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gå tilbake til klaring"
           }
         },
         "pl" : {
@@ -6877,6 +6877,12 @@
             "value" : "ポンプベースに戻る"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gå tilbake til pumpebasen"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6887,12 +6893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ga terug naar de pompbasis"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gå tilbake til pumpebasen"
           }
         },
         "pl" : {
@@ -7027,6 +7027,12 @@
             "value" : "時"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "time"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7037,12 +7043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "uur"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "time"
           }
         },
         "pl" : {
@@ -7177,6 +7177,12 @@
             "value" : "時間"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "timer"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7187,12 +7193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "timer"
           }
         },
         "pl" : {
@@ -7327,6 +7327,12 @@
             "value" : "インフォメーション"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informasjon"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7337,12 +7343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informatie"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Informasjon"
           }
         },
         "pl" : {
@@ -7477,6 +7477,12 @@
             "value" : "インスリン\n停止"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin\nSuspendert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7487,12 +7493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insuline\nopgeschort"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin\nSuspendert"
           }
         },
         "pl" : {
@@ -7627,6 +7627,12 @@
             "value" : "インスリンデリバリー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilførsel av insulin"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7637,12 +7643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insuline levering"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tilførsel av insulin"
           }
         },
         "pl" : {
@@ -7777,6 +7777,12 @@
             "value" : "インスリンは中断している！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin har blitt suspendert!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7787,12 +7793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insuline is opgeschort!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin har blitt suspendert!"
           }
         },
         "pl" : {
@@ -7927,6 +7927,12 @@
             "value" : "インスリン残量"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin som gjenstår"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7937,12 +7943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Resterende insuline"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin som gjenstår"
           }
         },
         "pl" : {
@@ -8077,6 +8077,12 @@
             "value" : "インスリンの種類"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin Type"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8087,12 +8093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insuline type"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Insulin Type"
           }
         },
         "pl" : {
@@ -8227,6 +8227,12 @@
             "value" : "最初に無効化することをお勧めします。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det anbefales å deaktivere første gang."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8237,12 +8243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Het wordt aanbevolen om eerst te deactiveren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Det anbefales å deaktivere første gang."
           }
         },
         "pl" : {
@@ -8377,6 +8377,12 @@
             "value" : "最後の同期"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sist synkronisert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8387,12 +8393,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Laatste synchronisatie"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sist synkronisert"
           }
         },
         "pl" : {
@@ -8527,6 +8527,12 @@
             "value" : "ライトとビープ音"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lys og pust"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8537,12 +8543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lichte en pieptoon"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lys og pust"
           }
         },
         "pl" : {
@@ -8677,6 +8677,12 @@
             "value" : "光と振動"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lys og vibrer"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8687,12 +8693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Licht en trillen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lys og vibrer"
           }
         },
         "pl" : {
@@ -8827,6 +8827,12 @@
             "value" : "ライトオンリー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun lette"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8837,12 +8843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Licht-alleen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kun lette"
           }
         },
         "pl" : {
@@ -8977,6 +8977,12 @@
             "value" : "ライト、バイブレーション、ビープ音"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lett, vibrering og grov"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8987,12 +8993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Licht, trillen en piep"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lett, vibrering og grov"
           }
         },
         "pl" : {
@@ -9127,6 +9127,12 @@
             "value" : "ローディング"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "laster"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9137,12 +9143,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "laden"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "laster"
           }
         },
         "pl" : {
@@ -9277,6 +9277,12 @@
             "value" : "パッチに接続する前に、シリアル番号が正しいことを確認してください。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontroller at serienummeret er korrekt før du kobler det til depotplasteret."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9287,12 +9293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zorg ervoor dat het serienummer correct is voordat u het verbindt met de patch."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kontroller at serienummeret er korrekt før du kobler det til depotplasteret."
           }
         },
         "pl" : {
@@ -9427,6 +9427,12 @@
             "value" : "ポンプ時間を手動で同期"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkroniser pumpens tid manuelt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9437,12 +9443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomptijd handmatig synchroniseren"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Synkroniser pumpens tid manuelt"
           }
         },
         "pl" : {
@@ -9577,6 +9577,12 @@
             "value" : "1日の最大インスリン量"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max daglig insulin"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9587,12 +9593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max. dagelijkse insuline"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Max daglig insulin"
           }
         },
         "pl" : {
@@ -9727,6 +9727,12 @@
             "value" : "1時間当たりの最大インスリン量"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimal timelegemiddel insulin"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9737,12 +9743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Max uur insuline"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maksimal timelegemiddel insulin"
           }
         },
         "pl" : {
@@ -9877,6 +9877,12 @@
             "value" : "微細"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9887,12 +9893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "minuut"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minutt"
           }
         },
         "pl" : {
@@ -10027,6 +10027,12 @@
             "value" : "議事録"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "minutter"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10037,12 +10043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "minuten"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "minutter"
           }
         },
         "pl" : {
@@ -10177,6 +10177,12 @@
             "value" : "アクティブパッチなし"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen aktive depotplastre"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10187,12 +10193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geen actieve patch"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ingen aktive depotplastre"
           }
         },
         "pl" : {
@@ -10327,6 +10327,12 @@
             "value" : "パッチなし"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen Patch"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10337,12 +10343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geen patch"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ingen Patch"
           }
         },
         "pl" : {
@@ -10477,6 +10477,12 @@
             "value" : "いいえ、そのままで"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nei, behold som det er"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10487,12 +10493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nee, zo houden"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nei, behold som det er"
           }
         },
         "pl" : {
@@ -10627,6 +10627,12 @@
             "value" : "いいえ、ポンプはそのままで"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nei, behold pumpen som er"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10637,12 +10643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nee, houd de pomp zoals hij is"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nei, behold pumpen som er"
           }
         },
         "pl" : {
@@ -10777,6 +10777,12 @@
             "value" : "期限切れパッチのお知らせ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varsel om utløpende plaster"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10787,12 +10793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kennisgeving voor vervaldatum"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Varsel om utløpende plaster"
           }
         },
         "pl" : {
@@ -10927,6 +10927,12 @@
             "value" : "でパッチが作動した。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch aktivert på"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10937,12 +10943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch geactiveerd op"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch aktivert på"
           }
         },
         "pl" : {
@@ -11077,6 +11077,12 @@
             "value" : "パッチの活性化"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivering av programfiks"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11087,12 +11093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch activering"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktivering av programfiks"
           }
         },
         "pl" : {
@@ -11227,6 +11227,12 @@
             "value" : "パッチ期限切れ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdatering utløpt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11237,12 +11243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch verlopen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oppdatering utløpt"
           }
         },
         "pl" : {
@@ -11527,6 +11527,12 @@
             "value" : "パッチの有効期限"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch utløper på"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11537,12 +11543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch verloopt op"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patch utløper på"
           }
         },
         "pl" : {
@@ -11677,6 +11677,12 @@
             "value" : "パッチID"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fiks ID"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11687,12 +11693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch ID"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fiks ID"
           }
         },
         "pl" : {
@@ -11827,6 +11827,12 @@
             "value" : "パッチ寿命"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korrigerens levetid"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11837,12 +11843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch levensduur"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Korrigerens levetid"
           }
         },
         "pl" : {
@@ -11977,6 +11977,12 @@
             "value" : "パッチのプライミング"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lappet klargjøring"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11987,12 +11993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch primmen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lappet klargjøring"
           }
         },
         "pl" : {
@@ -12127,6 +12127,12 @@
             "value" : "パッチ設定"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdatere innstillinger"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12137,12 +12143,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch instellingen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oppdatere innstillinger"
           }
         },
         "pl" : {
@@ -12277,6 +12277,12 @@
             "value" : "パッチ状態"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdatert tilstand"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12287,12 +12293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch state"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oppdatert tilstand"
           }
         },
         "pl" : {
@@ -12427,6 +12427,12 @@
             "value" : "パッチ・タイム"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppdaterings^dato"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12437,12 +12443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Patch tijd"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Oppdaterings^dato"
           }
         },
         "pl" : {
@@ -12577,6 +12577,12 @@
             "value" : "注射器をパッチの中に入れ、1～2ダッシュ分の空気を抜く。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sett sprøyten på plasteret og trekk ut 1 til 2 bindestreker med luft."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12587,12 +12593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plaats de spuit in de patch en trek 1 tot 2 streepjes lucht."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sett sprøyten på plasteret og trekk ut 1 til 2 bindestreker med luft."
           }
         },
         "pl" : {
@@ -12727,6 +12727,12 @@
             "value" : "ニードルボタンを押し、プライミングを開始する。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press på nålesnappen og begynn på sykkelprosessen."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12737,12 +12743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Druk op de naalknop en start het primerproces."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Press på nålesnappen og begynn på sykkelprosessen."
           }
         },
         "pl" : {
@@ -12877,6 +12877,12 @@
             "value" : "針ボタンを押して針を挿入します。Activate \"をクリックし、アクティベーションを完了します。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på kanylen for å sette inn kanylen. Klikk på \"Aktiver\" for å fullføre aktiveringsprosessen."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12887,12 +12893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Druk op de naaldknop om de naald in te voegen. Klik op \"Activeren\" om het activeringsproces te voltooien."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trykk på kanylen for å sette inn kanylen. Klikk på \"Aktiver\" for å fullføre aktiveringsprosessen."
           }
         },
         "pl" : {
@@ -13027,6 +13027,12 @@
             "value" : "前パッチの詳細"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forrige programfiks detaljer"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13037,12 +13043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vorige Patch Details"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Forrige programfiks detaljer"
           }
         },
         "pl" : {
@@ -13177,6 +13177,12 @@
             "value" : "ポンプベースモデル"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basismodell for pumpen"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13187,12 +13193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp basis model"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Basismodell for pumpen"
           }
         },
         "pl" : {
@@ -13327,6 +13327,12 @@
             "value" : "ポンプベースの設定"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger for pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13337,12 +13343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp basisinstellingen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Innstillinger for pumpe"
           }
         },
         "pl" : {
@@ -13477,6 +13477,12 @@
             "value" : "ポンプベースSN"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pumpens base SN"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13487,12 +13493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp basis SN"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pumpens base SN"
           }
         },
         "pl" : {
@@ -13627,6 +13627,12 @@
             "value" : "再接続"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenoppkoble"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13637,12 +13643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opnieuw verbinden"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjenoppkoble"
           }
         },
         "pl" : {
@@ -13777,6 +13777,12 @@
             "value" : "再接続..."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenopprettes..."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13787,12 +13793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opnieuw verbinden..."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjenopprettes..."
           }
         },
         "pl" : {
@@ -13927,6 +13927,12 @@
             "value" : "ポンプの取り外し"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjern pumpe"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13937,12 +13943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomp verwijderen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern pumpe"
           }
         },
         "pl" : {
@@ -14077,6 +14077,12 @@
             "value" : "パッチから安全カバーを外す。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjern sikkerhetsdekslet fra plasteret."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14087,12 +14093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verwijder de veiligheidsdeksel van de patch."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern sikkerhetsdekslet fra plasteret."
           }
         },
         "pl" : {
@@ -14227,6 +14227,12 @@
             "value" : "今すぐパッチを交換してください！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstatt depotplasteret ditt nå!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14237,12 +14243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vervang je patch nu!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erstatt depotplasteret ditt nå!"
           }
         },
         "pl" : {
@@ -14377,6 +14377,12 @@
             "value" : "Reservoir low (%iU)"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reservoar lavt (%iU)"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14387,12 +14393,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reservoir low (%iU)"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reservoar lavt (%iU)"
           }
         },
         "pl" : {
@@ -14527,6 +14527,12 @@
             "value" : "保存して続ける"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre og fortsett"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14537,12 +14543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opslaan en doorgaan"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lagre og fortsett"
           }
         },
         "pl" : {
@@ -14677,6 +14677,12 @@
             "value" : "予定ベース"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planlagt basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14687,12 +14693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geplande Basaal"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Planlagt basal"
           }
         },
         "pl" : {
@@ -14827,6 +14827,12 @@
             "value" : "インスリンの種類を選ぶ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg insulintype"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14837,12 +14843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selecteer type insuline"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velg insulintype"
           }
         },
         "pl" : {
@@ -14977,6 +14977,12 @@
             "value" : "使用するインスリンの種類を選択する。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg hvilken type insulin du skal bruke"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14987,12 +14993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Selecteer het type insuline dat je gaat gebruiken"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velg hvilken type insulin du skal bruke"
           }
         },
         "pl" : {
@@ -15127,6 +15127,12 @@
             "value" : "シリアル番号"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serienummer"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15134,12 +15140,6 @@
           }
         },
         "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Serienummer"
-          }
-        },
-        "no" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Serienummer"
@@ -15277,6 +15277,12 @@
             "value" : "Medtrumのパッチログを共有する"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del «Medtrum feilloggene»"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15287,12 +15293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deel Medtrum patch-logs"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Del «Medtrum feilloggene»"
           }
         },
         "pl" : {
@@ -15427,6 +15427,12 @@
             "value" : "沈黙"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forstummet"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15437,12 +15443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stilte"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Forstummet"
           }
         },
         "pl" : {
@@ -15577,6 +15577,12 @@
             "value" : "プライミング開始"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start klaring"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15587,12 +15593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Begin met primmen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start klaring"
           }
         },
         "pl" : {
@@ -15727,6 +15727,12 @@
             "value" : "ステータス"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status:"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15737,12 +15743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "status"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Status:"
           }
         },
         "pl" : {
@@ -15877,6 +15877,12 @@
             "value" : "パッチデータの同期"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkroniser patchdata"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15887,12 +15893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchroniseer patch gegevens"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Synkroniser patchdata"
           }
         },
         "pl" : {
@@ -16027,6 +16027,12 @@
             "value" : "基礎温度"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Midlertidig basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16037,12 +16043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tijdelijk basaal"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Midlertidig basal"
           }
         },
         "pl" : {
@@ -16177,6 +16177,12 @@
             "value" : "パッチは3日と8時間のみ使用することを意図しています。この時間を超えると、パッチが信頼できなくなることがあります。これは推奨されません。通常の寿命の使用を検討してください。最新世代のポンプベースの新しいファームウェアは、5日（120時間）後にボーラスコマンドをブロックすることがありますのでご注意ください。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plasteret skal kun brukes i 3 dager og 8 timer. Det kan føre til at plasteret ikke blir sikkert når det ikke overskrides. Vurder å bruke normal levetid. Vær oppmerksom på at ny fastvare ved nyeste generering av pumpeskjold kan blokkere boluskommandoer etter 5 dager (120 timer)."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16187,12 +16193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De patch is bedoeld voor gebruik gedurende slechts 3 dagen en 8 uur. Als je deze tijd overschrijdt, kan de patch onbetrouwbaar worden. Dit wordt NIET aanbevolen. Overweeg om de normale levensduur te gebruiken. Houd er rekening mee dat nieuwe firmware in de nieuwste generatie pomphouders boluscommando's na 5 dagen (120 uur) kan blokkeren."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plasteret skal kun brukes i 3 dager og 8 timer. Det kan føre til at plasteret ikke blir sikkert når det ikke overskrides. Vurder å bruke normal levetid. Vær oppmerksom på at ny fastvare ved nyeste generering av pumpeskjold kan blokkere boluskommandoer etter 5 dager (120 timer)."
           }
         },
         "pl" : {
@@ -16327,6 +16327,12 @@
             "value" : "ポンプの時刻が現在時刻と異なっています。ポンプの時刻を現在時刻に更新しますか？"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiden det tar på pumpen er forskjellig fra nåværende tidspunkt. Ønsker du å oppdatere tidspunktet på pumpen til nåværende tidspunkt?"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16337,12 +16343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De tijd op je pomp is anders dan de huidige tijd. Wil je de tijd op je pomp bijwerken naar de huidige tijd?"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tiden det tar på pumpen er forskjellig fra nåværende tidspunkt. Ønsker du å oppdatere tidspunktet på pumpen til nåværende tidspunkt?"
           }
         },
         "pl" : {
@@ -16477,6 +16477,12 @@
             "value" : "ポンプの時刻は現在時刻とは異なります。ポンプの時刻はスケジュールされた治療設定を制御します。ポンプ時刻の行までスクロールして、時差を確認し、ポンプを設定してください。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiden det tar på pumpen er forskjellig fra tiden pumpen din når du kontrollerer innstillingene i den planlagte behandlingen. Bla ned for å pumpe tidsraden for å se på tidsdifferansene og konfigurere pumpen."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16487,12 +16493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De tijd op je pomp verschilt van de huidige tijd. De tijd op je pomp bepaalt je geplande therapie-instellingen. Scroll naar beneden naar de rij Pomptijd om het tijdsverschil te bekijken en je pomp te configureren."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tiden det tar på pumpen er forskjellig fra tiden pumpen din når du kontrollerer innstillingene i den planlagte behandlingen. Bla ned for å pumpe tidsraden for å se på tidsdifferansene og konfigurere pumpen."
           }
         },
         "pl" : {
@@ -16627,6 +16627,12 @@
             "value" : "検出された時間変化"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidsendring oppdaget"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16637,12 +16643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tijdsverandering gedetecteerd"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tidsendring oppdaget"
           }
         },
         "pl" : {
@@ -16777,6 +16777,12 @@
             "value" : "ハートビートモードの切り替え"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veksle hjerteslag-modus"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16787,12 +16793,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schakel harbeat modus aan/uit"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Veksle hjerteslag-modus"
           }
         },
         "pl" : {
@@ -16927,6 +16927,12 @@
             "value" : "自己責任で使用すること！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk på egen risiko!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16937,12 +16943,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik op eigen risico!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bruk på egen risiko!"
           }
         },
         "pl" : {
@@ -17077,6 +17077,12 @@
             "value" : "寿命延長の使用"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk utvidet levetid"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17087,12 +17093,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik verlengde levensduur (doorgaan tot batterij leeg is)"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bruk utvidet levetid"
           }
         },
         "pl" : {
@@ -17227,6 +17227,12 @@
             "value" : "通常の寿命 (3d 8h) を使用"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk normal levetid (3d 8 t)"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17237,12 +17243,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik normale levensduur (3d 8h)"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bruk normal levetid (3d 8 t)"
           }
         },
         "pl" : {
@@ -17377,6 +17377,12 @@
             "value" : "振動とビープ音"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrer og pipende"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17387,12 +17393,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trillen en piepen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vibrer og pipende"
           }
         },
         "pl" : {
@@ -17527,6 +17527,12 @@
             "value" : "振動のみ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun Vibrasjon"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17537,12 +17543,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enkel trillingen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kun Vibrasjon"
           }
         },
         "pl" : {
@@ -17677,6 +17677,12 @@
             "value" : "ようこそ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velkommen"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17687,12 +17693,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verwelkoming"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velkommen"
           }
         },
         "pl" : {
@@ -17827,6 +17827,12 @@
             "value" : "ボタンをクリックすると、バイオメトリクスのプロンプトが表示されます。完了すると、パッチは無効化され、新しいパッチをペアリングするよう促されます。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du klikker på knappen, vil du få en biometrisk ledetekst. Når depotplasteret er ferdig, vil det bli deaktivert og du vil bli bedt om å pare et nytt depotplaster"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17837,12 +17843,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wanneer je op de knop klikt, krijg je een Biometrie prompt. Zodra klaar is wordt de patch gedeactiveerd en wordt je gevraagd om een nieuwe patch te koppelen."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Når du klikker på knappen, vil du få en biometrisk ledetekst. Når depotplasteret er ferdig, vil det bli deaktivert og du vil bli bedt om å pare et nytt depotplaster"
           }
         },
         "pl" : {
@@ -17977,6 +17977,12 @@
             "value" : "はい、ハートビートモードを無効にする"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja, deaktiver hjerteslagmodus"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17987,12 +17993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja, Schakel hartbeet modus uit"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ja, deaktiver hjerteslagmodus"
           }
         },
         "pl" : {
@@ -18127,6 +18127,12 @@
             "value" : "はい、ハートビートモードを有効にする"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja, Aktiver hjerteslag-modus"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18137,12 +18143,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja, hartslag modus inschakelen"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ja, Aktiver hjerteslag-modus"
           }
         },
         "pl" : {
@@ -18277,6 +18277,12 @@
             "value" : "はい、現在時刻に同期"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja, synkroniser til gjeldende tid"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18287,12 +18293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja, synchroniseren met huidige tijd"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ja, synkroniser til gjeldende tid"
           }
         },
         "pl" : {
@@ -18427,6 +18427,12 @@
             "value" : "パッチを有効にする前に、まずインスリンの種類と基本的なパッチの設定を行います。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du starter med å sette opp insulin type & grunnleggende plasterinnstillinger før du aktiverer depotplasteret."
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18437,12 +18443,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je zal beginnen met het instellen van jouw insulinetype & basispatch instellingen voordat je jouw patch activeert."
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du starter med å sette opp insulin type & grunnleggende plasterinnstillinger før du aktiverer depotplasteret."
           }
         },
         "pl" : {
@@ -18577,6 +18577,12 @@
             "value" : "パッチの残り時間は %i 時間です。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your patch has %i hours left"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18587,12 +18593,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch heeft nog %i uur over"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your patch has %i hours left"
           }
         },
         "pl" : {
@@ -18727,6 +18727,12 @@
             "value" : "パッチが異常を検出しました！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patchen har oppdaget en okklusjon!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18737,12 +18743,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch heeft een occlusie gedetecteerd!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patchen har oppdaget en okklusjon!"
           }
         },
         "pl" : {
@@ -18877,6 +18877,12 @@
             "value" : "パッチが1日の上限に達しました！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plasteret ditt har nådd maksimum!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18887,12 +18893,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch heeft zijn dagelijkse maximum bereikt!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plasteret ditt har nådd maksimum!"
           }
         },
         "pl" : {
@@ -19027,6 +19027,12 @@
             "value" : "パッチが1時間ごとの最大値に達した！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depotplasteret ditt har nådd maksimum timeliss!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19037,12 +19043,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch heeft zijn uurmaximum bereikt!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Depotplasteret ditt har nådd maksimum timeliss!"
           }
         },
         "pl" : {
@@ -19177,6 +19177,12 @@
             "value" : "パッチが故障状態です！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patchen er i gjeldende status!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19187,12 +19193,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch is in de fouttoestand!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patchen er i gjeldende status!"
           }
         },
         "pl" : {
@@ -19327,6 +19327,12 @@
             "value" : "あなたのパッチはインスリンが切れている！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plasteret ditt er tom for insulin!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19337,12 +19343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch heeft geen insuline meer!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plasteret ditt er tom for insulin!"
           }
         },
         "pl" : {
@@ -19477,6 +19477,12 @@
             "value" : "Your patch is running out of insulin!"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plasteret ditt renner ut av insulin!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19487,12 +19493,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your patch is running out of insulin!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plasteret ditt renner ut av insulin!"
           }
         },
         "pl" : {
@@ -19627,6 +19627,12 @@
             "value" : "パッチの有効期限はもうすぐ切れる！"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depotplasteret ditt vil utløpe snart!"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19637,12 +19643,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je patch verloopt binnenkort!"
-          }
-        },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Depotplasteret ditt vil utløpe snart!"
           }
         },
         "pl" : {
