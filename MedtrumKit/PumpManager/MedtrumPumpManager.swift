@@ -549,7 +549,8 @@ public extension MedtrumPumpManager {
                     dose: DoseEntry.tempBasal(
                         absoluteUnit: unitsPerHour,
                         duration: duration,
-                        insulinType: self.state.insulinType
+                        insulinType: self.state.insulinType,
+                        startDate: startDate
                     ),
                     date: startDate
                 )

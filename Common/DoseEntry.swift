@@ -39,7 +39,7 @@ public extension DoseEntry {
                 endDate: endDate,
                 value: absoluteUnit,
                 unit: .unitsPerHour,
-                deliveredUnits: absoluteUnit * (duration / .hours(1)),
+                deliveredUnits: roundBasalRate(absoluteUnit * (duration / .hours(1))),
                 insulinType: insulinType,
                 automatic: true,
                 isMutable: false
@@ -75,5 +75,9 @@ public extension DoseEntry {
 
     static func suspend(suspendDate: Date = Date.now) -> DoseEntry {
         DoseEntry(suspendDate: suspendDate)
+    }
+    
+    private static func roundBasalRate(_ rate: Double) -> Double {
+        MedtrumPumpManager.onboardingSupportedBasalRates.last(where: { $0 <= rate }) ?? 0
     }
 }
