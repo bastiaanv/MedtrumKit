@@ -37,16 +37,16 @@ class DeactivatePatchViewModel: ObservableObject {
                     initialReservoirLevel: pumpManager.state.initialReservoir,
                     reservoirLevel: pumpManager.state.reservoir
                 )
-                
-#if targetEnvironment(simulator)
-                pumpManager.state.patchId = Data()
-                pumpManager.state.sessionToken = Data()
-#endif
-                
+
+                #if targetEnvironment(simulator)
+                    pumpManager.state.patchId = Data()
+                    pumpManager.state.sessionToken = Data()
+                #endif
+
                 pumpManager.state.pumpState = .none
                 pumpManager.notifyStateDidChange()
             }
-            
+
             self.nextStep()
         }
     }
