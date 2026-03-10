@@ -57,7 +57,7 @@ struct MedtrumKitSettings: View {
                             .font(Font.footnote.weight(.semibold))
                     }.padding(.vertical, 8)
                 }
-                
+
                 if viewModel.patchLifecycleState == .gracePeriod {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(String(format: LocalizedString(
@@ -532,7 +532,7 @@ struct MedtrumKitSettings: View {
                     }
                 }
             case .expired,
-                    .gracePeriod:
+                 .gracePeriod:
                 HStack {
                     Text(LocalizedString("Patch expired", comment: "Text shown when patch expired"))
                         .foregroundStyle(.red)

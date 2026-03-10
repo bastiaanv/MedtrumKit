@@ -84,7 +84,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         formatter.timeStyle = .medium
         return formatter
     }()
-    
+
     let timeRemainingFormatter: DateComponentsFormatter = {
         let dateComponentsFormatter = DateComponentsFormatter()
         dateComponentsFormatter.allowedUnits = [.hour, .minute]
@@ -365,7 +365,7 @@ extension MedtrumKitSettingsViewModel {
 
             patchLifecycleProgress = min(progress / totalLifetime, 1)
             patchLifecycleState = getLifecycleState(state: state)
-            
+
             if patchLifecycleState == .gracePeriod {
                 let timeRemaining = patchExpiresAt.timeIntervalSinceNow
                 patchGraceTimeout = timeRemainingFormatter.string(from: timeRemaining) ?? ""
@@ -382,16 +382,16 @@ extension MedtrumKitSettingsViewModel {
             previousPatch = previewPatchState
         }
     }
-    
+
     private func getLifecycleState(state: MedtrumPumpState) -> PatchLifecycleState {
         if patchLifecycleProgress < 1 {
             return .active
         }
-        
+
         if Date.now > patchExpiresAt {
             return state.expirationTimer == 0 ? .expiredBasalOnly : .expired
         }
-        
+
         return .gracePeriod
     }
 }

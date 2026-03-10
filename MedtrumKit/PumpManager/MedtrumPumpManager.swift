@@ -868,7 +868,7 @@ public extension MedtrumPumpManager {
                 let gracePeriodFrom = self.state.expirationTimer == 0 ?
                     patchState.addingTimeInterval(.hours(112)) :
                     patchState.addingTimeInterval(.hours(72))
-                
+
                 self.state.initialReservoir = nil
                 self.state.patchId = data.patchId
                 self.state.patchActivatedAt = patchState
