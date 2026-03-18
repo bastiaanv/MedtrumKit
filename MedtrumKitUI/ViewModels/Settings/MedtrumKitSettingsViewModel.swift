@@ -13,15 +13,10 @@ enum PatchLifecycleState {
 class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     private let processQueue = DispatchQueue(label: "com.nightscout.medtrumkit.settingsViewModel")
 
-    @Published var pumpBaseSN: String = ""
-    @Published var swVersion: String = ""
     @Published var model: String = ""
-    @Published var patchId: UInt64 = 0
     @Published var is300u: Bool = false
     @Published var showPumpTimeSyncWarning = false
-    @Published var initialReservoirLevel: Double? = nil
     @Published var reservoirLevel: Double = 0
-    @Published var battery: Double = 0
     @Published var maxReservoirLevel: Double = 1
     @Published var pumpTime = Date.distantPast
     @Published var pumpTimeSyncedAt = Date.distantPast
@@ -57,13 +52,6 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         return formatter
     }()
 
-    let batteryFormatter: QuantityFormatter = {
-        let formatter = QuantityFormatter(for: .volt())
-        formatter.numberFormatter.minimumFractionDigits = 2
-        formatter.numberFormatter.maximumFractionDigits = 2
-        return formatter
-    }()
-
     let basalRateFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
@@ -81,7 +69,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     let dateTimeFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .short
         return formatter
     }()
 
@@ -96,6 +84,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     let deactivatePatchAction: () -> Void
     let pumpRemovalAction: () -> Void
     let toSettings: () -> Void
+    let toPatchDetails: () -> Void
     let toInsulinType: () -> Void
     let pumpActivationAction: (Bool) -> Void
     let activatePatchAction: () -> Void
@@ -106,6 +95,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         _ deactivatePatchAction: @escaping () -> Void,
         _ pumpActivationAction: @escaping (Bool) -> Void,
         _ toSettings: @escaping () -> Void,
+        _ toPatchDetails: @escaping () -> Void,
         _ toInsulinType: @escaping () -> Void,
         _ pumpRemovalAction: @escaping () -> Void,
         _ activatePatchAction: @escaping () -> Void
@@ -115,6 +105,7 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
         self.pumpActivationAction = pumpActivationAction
         self.pumpRemovalAction = pumpRemovalAction
         self.toInsulinType = toInsulinType
+        self.toPatchDetails = toPatchDetails
         self.toSettings = toSettings
         self.activatePatchAction = activatePatchAction
 
@@ -134,11 +125,6 @@ class MedtrumKitSettingsViewModel: ObservableObject, PumpManagerStatusObserver {
     func reservoirText(for units: Double) -> String {
         let quantity = HKQuantity(unit: .internationalUnit(), doubleValue: units)
         return reservoirVolumeFormatter.string(from: quantity) ?? ""
-    }
-
-    func batteryText(for voltage: Double) -> String {
-        let quantity = HKQuantity(unit: .volt(), doubleValue: voltage)
-        return batteryFormatter.string(from: quantity) ?? ""
     }
 
     var patchLifecycleDays: Int? {
@@ -341,13 +327,9 @@ extension MedtrumKitSettingsViewModel {
             maxReservoirLevel = 200
         }
 
-        pumpBaseSN = state.pumpSN.hexEncodedString().uppercased()
-        swVersion = state.swVersion
-        patchId = state.patchId.toUInt64()
         showPumpTimeSyncWarning = state.shouldShowTimeWarning()
         patchState = state.pumpState
         patchStateString = state.pumpState.description
-        initialReservoirLevel = state.initialReservoir
         pumpTime = state.pumpTime
         pumpTimeSyncedAt = state.pumpTimeSyncedAt
         reservoirLevel = state.reservoir
@@ -357,7 +339,6 @@ extension MedtrumKitSettingsViewModel {
         patchActivatedAt = state.patchActivatedAt
         patchGracePeriodFrom = state.patchGracePeriodFrom ?? state.patchActivatedAt.addingTimeInterval(.hours(72))
         patchExpiresAt = state.patchExpiresAt ?? state.patchActivatedAt.addingTimeInterval(.hours(80))
-        battery = state.battery
 
         if !state.patchId.isEmpty {
             let totalLifetime = patchGracePeriodFrom.timeIntervalSince(patchActivatedAt)

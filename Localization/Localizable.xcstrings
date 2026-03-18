@@ -150,6 +150,7 @@
       }
     },
     "%llu" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -11675,6 +11676,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "补丁激活"
+          }
+        }
+      }
+    },
+    "Patch details" : {
+      "comment" : "header patch details",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patch details"
           }
         }
       }
