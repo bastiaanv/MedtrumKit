@@ -419,8 +419,10 @@ public extension MedtrumPumpManager {
 
             let dose = doseEntry.toDoseEntry()
             var events = [NewPumpEvent.bolus(dose: dose, units: dose.deliveredUnits ?? 0, date: dose.startDate)]
-            if let tempBasalEvent = self.getTempBasalEvent(endDate: Date.now) {
-                events.append(tempBasalEvent)
+
+            let tempBasalEvents = self.getActivePumpEvents(endDate: nil)
+            if !tempBasalEvents.isEmpty {
+                events.append(contentsOf: tempBasalEvents)
             }
 
             self.state.doseEntry = nil
@@ -483,19 +485,21 @@ public extension MedtrumPumpManager {
                 // Need to cancel temp basal, but is already cancelled
                 // Only need to report back to algorithm
                 let startDate = Date.now
-                var events = [
-                    NewPumpEvent.basal(
-                        dose: DoseEntry.basal(
-                            rate: self.state.currentBaseBasalRate,
-                            insulinType: self.state.insulinType,
-                            startDate: startDate
-                        ),
-                        date: startDate
-                    )
-                ]
+                var events = self.getActivePumpEvents(endDate: startDate)
 
-                if let tempBasalEvent = self.getTempBasalEvent(endDate: Date.now) {
-                    events.append(tempBasalEvent)
+                // Maybe the temp basal already expired
+                // So only add the basal event if it isn't already in the list
+                if !events.contains(where: { $0.type == .basal }) {
+                    events.append(
+                        NewPumpEvent.basal(
+                            dose: DoseEntry.basal(
+                                rate: self.state.currentBaseBasalRate,
+                                insulinType: self.state.insulinType,
+                                startDate: startDate
+                            ),
+                            date: startDate
+                        )
+                    )
                 }
 
                 self.state.lastSync = Date.now
@@ -534,7 +538,8 @@ public extension MedtrumPumpManager {
             self.log.info("Set temp basal!")
 
             let startDate = Date.now
-            var events = [
+            var events = self.getActivePumpEvents(endDate: Date.now)
+            events.append(
                 NewPumpEvent.tempBasal(
                     dose: DoseEntry.tempBasal(
                         absoluteUnit: unitsPerHour,
@@ -544,11 +549,7 @@ public extension MedtrumPumpManager {
                     ),
                     date: startDate
                 )
-            ]
-
-            if let tempBasalEvent = self.getTempBasalEvent(endDate: Date.now) {
-                events.append(tempBasalEvent)
-            }
+            )
 
             self.state.basalState = .tempBasal
             self.state.basalStateSince = startDate
@@ -600,10 +601,8 @@ public extension MedtrumPumpManager {
             self.log.info("Delivery suspended for 120min!")
 
             let start = Date.now
-            var events = [NewPumpEvent.suspend(dose: DoseEntry.suspend(suspendDate: start))]
-            if let tempBasalEvent = self.getTempBasalEvent(endDate: start) {
-                events.append(tempBasalEvent)
-            }
+            var events = self.getActivePumpEvents(endDate: start)
+            events.append(NewPumpEvent.suspend(dose: DoseEntry.suspend(suspendDate: start)))
 
             self.state.basalState = .suspended
             self.state.basalStateSince = Date.now
@@ -718,11 +717,12 @@ public extension MedtrumPumpManager {
             self.state.basalSchedule = schedule
             self.log.info("Basal schedule sync complete!")
 
-            let dose = DoseEntry.basal(rate: self.state.currentBaseBasalRate, insulinType: self.state.insulinType)
-            var events = [NewPumpEvent.basal(dose: dose)]
-            if let tempBasalEvent = self.getTempBasalEvent() {
-                events.append(tempBasalEvent)
-            }
+            var events = self.getActivePumpEvents()
+            events.append(
+                NewPumpEvent.basal(
+                    dose: DoseEntry.basal(rate: self.state.currentBaseBasalRate, insulinType: self.state.insulinType)
+                )
+            )
 
             self.state.lastSync = Date.now
             self.notifyStateDidChange()
@@ -913,10 +913,8 @@ public extension MedtrumPumpManager {
                 reservoirLevel: self.state.reservoir
             )
 
-            var events = [NewPumpEvent.suspend(dose: DoseEntry.suspend())]
-            if let tempBasalEvent = self.getTempBasalEvent(endDate: Date.now) {
-                events.append(tempBasalEvent)
-            }
+            var events = self.getActivePumpEvents(endDate: Date.now)
+            events.append(NewPumpEvent.suspend(dose: DoseEntry.suspend()))
 
             self.state.patchId = Data()
             self.state.pumpState = .none
@@ -947,10 +945,8 @@ public extension MedtrumPumpManager {
     }
 
     func forceDeactivatePatch() {
-        var events = [NewPumpEvent.suspend(dose: DoseEntry.suspend())]
-        if let tempBasalEvent = getTempBasalEvent(endDate: Date.now) {
-            events.append(tempBasalEvent)
-        }
+        var events = getActivePumpEvents(endDate: Date.now)
+        events.append(NewPumpEvent.suspend(dose: DoseEntry.suspend()))
 
         state.previousPatch = PreviousPatch(
             patchId: state.patchId,
@@ -1088,16 +1084,14 @@ public extension MedtrumPumpManager {
 
         state.bolusState = .noBolus
         let dose = doseEntry.toDoseEntry(useEstimatedEndDate: useEstimatedEndDate)
-        var events = [
+        var events = getActivePumpEvents()
+        events.append(
             NewPumpEvent.bolus(
                 dose: dose,
                 units: dose.programmedUnits,
                 date: dose.startDate
             )
-        ]
-        if let tempBasalEvent = getTempBasalEvent() {
-            events.append(tempBasalEvent)
-        }
+        )
 
         state.doseEntry = nil
         state.lastSync = Date.now
@@ -1145,16 +1139,14 @@ public extension MedtrumPumpManager {
         // due to being disconnected for too long
         doseEntry.deliveredUnits = doseEntry.value
         let dose = doseEntry.toDoseEntry(useEstimatedEndDate: true)
-        var events = [
+        var events = getActivePumpEvents()
+        events.append(
             NewPumpEvent.bolus(
                 dose: dose,
                 units: dose.programmedUnits,
                 date: dose.startDate
             )
-        ]
-        if let tempBasalEvent = getTempBasalEvent() {
-            events.append(tempBasalEvent)
-        }
+        )
 
         state.bolusState = .noBolus
         state.lastSync = Date.now
@@ -1198,23 +1190,52 @@ public extension MedtrumPumpManager {
         )
     }
 
-    private func getTempBasalEvent(endDate: Date? = nil) -> NewPumpEvent? {
+    private func getActivePumpEvents(endDate: Date? = nil) -> [NewPumpEvent] {
         guard state.basalState == .tempBasal,
               let unitsPerHour = state.tempBasalUnits,
               let duration = state.tempBasalDuration
         else {
-            return nil
+            return []
         }
 
-        return NewPumpEvent.tempBasal(
-            dose: DoseEntry.tempBasal(
-                absoluteUnit: unitsPerHour,
-                duration: duration,
-                insulinType: state.insulinType,
-                startDate: state.basalStateSince,
-                endDate: endDate
-            ),
-            date: state.basalStateSince
-        )
+        let tempBasalEnd = state.basalStateSince.addingTimeInterval(duration)
+        if let endDate, endDate < tempBasalEnd {
+            // Temp basal already expired
+
+            state.basalState = .active
+            state.tempBasalUnits = nil
+            state.tempBasalDuration = nil
+            notifyStateDidChange()
+
+            return [
+                NewPumpEvent.tempBasal(
+                    dose: DoseEntry.tempBasal(
+                        absoluteUnit: unitsPerHour,
+                        duration: duration,
+                        insulinType: state.insulinType,
+                        startDate: state.basalStateSince,
+                        endDate: tempBasalEnd
+                    ),
+                    date: state.basalStateSince
+                ),
+                NewPumpEvent.basal(
+                    dose: DoseEntry.basal(rate: state.currentBaseBasalRate, insulinType: state.insulinType),
+                    date: tempBasalEnd
+                )
+            ]
+        }
+
+        return [
+            NewPumpEvent.tempBasal(
+                dose: DoseEntry.tempBasal(
+                    absoluteUnit: unitsPerHour,
+                    duration: duration,
+                    insulinType: state.insulinType,
+                    startDate: state.basalStateSince,
+                    endDate: endDate
+                ),
+                date: state.basalStateSince
+            )
+        ]
     }
 }

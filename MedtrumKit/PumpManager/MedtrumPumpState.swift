@@ -264,9 +264,6 @@ public class MedtrumPumpState: RawRepresentable {
     public var basalSchedule: BasalSchedule
     public var tempBasalUnits: Double?
     public var tempBasalDuration: Double?
-    public var tempBasalEndsAt: Date {
-        basalStateSince + (tempBasalDuration ?? 0)
-    }
 
     public var basalDeliveryState: PumpManagerStatus.BasalDeliveryState {
         switch basalState {
@@ -279,7 +276,7 @@ public class MedtrumPumpState: RawRepresentable {
                 DoseEntry.tempBasal(
                     absoluteUnit: tempBasalUnits ?? 0,
                     duration: tempBasalDuration ?? 0,
-                    insulinType: insulinType!,
+                    insulinType: insulinType,
                     startDate: basalStateSince
                 )
             )

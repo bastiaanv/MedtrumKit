@@ -119,6 +119,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
         self.toPreviousPatchDetails = toPreviousPatchDetails
         self.toSettings = toSettings
         self.activatePatchAction = activatePatchAction
+        super.init()
 
         super.init()
 
