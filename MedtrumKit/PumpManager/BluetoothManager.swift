@@ -70,9 +70,6 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
     }
 
     func ensureConnected(_ completionAsync: @escaping (MedtrumConnectError?) async -> Void) {
-        // Reset force disconnect
-        forcedDisconnect = false
-
         guard connectCompletion == nil else {
             logger.error("EnsureConnected is already running...")
             Task {
@@ -122,6 +119,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
         // We are disconnected and have no reference to the previous connection
         // Start to scan for patch and reconnect the long way
+        startTimeout(seconds: .seconds(15))
         startScan { result in
             switch result {
             case let .failure(error):
@@ -155,6 +153,11 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
                 }
 
                 self.logger.error("Failed to connect: Timeout reached...")
+
+                if self.manager.isScanning {
+                    self.manager.stopScan()
+                    self.scanCompletion = nil
+                }
 
                 connectionCallback(.failedToConnectToDevice)
                 self.connectCompletion = nil
@@ -282,6 +285,7 @@ extension BluetoothManager {
         }
 
         connectionTimeout?.cancel()
+        forcedDisconnect = false
 
         self.peripheral = peripheral
         peripheralManager = PeripheralManager(peripheral, self, pumpManager, completion)
@@ -310,6 +314,11 @@ extension BluetoothManager {
                 "Device disconnected, name: \(peripheral.name ?? "<NO_NAME>"), error: \(error?.localizedDescription ?? "No error")"
             )
 
+        if forcedDisconnect {
+            forcedDisconnect = false
+            return
+        }
+
         if let pumpManager = self.pumpManager {
             pumpManager.state.isConnected = false
             pumpManager.notifyStateDidChange()
@@ -324,7 +333,7 @@ extension BluetoothManager {
             connectCompletion(.failedToConnectToDevice)
             self.connectCompletion = nil
 
-        } else if !forcedDisconnect {
+        } else {
             ensureConnected { error in
                 if let error = error {
                     self.logger.warning("Failed to auto-reconnect: \(error)")

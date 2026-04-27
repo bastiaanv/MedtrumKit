@@ -222,7 +222,7 @@ public extension MedtrumPumpManager {
             return
         #endif
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 completion?(nil)
@@ -314,7 +314,7 @@ public extension MedtrumPumpManager {
         let duration = estimatedDuration(toBolus: units)
         log.info("Enact bolus - \(units)U, \(duration)sec")
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 self.resetBolusState()
@@ -386,7 +386,7 @@ public extension MedtrumPumpManager {
         state.bolusState = .canceling
         notifyStateDidChange()
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 self.state.bolusState = oldBolusState
@@ -458,7 +458,7 @@ public extension MedtrumPumpManager {
             return
         }
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 completion(.communication(error))
@@ -581,7 +581,7 @@ public extension MedtrumPumpManager {
     func suspendPatch(duration: TimeInterval, completion: @escaping ((any Error)?) -> Void) {
         log.info("Suspending delivery...")
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 completion(error)
@@ -632,7 +632,7 @@ public extension MedtrumPumpManager {
     func resumeDelivery(completion: @escaping ((any Error)?) -> Void) {
         log.info("Suspending delivery...")
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 completion(error)
@@ -698,7 +698,7 @@ public extension MedtrumPumpManager {
             return
         }
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect: \(error.localizedDescription)")
                 completion(.failure(error))
@@ -992,7 +992,7 @@ public extension MedtrumPumpManager {
     func clearAlert(alertType: AlertType, completion: @escaping (Bool) -> Void) {
         log.info("Clearing alert - alertType: \(alertType.rawValue)")
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect to pump: \(error)")
                 completion(false)
@@ -1025,7 +1025,7 @@ public extension MedtrumPumpManager {
     func updatePatchSettings(completion: @escaping (MedtrumUpdatePatchResult) -> Void) {
         log.info("Update patch settings...")
 
-        bluetooth.ensureConnected { error in
+        ensureConnectedAndActive { error in
             if let error = error {
                 self.log.error("Failed to connect to pump: \(error)")
                 completion(.failure(error: .connectionFailure))
@@ -1181,6 +1181,15 @@ public extension MedtrumPumpManager {
                 }
             }
         }
+    }
+
+    private func ensureConnectedAndActive(_ completionAsync: @escaping (MedtrumConnectError?) async -> Void) {
+        guard state.pumpState.rawValue >= PatchState.active.rawValue else {
+            log.warning("No active patch, failing immediately")
+            Task { await completionAsync(.failedToFindDevice) }
+            return
+        }
+        bluetooth.ensureConnected(completionAsync)
     }
 
     private func handlePumpDelegateError(method: String, _ error: Error, _ function: String = #function, _ line: Int = #line) {
