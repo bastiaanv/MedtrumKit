@@ -11,6 +11,15 @@ public extension NewPumpEvent {
             title: String(localized: "Bolus", comment: "Pump Event title for UnfinalizedDose with doseType of .bolus")
         )
     }
+    
+    static func bolus(unfinalizedDose: UnfinalizedDose) -> NewPumpEvent {
+        let dose = unfinalizedDose.toDoseEntry(isMutable: true)
+        return NewPumpEvent.bolus(
+            dose: dose,
+            units: dose.programmedUnits,
+            date: dose.startDate
+        )
+    }
 
     static func tempBasal(dose: DoseEntry, date: Date = Date.now) -> NewPumpEvent {
         let dateFormatter = ISO8601DateFormatter()

@@ -157,7 +157,7 @@ struct MedtrumKitSettings: View {
                         viewModel.suspendResumeButtonPressed()
                     }) {
                         HStack {
-                            if viewModel.basalType == .suspended {
+                            if viewModel.basalType == .suspend {
                                 Text("Resume Insulin Delivery", comment: "Resume patch")
                             } else {
                                 Text("Suspend Insulin Delivery", comment: "Suspend patch")
@@ -514,8 +514,10 @@ struct MedtrumKitSettings: View {
                 .foregroundColor(Color(UIColor.secondaryLabel))
 
             switch viewModel.basalType {
-            case .active,
-                 .tempBasal:
+            case .basal,
+                 .tempBasal,
+                 .resume,
+                 .bolus:
                 HStack(alignment: .center) {
                     HStack(alignment: .lastTextBaseline, spacing: 3) {
                         Text(viewModel.basalRateFormatter.string(from: viewModel.basalRate as NSNumber) ?? "")
@@ -526,7 +528,7 @@ struct MedtrumKitSettings: View {
                             .foregroundColor(.secondary)
                     }
                 }
-            case .suspended:
+            case .suspend:
                 HStack(alignment: .center) {
                     Image(systemName: "pause.circle.fill")
                         .font(.system(size: 34))
@@ -675,11 +677,13 @@ struct MedtrumKitSettings: View {
 
     var deliverySectionTitle: String {
         switch viewModel.basalType {
-        case .active:
+        case .resume,
+             .basal,
+             .bolus:
             return String(localized: "Scheduled Basal", comment: "Title of insulin delivery section")
         case .tempBasal:
             return String(localized: "Temp Basal", comment: "Pump Event title for UnfinalizedDose with doseType of .tempBasal")
-        case .suspended:
+        case .suspend:
             return String(localized: "Insulin Delivery", comment: "Title of insulin delivery section")
         }
     }

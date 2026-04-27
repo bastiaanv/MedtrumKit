@@ -24,7 +24,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
     @Published var pumpTimeSyncedAt = Date.distantPast
     @Published var patchState: PatchState = .none
     @Published var patchStateString: String = PatchState.none.description
-    @Published var basalType: BasalState = .active
+    @Published var basalType: DoseType = .basal
     @Published var basalRate: Double = 0
     @Published var insulinType: InsulinType = .novolog
     @Published var lastSync = Date.distantPast
@@ -119,8 +119,6 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
         self.toPreviousPatchDetails = toPreviousPatchDetails
         self.toSettings = toSettings
         self.activatePatchAction = activatePatchAction
-        super.init()
-
         super.init()
 
         guard let pumpManager = pumpManager else {
@@ -253,7 +251,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
     }
 
     func suspendResumeButtonPressed() {
-        if basalType != .suspended {
+        if basalType != .suspend {
             showingSuspendPicker = true
             return
         }
@@ -367,8 +365,8 @@ extension MedtrumKitSettingsViewModel {
         pumpTime = state.pumpTime
         pumpTimeSyncedAt = state.pumpTimeSyncedAt
         reservoirLevel = patchState != .reservoirEmpty ? state.reservoir : 0
-        basalType = state.basalState
-        basalRate = basalType == .tempBasal ? (state.tempBasalUnits ?? state.currentBaseBasalRate) : state.currentBaseBasalRate
+        basalType = state.basalDose.type
+        basalRate = state.basalDose.value
         lastSync = state.lastSync
         patchActivatedAt = state.patchActivatedAt
         patchGracePeriodFrom = state.patchGracePeriodFrom
