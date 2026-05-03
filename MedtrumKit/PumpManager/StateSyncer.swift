@@ -5,8 +5,13 @@ enum StateSyncer {
         syncResponse: SynchronizePacketResponse,
         state: MedtrumPumpState,
         pumpManager: MedtrumPumpManager,
-        duringReconnect: Bool
+        duringReconnect: Bool,
+        fullSync: Bool
     ) {
+        if fullSync {
+            pumpManager.state.lastSync = Date.now
+        }
+
         StateSyncer.updatePumpState(syncResponse: syncResponse, state: state)
 
         if let reservoir = syncResponse.reservoir {
@@ -21,6 +26,11 @@ enum StateSyncer {
             state.reservoir = reservoir
             if state.initialReservoir == nil {
                 state.initialReservoir = state.reservoir
+            }
+            
+            if fullSync {
+                // to prevent spaming the OSAID app with reservoir updates
+                pumpManager.emitReservoirLevel()
             }
         }
 
@@ -83,7 +93,7 @@ enum StateSyncer {
         pumpManager.notifyStateDidChange()
     }
 
-    public static func timeSync(pumpManager: MedtrumPumpManager) async {
+    public static func fetchPatchTime(pumpManager: MedtrumPumpManager) async {
         let logger = MedtrumLogger(category: "TimeSync")
         let timeData = await pumpManager.bluetooth.write(GetTimePacket())
 
@@ -123,7 +133,7 @@ enum StateSyncer {
             logger.error("Failed to sync timezone: \(error.errorDescription)")
             return
         default:
-            await StateSyncer.timeSync(pumpManager: pumpManager)
+            await StateSyncer.fetchPatchTime(pumpManager: pumpManager)
         }
     }
 

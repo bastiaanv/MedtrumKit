@@ -185,10 +185,10 @@ public extension MedtrumPumpManager {
 
     func ensureCurrentPumpData(completion: ((Date?) -> Void)?) {
         guard let activatedAt = state.patchActivatedAt,
-              Date.now.timeIntervalSince(state.lastSync) > .minutes(4) ||
+              Date.now.timeIntervalSince(state.lastSync) > .minutes(2.5) ||
               Date.now.timeIntervalSince(activatedAt) < .minutes(4)
         else {
-            log.warning("Skipping status update -> data is fresh: \(Date.now.timeIntervalSince(state.lastSync)) sec")
+            log.warning("Skipping status update -> data is fresh or not active: \(Date.now.timeIntervalSince(state.lastSync)) sec")
             completion?(nil)
             return
         }
@@ -230,7 +230,7 @@ public extension MedtrumPumpManager {
             }
 
             let syncResult = await self.bluetooth.write(SynchronizePacket())
-            await StateSyncer.timeSync(pumpManager: self)
+            await StateSyncer.fetchPatchTime(pumpManager: self)
 
             switch syncResult {
             case let .failure(error):
@@ -251,30 +251,13 @@ public extension MedtrumPumpManager {
                     self.log.warning("State update: Failed to encode JSON")
                 }
 
-                self.state.lastSync = Date.now
-                self.notifyStateDidChange()
-
                 StateSyncer.sync(
                     syncResponse: syncResponse,
                     state: self.state,
                     pumpManager: self,
-                    duringReconnect: false
+                    duringReconnect: false,
+                    fullSync: true
                 )
-
-                self.pumpDelegate.notify { delegate in
-                    delegate?.pumpManager(
-                        self,
-                        didReadReservoirValue: self.state.reservoir.rounded(toPlaces: 1),
-                        at: self.state.lastSync
-                    ) { result in
-                        switch result {
-                        case let .failure(error):
-                            self.handlePumpDelegateError(method: "didReadReservoirValue", error)
-                        case .success:
-                            break
-                        }
-                    }
-                }
 
                 completion?(Date.now)
             }
@@ -1083,6 +1066,23 @@ public extension MedtrumPumpManager {
         }
 
         return events
+    }
+    
+    func emitReservoirLevel() {
+        self.pumpDelegate.notify { delegate in
+            delegate?.pumpManager(
+                self,
+                didReadReservoirValue: self.state.reservoir.rounded(toPlaces: 1),
+                at: self.state.lastSync
+            ) { result in
+                switch result {
+                case let .failure(error):
+                    self.handlePumpDelegateError(method: "didReadReservoirValue", error)
+                case .success:
+                    break
+                }
+            }
+        }
     }
     
     private func emitPumpEvents(_ events: [NewPumpEvent], replacePendingEvents: Bool = true) {

@@ -101,7 +101,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
             return
         }
 
-        let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [PeripheralManager.SERVICE_UUID])
+        let connectedDevices = manager.retrieveConnectedPeripherals(withServices: [CBUUID.SERVICE_UUID])
         if let peripheral = connectedDevices.first(where: { $0.name == "MT" }) {
             // Phone is already connected, but the app is not
             startTimeout(seconds: .seconds(15))
@@ -289,7 +289,7 @@ extension BluetoothManager {
 
         self.peripheral = peripheral
         peripheralManager = PeripheralManager(peripheral, self, pumpManager, completion)
-        peripheral.discoverServices([PeripheralManager.SERVICE_UUID])
+        peripheral.discoverServices([CBUUID.SERVICE_UUID])
     }
 
     func centralManager(_ centralManager: CBCentralManager, willRestoreState dict: [String: Any]) {
@@ -299,7 +299,7 @@ extension BluetoothManager {
             return
         }
 
-        if peripheral.services?.first(where: { $0.uuid == PeripheralManager.SERVICE_UUID }) == nil {
+        if peripheral.services?.first(where: { $0.uuid == CBUUID.SERVICE_UUID }) == nil {
             logger.warning("Couldnt restore state, since no service is available...")
             centralManager.cancelPeripheralConnection(peripheral)
             return
