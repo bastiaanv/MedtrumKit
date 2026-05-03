@@ -10,6 +10,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
     private var peripheral: CBPeripheral?
     private var peripheralManager: PeripheralManager?
+    private var forcedDisconnect: Bool = false
 
     var scanCompletion: ((MedtrumScanResult) -> Void)?
     var connectCompletion: ((MedtrumConnectError?) -> Void)?
@@ -118,6 +119,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
         // We are disconnected and have no reference to the previous connection
         // Start to scan for patch and reconnect the long way
+        startTimeout(seconds: .seconds(15))
         startScan { result in
             switch result {
             case let .failure(error):
@@ -152,6 +154,11 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
                 self.logger.error("Failed to connect: Timeout reached...")
 
+                if self.manager.isScanning {
+                    self.manager.stopScan()
+                    self.scanCompletion = nil
+                }
+
                 connectionCallback(.failedToConnectToDevice)
                 self.connectCompletion = nil
             } catch {}
@@ -166,9 +173,15 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
         return await peripheralManager.writePacket(packet)
     }
 
-    func disconnect() {
-        if let peripheral = self.peripheral, peripheral.state == .connected {
+    func disconnect(force: Bool = false) {
+        forcedDisconnect = force
+
+        if let peripheral, peripheral.state == .connected {
             manager.cancelPeripheralConnection(peripheral)
+        }
+
+        if force {
+            clearPeripheral()
         }
     }
 
@@ -272,6 +285,7 @@ extension BluetoothManager {
         }
 
         connectionTimeout?.cancel()
+        forcedDisconnect = false
 
         self.peripheral = peripheral
         peripheralManager = PeripheralManager(peripheral, self, pumpManager, completion)
@@ -300,6 +314,11 @@ extension BluetoothManager {
                 "Device disconnected, name: \(peripheral.name ?? "<NO_NAME>"), error: \(error?.localizedDescription ?? "No error")"
             )
 
+        if forcedDisconnect {
+            forcedDisconnect = false
+            return
+        }
+
         if let pumpManager = self.pumpManager {
             pumpManager.state.isConnected = false
             pumpManager.notifyStateDidChange()
@@ -315,8 +334,6 @@ extension BluetoothManager {
             self.connectCompletion = nil
 
         } else {
-            // Prevent reconnect spam
-            // Only try to reconnect if Authorization was successful
             ensureConnected { error in
                 if let error = error {
                     self.logger.warning("Failed to auto-reconnect: \(error)")

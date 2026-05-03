@@ -305,7 +305,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
             return
         } else {
             // Disconnect from patch
-            pumpManager.bluetooth.disconnect()
+            pumpManager.bluetooth.disconnect(force: true)
             return
         }
     }
