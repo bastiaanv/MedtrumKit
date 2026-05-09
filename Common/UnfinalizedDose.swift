@@ -25,7 +25,7 @@ public class UnfinalizedDose {
         self.insulinType = insulinType
         automatic = activationType.isAutomatic
     }
-    
+
     public init(basalRate: Double, insulinType: InsulinType?, startDate: Date = Date.now) {
         type = .basal
         value = basalRate
@@ -34,7 +34,7 @@ public class UnfinalizedDose {
         self.insulinType = insulinType
         automatic = false
     }
-    
+
     public init(tempRate: Double, duration: TimeInterval, insulinType: InsulinType?) {
         type = .tempBasal
         value = tempRate
@@ -43,7 +43,7 @@ public class UnfinalizedDose {
         estimatedEndDate = startDate.addingTimeInterval(duration)
         automatic = true
     }
-    
+
     public init(suspendStartTime: Date) {
         type = .suspend
         value = 0
@@ -52,7 +52,7 @@ public class UnfinalizedDose {
         automatic = false // OSAID does not use suspend function
         insulinType = nil
     }
-    
+
     public init(resumeStartTime: Date, insulinType: InsulinType?) {
         type = .resume
         value = 0
@@ -136,19 +136,19 @@ public class UnfinalizedDose {
                 // The endDate of a bolus cannot be in the future...
                 endDate = Date.now
             }
-            
+
             return DoseEntry(
                 type: .bolus,
                 startDate: startDate,
                 endDate: endDate,
                 value: value.rounded(toPlaces: 2),
                 unit: .units,
-                deliveredUnits: isMutable ? nil : self.deliveredUnits.rounded(toPlaces: 2),
+                deliveredUnits: isMutable ? nil : deliveredUnits.rounded(toPlaces: 2),
                 insulinType: insulinType,
                 automatic: automatic,
                 isMutable: isMutable
             )
-            
+
         case .basal:
             return DoseEntry(
                 type: .basal,
@@ -157,14 +157,9 @@ public class UnfinalizedDose {
                 unit: .unitsPerHour,
                 insulinType: insulinType
             )
-            
+
         case .tempBasal:
-            var actualEndDate = isMutable ? estimatedEndDate : endDate
-            if !isMutable, estimatedEndDate < endDate {
-                // Temp basal already expired, update endDate & add normal basal event
-                actualEndDate = estimatedEndDate
-            }
-            
+            let actualEndDate = isMutable ? estimatedEndDate : endDate
             let duration = actualEndDate.timeIntervalSince(startDate)
             return DoseEntry(
                 type: .tempBasal,
@@ -177,28 +172,26 @@ public class UnfinalizedDose {
                 automatic: automatic,
                 isMutable: isMutable
             )
-            
+
         case .suspend:
             return DoseEntry(
                 suspendDate: startDate,
-                automatic: automatic,
-                isMutable: isMutable
+                automatic: automatic
             )
-            
+
         case .resume:
             return DoseEntry(
                 resumeDate: startDate,
                 insulinType: insulinType,
-                automatic: automatic,
-                isMutable: isMutable
+                automatic: automatic
             )
         }
     }
-    
+
     private func roundBasalRate(_ rate: Double) -> Double {
         MedtrumPumpManager.onboardingSupportedBasalRates.last(where: { $0 <= rate }) ?? 0
     }
-    
+
     public static func defaultBasalDose(basalSchedule: BasalSchedule, insulineType: InsulinType?) -> UnfinalizedDose {
         let now = Date()
         let startOfDay = Calendar.current.startOfDay(for: now)

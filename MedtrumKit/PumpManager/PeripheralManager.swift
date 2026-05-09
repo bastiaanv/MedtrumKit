@@ -329,25 +329,25 @@ extension PeripheralManager: CBPeripheralDelegate {
             self.currentPacket = nil
         }
     }
-    
+
     private func handleHeartbeat(data: Data) {
         var data = data
 
-        self.log.debug("READ -> Got data: \(data.hexEncodedString())")
+        log.debug("READ -> Got data: \(data.hexEncodedString())")
         data.append(0x00) // Little CRC hack. The notification lacks the CRC value, thus add an empty value there
 
         var packet = NotificationPacket()
         packet.decode(data)
 
-        guard Date.now.timeIntervalSince(self.pumpManager.state.lastSync) > .minutes(2.5) else {
-            self.parseStateUpdate(packet.parseResponse(), duringReconnect: false, fullSync: false)
-            self.log.debug("State too fresh, skipping full sync...")
+        guard Date.now.timeIntervalSince(pumpManager.state.lastSync) > .minutes(2.5) else {
+            parseStateUpdate(packet.parseResponse(), duringReconnect: false, fullSync: false)
+            log.debug("State too fresh, skipping full sync...")
             return
         }
-        
-        guard self.pumpManager.state.bolusState == .noBolus else {
-            self.parseStateUpdate(packet.parseResponse(), duringReconnect: false, fullSync: false)
-            self.log.warning("Skipping sync, pump is currently bolusing")
+
+        guard pumpManager.state.bolusState == .noBolus else {
+            parseStateUpdate(packet.parseResponse(), duringReconnect: false, fullSync: false)
+            log.warning("Skipping sync, pump is currently bolusing")
             return
         }
 

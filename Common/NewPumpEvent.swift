@@ -2,16 +2,17 @@ import Foundation
 import LoopKit
 
 public extension NewPumpEvent {
+    private static let dateFormatter = ISO8601DateFormatter()
+
     static func bolus(dose: DoseEntry, units: Double, date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: date,
             dose: dose,
             raw: "\(DoseType.bolus.rawValue) \(units) \(dateFormatter.string(from: date))".data(using: .utf8) ?? Data([]),
             title: String(localized: "Bolus", comment: "Pump Event title for UnfinalizedDose with doseType of .bolus")
         )
     }
-    
+
     static func bolus(unfinalizedDose: UnfinalizedDose) -> NewPumpEvent {
         let dose = unfinalizedDose.toDoseEntry(isMutable: true)
         return NewPumpEvent.bolus(
@@ -22,8 +23,7 @@ public extension NewPumpEvent {
     }
 
     static func tempBasal(dose: DoseEntry, date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: date,
             dose: dose,
             raw: "\(DoseType.tempBasal.rawValue) \(dose.programmedUnits) \(dateFormatter.string(from: date))"
@@ -33,8 +33,7 @@ public extension NewPumpEvent {
     }
 
     static func basal(dose: DoseEntry, date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: date,
             dose: dose,
             raw: "\(DoseType.basal.rawValue) \(dateFormatter.string(from: date))".data(using: .utf8) ?? Data([]),
@@ -43,8 +42,7 @@ public extension NewPumpEvent {
     }
 
     static func resume(dose: DoseEntry, date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: date,
             dose: dose,
             raw: "\(DoseType.resume.rawValue) \(dateFormatter.string(from: date))".data(using: .utf8) ?? Data([]),
@@ -53,8 +51,7 @@ public extension NewPumpEvent {
     }
 
     static func suspend(dose: DoseEntry, date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: date,
             dose: dose,
             raw: "\(DoseType.suspend.rawValue) \(dateFormatter.string(from: date))".data(using: .utf8) ?? Data([]),
@@ -63,8 +60,7 @@ public extension NewPumpEvent {
     }
 
     static func replacedPump(date: Date = Date.now) -> NewPumpEvent {
-        let dateFormatter = ISO8601DateFormatter()
-        return NewPumpEvent(
+        NewPumpEvent(
             date: Date.now,
             dose: nil,
             raw: "PATCH_REPLACE \(dateFormatter.string(from: date))".data(using: .utf8) ?? Data([]),

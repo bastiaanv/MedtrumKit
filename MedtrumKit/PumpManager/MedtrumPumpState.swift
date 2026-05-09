@@ -115,15 +115,16 @@ public class MedtrumPumpState: RawRepresentable {
         } else {
             alarmSetting = .BeepOnly
         }
-        
+
         if let rawDoseEntry = rawValue["bolusDose"] as? UnfinalizedDose.RawValue {
             bolusDose = UnfinalizedDose(rawValue: rawDoseEntry)
         } else {
             bolusDose = nil
         }
-        
+
         if let rawDoseEntry = rawValue["basalDose"] as? UnfinalizedDose.RawValue {
-            basalDose = UnfinalizedDose(rawValue: rawDoseEntry) ?? UnfinalizedDose.defaultBasalDose(basalSchedule: basalSchedule, insulineType: insulinType)
+            basalDose = UnfinalizedDose(rawValue: rawDoseEntry) ?? UnfinalizedDose
+                .defaultBasalDose(basalSchedule: basalSchedule, insulineType: insulinType)
         } else {
             basalDose = UnfinalizedDose.defaultBasalDose(basalSchedule: basalSchedule, insulineType: insulinType)
         }
@@ -160,7 +161,7 @@ public class MedtrumPumpState: RawRepresentable {
         } else {
             basalSchedule = BasalSchedule(entries: [LoopKit.RepeatingScheduleValue(startTime: 0, value: 0)])
         }
-        
+
         basalDose = UnfinalizedDose.defaultBasalDose(basalSchedule: basalSchedule, insulineType: insulinType)
     }
 
@@ -258,7 +259,7 @@ public class MedtrumPumpState: RawRepresentable {
 
     public var bolusState: BolusState
     public var bolusDose: UnfinalizedDose?
-    
+
     // basalState is the basalState from the patch itself
     // Preventing acting on an out-dated basalDose
     public var basalState: BasalState
@@ -267,14 +268,29 @@ public class MedtrumPumpState: RawRepresentable {
 
     public var basalDeliveryState: PumpManagerStatus.BasalDeliveryState {
         switch basalDose.type {
-        case .resume,
-             .basal,
-             .bolus:
+        case .basal,
+             .bolus,
+             .resume:
             return .active(basalDose.startDate)
         case .suspend:
             return .suspended(basalDose.startDate)
         case .tempBasal:
-            return .tempBasal(basalDose.toDoseEntry())
+            return .tempBasal(basalDose.toDoseEntry(isMutable: true))
+        }
+    }
+
+    var bolusDeliveryState: PumpManagerStatus.BolusState {
+        switch bolusState {
+        case .noBolus:
+            return .noBolus
+        case .canceling:
+            return .canceling
+        case .inProgress:
+            if let dose = bolusDose?.toDoseEntry(isMutable: true) {
+                return .inProgress(dose)
+            }
+
+            return .noBolus
         }
     }
 

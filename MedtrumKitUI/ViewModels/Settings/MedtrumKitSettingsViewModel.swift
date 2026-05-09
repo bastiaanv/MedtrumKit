@@ -366,7 +366,7 @@ extension MedtrumKitSettingsViewModel {
         pumpTimeSyncedAt = state.pumpTimeSyncedAt
         reservoirLevel = patchState != .reservoirEmpty ? state.reservoir : 0
         basalType = state.basalDose.type
-        basalRate = state.basalDose.value
+        basalRate = basalType == .tempBasal ? state.basalDose.value : state.currentBaseBasalRate
         lastSync = state.lastSync
         patchActivatedAt = state.patchActivatedAt
         patchGracePeriodFrom = state.patchGracePeriodFrom
