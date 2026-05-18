@@ -11,7 +11,7 @@ public extension NewPumpEvent {
             title: String(localized: "Bolus", comment: "Pump Event title for UnfinalizedDose with doseType of .bolus")
         )
     }
-    
+
     static func bolus(unfinalizedDose: UnfinalizedDose) -> NewPumpEvent {
         let dose = unfinalizedDose.toDoseEntry(isMutable: true)
         return NewPumpEvent.bolus(

@@ -19,7 +19,10 @@ public enum MedtrumConnectError: LocalizedError {
         case let .failedToCompleteAuthorizationFlow(localizedErr):
             return localizedErr
         case .failedToConnectToDevice:
-            return String(localized: "Failed to connect to patch -> Timeout reached", comment: "MedtrumError patch failedToConnectToDevice")
+            return String(
+                localized: "Failed to connect to patch -> Timeout reached",
+                comment: "MedtrumError patch failedToConnectToDevice"
+            )
         case .failedToFindDevice:
             return String(localized: "Failed to connect to patch", comment: "MedtrumError patch failedToFindDevice")
         case .isBolussing:
