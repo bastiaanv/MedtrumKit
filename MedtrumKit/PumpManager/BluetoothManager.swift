@@ -72,9 +72,7 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
     func ensureConnected(_ completion: @escaping (MedtrumConnectError?) -> Void) {
         guard connectCompletion == nil else {
             logger.error("EnsureConnected is already running...")
-            Task {
-                completion(.failedToConnectToDevice)
-            }
+            completion(.failedToConnectToDevice)
             return
         }
 
