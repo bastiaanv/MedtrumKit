@@ -11,7 +11,7 @@ public extension NewPumpEvent {
             title: String(localized: "Bolus", comment: "Pump Event title for UnfinalizedDose with doseType of .bolus")
         )
     }
-    
+
     static func bolus(unfinalizedDose: UnfinalizedDose) -> NewPumpEvent {
         let dose = unfinalizedDose.toDoseEntry(isMutable: true)
         return NewPumpEvent.bolus(
@@ -73,12 +73,12 @@ public extension NewPumpEvent {
             alarmType: nil
         )
     }
-    
+
     internal static func alert(type: MedtrumAlert) -> NewPumpEvent? {
         guard let alertTitle = type.title, let alertType = type.type else {
             return nil
         }
-        
+
         return NewPumpEvent(
             date: Date.now,
             dose: nil,

@@ -8,7 +8,7 @@ enum MedtrumAlert {
     case occlusionNotification
     case patchFaultNotification
     case reservoirEmptyNotification
-    
+
     var title: String? {
         switch self {
         case .patchDailyMaxNotification:
@@ -25,12 +25,12 @@ enum MedtrumAlert {
             return nil
         }
     }
-    
+
     var type: PumpAlarmType? {
         switch self {
         case .patchDailyMaxNotification,
-                .patchHourlyMaxNotification,
-                .patchFaultNotification:
+             .patchFaultNotification,
+             .patchHourlyMaxNotification:
             return .noDelivery
         case .occlusionNotification:
             return .occlusion
@@ -40,7 +40,7 @@ enum MedtrumAlert {
             return nil
         }
     }
-    
+
     var alert: Alert {
         let content = alertContent
         return Alert(
@@ -50,7 +50,7 @@ enum MedtrumAlert {
             trigger: trigger,
         )
     }
-    
+
     private static let managerIdentifier = "Medtrum"
     private var identifier: Alert.Identifier {
         switch self {
@@ -91,10 +91,10 @@ enum MedtrumAlert {
             )
         }
     }
-        
+
     private var alertContent: Alert.Content {
         switch self {
-        case .patchExpiredNotification(let after):
+        case let .patchExpiredNotification(after):
             return Alert.Content(
                 title: String(
                     localized: "Your patch will expire soon!",
@@ -160,7 +160,7 @@ enum MedtrumAlert {
                     comment: "Acknoledge alert"
                 )
             )
-        case .lowReservoir(let level):
+        case let .lowReservoir(level):
             return Alert.Content(
                 title: String(
                     format: String(localized: "Reservoir low (%lld U)", comment: "Title low reservoir notification"),
@@ -174,10 +174,10 @@ enum MedtrumAlert {
             )
         }
     }
-    
+
     private var trigger: Alert.Trigger {
         switch self {
-        case .patchExpiredNotification(let after):
+        case let .patchExpiredNotification(after):
             return Alert.Trigger.delayed(interval: after)
         default:
             return Alert.Trigger.immediate

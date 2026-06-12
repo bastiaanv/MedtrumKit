@@ -515,9 +515,9 @@ struct MedtrumKitSettings: View {
 
             switch viewModel.basalType {
             case .basal,
-                 .tempBasal,
+                 .bolus,
                  .resume,
-                 .bolus:
+                 .tempBasal:
                 HStack(alignment: .center) {
                     HStack(alignment: .lastTextBaseline, spacing: 3) {
                         Text(viewModel.basalRateFormatter.string(from: viewModel.basalRate as NSNumber) ?? "")
@@ -677,9 +677,9 @@ struct MedtrumKitSettings: View {
 
     var deliverySectionTitle: String {
         switch viewModel.basalType {
-        case .resume,
-             .basal,
-             .bolus:
+        case .basal,
+             .bolus,
+             .resume:
             return String(localized: "Scheduled Basal", comment: "Title of insulin delivery section")
         case .tempBasal:
             return String(localized: "Temp Basal", comment: "Pump Event title for UnfinalizedDose with doseType of .tempBasal")

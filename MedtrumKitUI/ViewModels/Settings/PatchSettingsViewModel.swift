@@ -133,7 +133,7 @@ class PatchSettingsViewModel: ObservableObject {
         }
 
         pumpManager.notifyStateDidChange()
-        
+
         pumpManager.pumpDelegate.notify { delegate in
             delegate?.retractAlert(identifier: MedtrumAlert.patchExpiredNotification(after: .hours(1)).alert.identifier)
             delegate?.issueAlert(MedtrumAlert.patchExpiredNotification(after: self.notificationAfterActivation).alert)

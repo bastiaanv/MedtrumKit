@@ -27,7 +27,7 @@ enum StateSyncer {
             if state.initialReservoir == nil {
                 state.initialReservoir = state.reservoir
             }
-            
+
             if fullSync {
                 // to prevent spaming the OSAID app with reservoir updates
                 pumpManager.emitReservoirLevel()
