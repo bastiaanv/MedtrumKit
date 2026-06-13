@@ -49,6 +49,5 @@ struct PatchDeactivationView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .edgesIgnoringSafeArea(.bottom)
-        .navigationTitle(String(localized: "Deactivate Patch", comment: "deactive patch"))
     }
 }
