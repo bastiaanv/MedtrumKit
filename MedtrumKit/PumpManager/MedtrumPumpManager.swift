@@ -695,7 +695,7 @@ public extension MedtrumPumpManager {
                 }
 
                 if self.state.expiryMode == .default {
-                    NotificationManager.activatePatchExpiredNotification(after: self.state.notificationAfterActivation)
+                    self.emitAlert(alertType: .patchExpiredNotification(after: self.state.notificationAfterActivation))
                 }
 
                 let start = Date.now
@@ -883,6 +883,26 @@ public extension MedtrumPumpManager {
             }
 
             self.oldState = MedtrumPumpState(rawValue: self.state.rawValue)
+        }
+    }
+
+    internal func emitAlert(alertType: MedtrumAlert) {
+        pumpDelegate.notify { delegate in
+            delegate?.issueAlert(alertType.alert)
+
+            if let pumpEvent = NewPumpEvent.alert(type: alertType) {
+                delegate?.pumpManager(
+                    self,
+                    hasNewPumpEvents: [pumpEvent],
+                    lastReconciliation: self.state.lastSync,
+                    replacePendingEvents: false,
+                    completion: { error in
+                        if let error = error {
+                            self.handlePumpDelegateError(method: "hasNewPumpEvents", error)
+                        }
+                    }
+                )
+            }
         }
     }
 
