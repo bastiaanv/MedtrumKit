@@ -22,7 +22,7 @@ final class MedtrumKitDispatchGroup {
         group.leave()
     }
 
-    @discardableResult  func wait(timeout: DispatchTime) -> DispatchTimeoutResult {
+    @discardableResult func wait(timeout: DispatchTime) -> DispatchTimeoutResult {
         group.wait(timeout: timeout)
     }
 }
