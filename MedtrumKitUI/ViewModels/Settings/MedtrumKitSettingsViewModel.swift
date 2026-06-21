@@ -271,6 +271,10 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
             }
         }
     }
+    
+    func sendTest() {
+        pumpManager?.sendTest()
+    }
 
     func stopTempBasal() {
         guard let pumpManager = self.pumpManager else {

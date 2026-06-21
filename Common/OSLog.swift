@@ -10,11 +10,9 @@ class MedtrumLogger {
     }
 
     public func debug(_ msg: String, file: String = #file, _ function: String = #function, _ line: Int = #line) {
-        #if MEDTRUM_DEBUG_LOGS
             let message = "\(file.file) - \(function)#\(line): \(msg)"
             logger.debug("\(message, privacy: .public)")
             writeToFile(message, .debug)
-        #endif
     }
 
     public func info(_ msg: String, file: String = #file, _ function: String = #function, _ line: Int = #line) {

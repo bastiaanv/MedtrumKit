@@ -277,6 +277,13 @@ struct MedtrumKitSettings: View {
                             connectionStatusIcon
                         }
                     }
+                    
+                    Button(action: { viewModel.sendTest() }) {
+                        HStack {
+                            Text("Send Test", comment: "reconnect to patch")
+                            Spacer()
+                        }
+                    }
                 } else {
                     Button(action: { viewModel.activatePatchAction() }) {
                         HStack {

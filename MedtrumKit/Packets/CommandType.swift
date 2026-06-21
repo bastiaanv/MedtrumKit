@@ -22,4 +22,5 @@ enum CommandType {
     static let SET_BOLUS_MOTOR: UInt8 = 36
     static let GET_RECORD: UInt8 = 99
     static let CLEAR_ALARM: UInt8 = 115
+    static let TEST: UInt8 = 240
 }

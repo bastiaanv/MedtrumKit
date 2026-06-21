@@ -620,6 +620,18 @@ public extension MedtrumPumpManager {
         log.warning("Skipping sync delivery limits (not supported by Medtrum)")
         completion(.success(limits))
     }
+    
+    func sendTest() {
+        log.info("Send test")
+        bluetooth.ensureConnected { error in
+            if let error = error {
+                self.log.error("Failed to connect to pump: \(error)")
+                return
+            }
+            
+            let _ = self.bluetooth.write(TestPacket())
+        }
+    }
 
     func primePatch(_ completion: @escaping (MedtrumPrimePatchResult) -> Void) {
         log.info("Start priming patch...")
