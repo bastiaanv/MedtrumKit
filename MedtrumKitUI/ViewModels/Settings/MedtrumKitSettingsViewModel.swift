@@ -92,6 +92,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
     let deactivatePatchAction: () -> Void
     let pumpRemovalAction: () -> Void
     let toSettings: () -> Void
+    let toTempBasal: () -> Void
     let toPatchDetails: () -> Void
     let toPreviousPatchDetails: () -> Void
     let toInsulinType: () -> Void
@@ -104,6 +105,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
         _ deactivatePatchAction: @escaping () -> Void,
         _ pumpActivationAction: @escaping (Bool) -> Void,
         _ toSettings: @escaping () -> Void,
+        _ toTempBasal: @escaping () -> Void,
         _ toPatchDetails: @escaping () -> Void,
         _ toPreviousPatchDetails: @escaping () -> Void,
         _ toInsulinType: @escaping () -> Void,
@@ -118,6 +120,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
         self.toPatchDetails = toPatchDetails
         self.toPreviousPatchDetails = toPreviousPatchDetails
         self.toSettings = toSettings
+        self.toTempBasal = toTempBasal
         self.activatePatchAction = activatePatchAction
         super.init()
 

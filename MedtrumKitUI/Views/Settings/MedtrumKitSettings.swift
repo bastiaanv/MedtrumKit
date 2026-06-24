@@ -207,6 +207,16 @@ struct MedtrumKitSettings: View {
                         viewModel.isUpdatingPumpState || viewModel.isUpdatingTempBasal || viewModel
                             .isUpdatingSuspend || viewModel.isClearingAlert
                     )
+                    Button(action: { viewModel.toTempBasal() }) {
+                        HStack {
+                            Text("Manual temp basal", comment: "sync pump")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: UIFont.systemFontSize, weight: .bold))
+                                .opacity(0.35)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
 
                     if viewModel.patchState.rawValue < PatchState.active.rawValue && viewModel.patchState != .none {
                         Button(action: { viewModel.toPumpActivation() }) {
