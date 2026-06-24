@@ -26,6 +26,7 @@ class MedtrumKitSettingsViewModel: PatchLifetimeFormatting, ObservableObject, Pu
     @Published var patchStateString: String = PatchState.none.description
     @Published var basalType: DoseType = .basal
     @Published var basalRate: Double = 0
+    @Published var tempBasalManual = false
     @Published var insulinType: InsulinType = .novolog
     @Published var lastSync = Date.distantPast
     @Published var hourlyLimit = 0
@@ -370,6 +371,7 @@ extension MedtrumKitSettingsViewModel {
         reservoirLevel = patchState != .reservoirEmpty ? state.reservoir : 0
         basalType = state.basalDose.type
         basalRate = basalType == .tempBasal ? state.basalDose.value : state.currentBaseBasalRate
+        tempBasalManual = state.basalDose.type == .tempBasal && !state.basalDose.automatic
         lastSync = state.lastSync
         patchActivatedAt = state.patchActivatedAt
         patchGracePeriodFrom = state.patchGracePeriodFrom

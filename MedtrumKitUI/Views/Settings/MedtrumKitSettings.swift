@@ -209,11 +209,10 @@ struct MedtrumKitSettings: View {
                     )
                     Button(action: { viewModel.toTempBasal() }) {
                         HStack {
-                            Text("Manual temp basal", comment: "sync pump")
+                            Text("Manual Temp Basal", comment: "sync pump")
                             Spacer()
                             Image(systemName: "chevron.right")
                                 .font(.system(size: UIFont.systemFontSize, weight: .bold))
-                                .opacity(0.35)
                                 .foregroundStyle(.secondary)
                         }
                     }
@@ -685,6 +684,13 @@ struct MedtrumKitSettings: View {
     }
 
     var deliverySectionTitle: String {
+        if viewModel.tempBasalManual {
+            return String(
+                localized: "Manual Temp Basal",
+                comment: "Pump Event title for UnfinalizedDose with doseType of .tempBasal"
+            )
+        }
+
         switch viewModel.basalType {
         case .basal,
              .bolus,

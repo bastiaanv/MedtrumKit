@@ -258,10 +258,17 @@ class MedtrumKitUICoordinator: UINavigationController, PumpManagerOnboarding, Co
             )
 
         case .manualTempBasalScreen:
-            let viewModel = ManualTempBasalViewModel(pumpManager: pumpManager)
+            let viewModel = ManualTempBasalViewModel(
+                pumpManager: pumpManager,
+                goBack: { [weak self] in
+                    guard let self else { return }
+                    self.screenStack.removeLast()
+                    self.popViewController(animated: true)
+                }
+            )
             return hostingController(
                 rootView: ManualTempBasalView(viewModel: viewModel),
-                title: String(localized: "Manual temp basal", comment: "header manual temp basal")
+                title: String(localized: "Manual Temp Basal", comment: "header manual temp basal")
             )
 
         case .patchDetailsScreen:
